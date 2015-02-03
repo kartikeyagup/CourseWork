@@ -1,35 +1,64 @@
 datatype keyword = LET | IF | THEN | ELSE | END
-
+datatype substr = SINGLE of int | BOUNDED of int*int
+datatype operator= ADD| MUL | SUB | POW | DIV | MOD | ABS
+datatype boolean = AND | OR | NOT
+datatype compare = LESSTHAN| EQUALTO | LESSTHANEQUAL | GREATERTHANEQUAL | GREATERTHAN |NOTEQUAL
 datatype lexresult = NUM of int 						(*To fix*)
-	| BOOLEAN of bool 									(*To fix *)
+	| BOOLEAN of bool 
 	| FLOAT of real 									(*TODO*)
-	| STRING of string 									(*TODO*)
-	| LPAREN 											(*TODO*)
-	| RPAREN											(*TODO*)
-	| ARITHMETIC 										(*TODO*)
-	| COMPARATOR										(*TODO*)
-	| CONNECTIVES										(*TODO*)
-	| CONCAT											(*TODO*)
-	| SUBSTR											(*TODO*)
-	| IDENTIFIER of string 								(*TODO*)
+	| STRING of string 									
+	| LPAREN 											
+	| RPAREN											
+	| ARITHMETIC of operator
+	| COMPARATOR of compare								
+	| CONNECTIVES of boolean
+	| CONCAT											
+	| SUBSTR of substr									
+	| IDENTIFIER of string 								
 	| KEYWORD of keyword 
 	| COMMA
 	| COLON
 	| EOF
 
-val error= fn x => TextIO.output(TextIO.stdOut,x ^ "\n")
-val eof = fn () => EOF
+val error		= fn x 	=> TextIO.output(TextIO.stdOut,x ^ "\n")
+val eof 		= fn () => EOF
+fun getlim(x)   = if (hd(x)= #".") then 0 else 1 + getlim(tl(x));
+val splitter 	= fn x 	=> let val lim = getlim (explode(x))  in  (Option.valOf(Int.fromString(String.substring(x,1,lim-1))),Option.valOf(Int.fromString(String.substring(x,lim+2,String.size(x)-lim-3)))) end;
 
 %%
 %structure Assignment1Lex
 %%
 (-[1-9][0-9]*|0|[1-9][0-9]*)	=> (NUM (Option.valOf(Int.fromString(yytext))));
 "true"|"false"					=> (BOOLEAN (Option.valOf(Bool.fromString(yytext))));
+"and"							=> (CONNECTIVES (AND));
+"or"							=> (CONNECTIVES (OR));
+"not"							=> (CONNECTIVES (NOT));
+"\""[a-z|A-Z]*"\""				=> (STRING (String.substring(yytext,1,size(yytext)-2)));
+[a-z|A-Z][a-z|0-9|A-Z|\'|\_]*	=> (IDENTIFIER (yytext));
 ","								=> (COMMA);
 ":"								=> (COLON);
+"("								=> (LPAREN);
+")"								=> (RPAREN);
+"/"								=> (ARITHMETIC (DIV));
+"%"								=> (ARITHMETIC (MOD));
+"*"								=> (ARITHMETIC (MUL));
+"abs"							=> (ARITHMETIC (ABS));
+"pow"							=> (ARITHMETIC (POW));
+"-"								=> (ARITHMETIC (SUB));
+"+"								=> (ARITHMETIC (ADD));
+"\^"							=> (CONCAT);
+"<>"							=> (COMPARATOR (NOTEQUAL));
+"<="							=> (COMPARATOR (LESSTHANEQUAL));
+">="							=> (COMPARATOR (GREATERTHANEQUAL));
+"<>"							=> (COMPARATOR (NOTEQUAL));
+">"								=> (COMPARATOR (GREATERTHAN));
+"<"								=> (COMPARATOR (LESSTHAN));
+"="								=> (COMPARATOR (EQUALTO));
+"\["[0-9]*"...\]"				=> (SUBSTR (SINGLE(Option.valOf(Int.fromString(String.substring(yytext,1, String.size(yytext) -3))))));
+"\["[0-9]*".."[0-9]*"\]"		=> (SUBSTR (BOUNDED(splitter yytext)));
 "if"							=> (KEYWORD (IF));
 "let"							=> (KEYWORD (LET));
 "then"							=> (KEYWORD (THEN));
 "else"							=> (KEYWORD (ELSE));
 "end"							=> (KEYWORD (END));
-.								=> (error ( "error dound" ) ; lex() );
+.								=> (error ( "error found" ) ; lex() );
