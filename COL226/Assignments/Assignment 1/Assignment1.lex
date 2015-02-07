@@ -3,19 +3,19 @@ datatype substr = SINGLE of int | BOUNDED of int*int
 datatype operator= ADD| MUL | SUB | POW | DIV | MOD | ABS
 datatype boolean = AND | OR | NOT
 datatype compare = LESSTHAN| EQUALTO | LESSTHANEQUAL | GREATERTHANEQUAL | GREATERTHAN |NOTEQUAL
-datatype lexresult = NUM of int 						(*To fix*)
-	| BOOLEAN of bool 
-	| FLOAT of real 									(*TODO*)
-	| STRING of string 									
-	| LPAREN 											
-	| RPAREN											
+datatype lexresult = NUM of int
+	| BOOLEAN of bool
+	| FLOAT of real
+	| STRING of string
+	| LPAREN
+	| RPAREN
 	| ARITHMETIC of operator
-	| COMPARATOR of compare								
+	| COMPARATOR of compare
 	| CONNECTIVES of boolean
-	| CONCAT											
-	| SUBSTR of substr									
-	| IDENTIFIER of string 								
-	| KEYWORD of keyword 
+	| CONCAT
+	| SUBSTR of substr
+	| IDENTIFIER of string
+	| KEYWORD of keyword
 	| COMMA
 	| COLON
 	| EOF
@@ -28,37 +28,39 @@ val splitter 	= fn x 	=> let val lim = getlim (explode(x))  in  (Option.valOf(In
 %%
 %structure Assignment1Lex
 %%
-(-[1-9][0-9]*|0|[1-9][0-9]*)	=> (NUM (Option.valOf(Int.fromString(yytext))));
-"true"|"false"					=> (BOOLEAN (Option.valOf(Bool.fromString(yytext))));
-"and"							=> (CONNECTIVES (AND));
-"or"							=> (CONNECTIVES (OR));
-"not"							=> (CONNECTIVES (NOT));
-"\""[a-z|A-Z]*"\""				=> (STRING (String.substring(yytext,1,size(yytext)-2)));
-[a-z|A-Z][a-z|0-9|A-Z|\'|\_]*	=> (IDENTIFIER (yytext));
-","								=> (COMMA);
-":"								=> (COLON);
-"("								=> (LPAREN);
-")"								=> (RPAREN);
-"/"								=> (ARITHMETIC (DIV));
-"%"								=> (ARITHMETIC (MOD));
-"*"								=> (ARITHMETIC (MUL));
-"abs"							=> (ARITHMETIC (ABS));
-"pow"							=> (ARITHMETIC (POW));
-"-"								=> (ARITHMETIC (SUB));
-"+"								=> (ARITHMETIC (ADD));
-"\^"							=> (CONCAT);
-"<>"							=> (COMPARATOR (NOTEQUAL));
-"<="							=> (COMPARATOR (LESSTHANEQUAL));
-">="							=> (COMPARATOR (GREATERTHANEQUAL));
-"<>"							=> (COMPARATOR (NOTEQUAL));
-">"								=> (COMPARATOR (GREATERTHAN));
-"<"								=> (COMPARATOR (LESSTHAN));
-"="								=> (COMPARATOR (EQUALTO));
-"\["[0-9]*"...\]"				=> (SUBSTR (SINGLE(Option.valOf(Int.fromString(String.substring(yytext,1, String.size(yytext) -3))))));
-"\["[0-9]*".."[0-9]*"\]"		=> (SUBSTR (BOUNDED(splitter yytext)));
-"if"							=> (KEYWORD (IF));
-"let"							=> (KEYWORD (LET));
-"then"							=> (KEYWORD (THEN));
-"else"							=> (KEYWORD (ELSE));
-"end"							=> (KEYWORD (END));
-.								=> (error ( "error found" ) ; lex() );
+("~"[1-9][0-9]*|0|[1-9][0-9]*)													=> (NUM (Option.valOf(Int.fromString(yytext))));
+"~"?[1-9][0-9]*"\."([0-9]*[1-9]|0)("E"("~"[1-9][0-9]*|0|[1-9][0-9]*))?			=> (FLOAT (Option.valOf(Real.fromString(yytext))));
+"true"|"false"																	=> (BOOLEAN (Option.valOf(Bool.fromString(yytext))));
+"and"																			=> (CONNECTIVES (AND));
+"or"																			=> (CONNECTIVES (OR));
+"not"																			=> (CONNECTIVES (NOT));
+"\""[a-z|A-Z]*"\""																=> (STRING (String.substring(yytext,1,size(yytext)-2)));
+","																				=> (COMMA);
+":"																				=> (COLON);
+"("																				=> (LPAREN);
+")"																				=> (RPAREN);
+"/"																				=> (ARITHMETIC (DIV));
+"%"																				=> (ARITHMETIC (MOD));
+"*"																				=> (ARITHMETIC (MUL));
+"abs"																			=> (ARITHMETIC (ABS));
+"pow"																			=> (ARITHMETIC (POW));
+"-"																				=> (ARITHMETIC (SUB));
+"+"																				=> (ARITHMETIC (ADD));
+"\^"																			=> (CONCAT);
+"<>"																			=> (COMPARATOR (NOTEQUAL));
+"<="																			=> (COMPARATOR (LESSTHANEQUAL));
+">="																			=> (COMPARATOR (GREATERTHANEQUAL));
+"<>"																			=> (COMPARATOR (NOTEQUAL));
+">"																				=> (COMPARATOR (GREATERTHAN));
+"<"																				=> (COMPARATOR (LESSTHAN));
+"="																				=> (COMPARATOR (EQUALTO));
+"\["[0-9]*"...\]"																=> (SUBSTR (SINGLE(Option.valOf(Int.fromString(String.substring(yytext,1, String.size(yytext) -3))))));
+"\["[0-9]*".."[0-9]*"\]"														=> (SUBSTR (BOUNDED(splitter yytext)));
+"if"																			=> (KEYWORD (IF));
+"let"																			=> (KEYWORD (LET));
+"then"																			=> (KEYWORD (THEN));
+"else"																			=> (KEYWORD (ELSE));
+"end"																			=> (KEYWORD (END));
+[a-z|A-Z][a-z|0-9|A-Z|\'|\_]*													=> (IDENTIFIER (yytext));
+[\ \t\n]																		=> (lex());
+.																				=> (error ( "error found at " ^ yytext ) ; lex() );
