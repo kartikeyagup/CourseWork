@@ -28,8 +28,8 @@ val splitter 	= fn x 	=> let val lim = getlim (explode(x))  in  (Option.valOf(In
 %%
 %structure Assignment1Lex
 %%
-("~"[1-9][0-9]*|0|[1-9][0-9]*)													=> (NUM (Option.valOf(Int.fromString(yytext))));
 "~"?[1-9][0-9]*"\."([0-9]*[1-9]|0)("E"("~"[1-9][0-9]*|0|[1-9][0-9]*))?			=> (FLOAT (Option.valOf(Real.fromString(yytext))));
+("~"[1-9][0-9]*|0|[1-9][0-9]*)													=> (NUM (Option.valOf(Int.fromString(yytext))));
 "true"|"false"																	=> (BOOLEAN (Option.valOf(Bool.fromString(yytext))));
 "and"																			=> (CONNECTIVES (AND));
 "or"																			=> (CONNECTIVES (OR));
