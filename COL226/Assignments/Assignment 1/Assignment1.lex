@@ -21,20 +21,21 @@ datatype lexresult = NUM of int
 	| EOF
 
 val error		= fn x 	=> TextIO.output(TextIO.stdOut,x ^ "\n")
-val eof 		= fn () => EOF
+val eof 		= fn () => EOF;
 fun getlim(x)   = if (hd(x)= #".") then 0 else 1 + getlim(tl(x));
 val splitter 	= fn x 	=> let val lim = getlim (explode(x))  in  (Option.valOf(Int.fromString(String.substring(x,1,lim-1))),Option.valOf(Int.fromString(String.substring(x,lim+2,String.size(x)-lim-3)))) end;
 
 %%
 %structure Assignment1Lex
 %%
-"~"?([1-9][0-9]|0)*"\."([0-9]*[1-9]|0)("E"("~"[1-9][0-9]*|0|[1-9][0-9]*))?			=> (FLOAT (Option.valOf(Real.fromString(yytext))));
+("~"[1-9][0-9]*|0|[1-9][0-9]*)"\."([0-9]*[1-9]|0)("E"("~"[1-9][0-9]*|0|[1-9][0-9]*))?		
+																				=> (FLOAT (Option.valOf(Real.fromString(yytext))));
 ("~"[1-9][0-9]*|0|[1-9][0-9]*)													=> (NUM (Option.valOf(Int.fromString(yytext))));
 "true"|"false"																	=> (BOOLEAN (Option.valOf(Bool.fromString(yytext))));
 "and"																			=> (CONNECTIVES (AND));
 "or"																			=> (CONNECTIVES (OR));
 "not"																			=> (CONNECTIVES (NOT));
-"\""[a-z|A-Z]*"\""																=> (STRING (String.substring(yytext,1,size(yytext)-2)));
+"\""[a-zA-Z\ ]*"\""																=> (STRING (String.substring(yytext,1,size(yytext)-2)));
 ","																				=> (COMMA);
 ":"																				=> (COLON);
 "("																				=> (LPAREN);

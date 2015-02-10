@@ -1,5 +1,5 @@
 open TextIO;
 use "math.lex.sml";
-open MathLex;
+open CalcLex;
 open UserDeclarations;
 val lexer = makeLexer( fn n => valOf(inputLine( stdIn ) ));

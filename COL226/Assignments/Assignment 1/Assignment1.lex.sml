@@ -25,7 +25,7 @@ datatype lexresult = NUM of int
 	| EOF
 
 val error		= fn x 	=> TextIO.output(TextIO.stdOut,x ^ "\n")
-val eof 		= fn () => EOF
+val eof 		= fn () => EOF;
 fun getlim(x)   = if (hd(x)= #".") then 0 else 1 + getlim(tl(x));
 val splitter 	= fn x 	=> let val lim = getlim (explode(x))  in  (Option.valOf(Int.fromString(String.substring(x,1,lim-1))),Option.valOf(Int.fromString(String.substring(x,lim+2,String.size(x)-lim-3)))) end;
 
@@ -512,15 +512,26 @@ val s = [
 \\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
 \\000"
 ),
+ (69, 
+"\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\006\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000"
+),
  (78, 
 "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
 \\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
-\\000\000\080\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\079\000\080\000\000\000\000\000\000\000\000\000\000\000\000\000\
 \\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
 \\000\079\079\079\079\079\079\079\079\079\079\079\079\079\079\079\
 \\079\079\079\079\079\079\079\079\079\079\079\000\000\000\000\000\
 \\000\079\079\079\079\079\079\079\079\079\079\079\079\079\079\079\
-\\079\079\079\079\079\079\079\079\079\079\079\000\079\000\000\000\
+\\079\079\079\079\079\079\079\079\079\079\079\000\000\000\000\000\
 \\000"
 ),
 (0, "")]
@@ -534,86 +545,86 @@ in Vector.fromList(List.map g
 [{fin = [], trans = 0},
 {fin = [], trans = 1},
 {fin = [], trans = 1},
-{fin = [(N 134)], trans = 0},
-{fin = [(N 134)], trans = 4},
-{fin = [(N 6)], trans = 5},
+{fin = [(N 137)], trans = 0},
+{fin = [(N 137)], trans = 4},
+{fin = [(N 24)], trans = 5},
 {fin = [], trans = 6},
-{fin = [(N 21)], trans = 7},
+{fin = [(N 17)], trans = 7},
 {fin = [], trans = 8},
 {fin = [], trans = 9},
-{fin = [(N 21)], trans = 10},
-{fin = [(N 21)], trans = 11},
-{fin = [(N 21)], trans = 0},
+{fin = [(N 17)], trans = 10},
+{fin = [(N 17)], trans = 11},
+{fin = [(N 17)], trans = 0},
 {fin = [], trans = 13},
-{fin = [(N 130),(N 134)], trans = 14},
-{fin = [(N 130)], trans = 14},
-{fin = [(N 130),(N 134)], trans = 16},
-{fin = [(N 130)], trans = 17},
-{fin = [(N 130)], trans = 18},
-{fin = [(N 31),(N 130)], trans = 14},
-{fin = [(N 130)], trans = 20},
-{fin = [(N 130)], trans = 21},
-{fin = [(N 118),(N 130)], trans = 14},
-{fin = [(N 130),(N 134)], trans = 23},
-{fin = [(N 130)], trans = 24},
-{fin = [(N 68),(N 130)], trans = 14},
-{fin = [(N 130),(N 134)], trans = 26},
-{fin = [(N 38),(N 130)], trans = 14},
-{fin = [(N 130),(N 134)], trans = 28},
-{fin = [(N 130)], trans = 29},
-{fin = [(N 42),(N 130)], trans = 14},
-{fin = [(N 130),(N 134)], trans = 31},
-{fin = [(N 130)], trans = 32},
-{fin = [(N 113),(N 130)], trans = 14},
-{fin = [(N 130),(N 134)], trans = 34},
-{fin = [(N 109),(N 130)], trans = 14},
-{fin = [(N 130),(N 134)], trans = 36},
-{fin = [(N 130)], trans = 37},
-{fin = [(N 130)], trans = 38},
-{fin = [(N 130)], trans = 18},
-{fin = [(N 130),(N 134)], trans = 40},
-{fin = [(N 130)], trans = 41},
-{fin = [(N 127),(N 130)], trans = 14},
-{fin = [(N 130)], trans = 43},
-{fin = [(N 130)], trans = 44},
-{fin = [(N 123),(N 130)], trans = 14},
-{fin = [(N 130),(N 134)], trans = 46},
-{fin = [(N 130)], trans = 47},
-{fin = [(N 35),(N 130)], trans = 14},
-{fin = [(N 130)], trans = 49},
-{fin = [(N 64),(N 130)], trans = 14},
-{fin = [(N 74),(N 134)], trans = 0},
-{fin = [(N 134)], trans = 52},
+{fin = [(N 133),(N 137)], trans = 14},
+{fin = [(N 133)], trans = 14},
+{fin = [(N 133),(N 137)], trans = 16},
+{fin = [(N 133)], trans = 17},
+{fin = [(N 133)], trans = 18},
+{fin = [(N 34),(N 133)], trans = 14},
+{fin = [(N 133)], trans = 20},
+{fin = [(N 133)], trans = 21},
+{fin = [(N 121),(N 133)], trans = 14},
+{fin = [(N 133),(N 137)], trans = 23},
+{fin = [(N 133)], trans = 24},
+{fin = [(N 71),(N 133)], trans = 14},
+{fin = [(N 133),(N 137)], trans = 26},
+{fin = [(N 41),(N 133)], trans = 14},
+{fin = [(N 133),(N 137)], trans = 28},
+{fin = [(N 133)], trans = 29},
+{fin = [(N 45),(N 133)], trans = 14},
+{fin = [(N 133),(N 137)], trans = 31},
+{fin = [(N 133)], trans = 32},
+{fin = [(N 116),(N 133)], trans = 14},
+{fin = [(N 133),(N 137)], trans = 34},
+{fin = [(N 112),(N 133)], trans = 14},
+{fin = [(N 133),(N 137)], trans = 36},
+{fin = [(N 133)], trans = 37},
+{fin = [(N 133)], trans = 38},
+{fin = [(N 133)], trans = 18},
+{fin = [(N 133),(N 137)], trans = 40},
+{fin = [(N 133)], trans = 41},
+{fin = [(N 130),(N 133)], trans = 14},
+{fin = [(N 133)], trans = 43},
+{fin = [(N 133)], trans = 44},
+{fin = [(N 126),(N 133)], trans = 14},
+{fin = [(N 133),(N 137)], trans = 46},
+{fin = [(N 133)], trans = 47},
+{fin = [(N 38),(N 133)], trans = 14},
+{fin = [(N 133)], trans = 49},
+{fin = [(N 67),(N 133)], trans = 14},
+{fin = [(N 77),(N 137)], trans = 0},
+{fin = [(N 137)], trans = 52},
 {fin = [], trans = 52},
 {fin = [], trans = 54},
 {fin = [], trans = 55},
-{fin = [(N 106)], trans = 0},
+{fin = [(N 109)], trans = 0},
 {fin = [], trans = 57},
 {fin = [], trans = 58},
-{fin = [(N 99)], trans = 0},
-{fin = [(N 88),(N 134)], trans = 60},
+{fin = [(N 102)], trans = 0},
+{fin = [(N 91),(N 137)], trans = 60},
+{fin = [(N 86)], trans = 0},
+{fin = [(N 95),(N 137)], trans = 0},
+{fin = [(N 93),(N 137)], trans = 63},
+{fin = [(N 80),(N 89)], trans = 0},
 {fin = [(N 83)], trans = 0},
-{fin = [(N 92),(N 134)], trans = 0},
-{fin = [(N 90),(N 134)], trans = 63},
-{fin = [(N 77),(N 86)], trans = 0},
-{fin = [(N 80)], trans = 0},
-{fin = [(N 50),(N 134)], trans = 0},
-{fin = [(N 6),(N 134)], trans = 67},
-{fin = [(N 6)], trans = 67},
-{fin = [(N 6),(N 134)], trans = 0},
-{fin = [(N 56),(N 134)], trans = 0},
-{fin = [(N 70),(N 134)], trans = 0},
-{fin = [(N 48),(N 134)], trans = 0},
-{fin = [(N 72),(N 134)], trans = 0},
-{fin = [(N 60),(N 134)], trans = 0},
-{fin = [(N 54),(N 134)], trans = 0},
-{fin = [(N 52),(N 134)], trans = 0},
-{fin = [(N 58),(N 134)], trans = 0},
-{fin = [(N 134)], trans = 78},
+{fin = [(N 53),(N 137)], trans = 0},
+{fin = [(N 24),(N 137)], trans = 67},
+{fin = [(N 24)], trans = 67},
+{fin = [(N 24),(N 137)], trans = 69},
+{fin = [(N 59),(N 137)], trans = 0},
+{fin = [(N 73),(N 137)], trans = 0},
+{fin = [(N 51),(N 137)], trans = 0},
+{fin = [(N 75),(N 137)], trans = 0},
+{fin = [(N 63),(N 137)], trans = 0},
+{fin = [(N 57),(N 137)], trans = 0},
+{fin = [(N 55),(N 137)], trans = 0},
+{fin = [(N 61),(N 137)], trans = 0},
+{fin = [(N 137)], trans = 78},
 {fin = [], trans = 78},
-{fin = [(N 46)], trans = 0},
-{fin = [(N 132),(N 134)], trans = 0},
-{fin = [(N 132)], trans = 0}])
+{fin = [(N 49)], trans = 0},
+{fin = [(N 135),(N 137)], trans = 0},
+{fin = [(N 135)], trans = 0}])
 end
 structure StartStates =
 	struct
@@ -655,42 +666,42 @@ let fun continue() = lex() in
 
 			(* Application actions *)
 
-  106 => let val yytext=yymktext() in SUBSTR (BOUNDED(splitter yytext)) end
-| 109 => (KEYWORD (IF))
-| 113 => (KEYWORD (LET))
-| 118 => (KEYWORD (THEN))
-| 123 => (KEYWORD (ELSE))
-| 127 => (KEYWORD (END))
-| 130 => let val yytext=yymktext() in IDENTIFIER (yytext) end
-| 132 => (lex())
-| 134 => let val yytext=yymktext() in error ( "error found at " ^ yytext ) ; lex()  end
-| 21 => let val yytext=yymktext() in FLOAT (Option.valOf(Real.fromString(yytext))) end
-| 31 => let val yytext=yymktext() in BOOLEAN (Option.valOf(Bool.fromString(yytext))) end
-| 35 => (CONNECTIVES (AND))
-| 38 => (CONNECTIVES (OR))
-| 42 => (CONNECTIVES (NOT))
-| 46 => let val yytext=yymktext() in STRING (String.substring(yytext,1,size(yytext)-2)) end
-| 48 => (COMMA)
-| 50 => (COLON)
-| 52 => (LPAREN)
-| 54 => (RPAREN)
-| 56 => (ARITHMETIC (DIV))
-| 58 => (ARITHMETIC (MOD))
-| 6 => let val yytext=yymktext() in NUM (Option.valOf(Int.fromString(yytext))) end
-| 60 => (ARITHMETIC (MUL))
-| 64 => (ARITHMETIC (ABS))
-| 68 => (ARITHMETIC (POW))
-| 70 => (ARITHMETIC (SUB))
-| 72 => (ARITHMETIC (ADD))
-| 74 => (CONCAT)
-| 77 => (COMPARATOR (NOTEQUAL))
-| 80 => (COMPARATOR (LESSTHANEQUAL))
-| 83 => (COMPARATOR (GREATERTHANEQUAL))
-| 86 => (COMPARATOR (NOTEQUAL))
-| 88 => (COMPARATOR (GREATERTHAN))
-| 90 => (COMPARATOR (LESSTHAN))
-| 92 => (COMPARATOR (EQUALTO))
-| 99 => let val yytext=yymktext() in SUBSTR (SINGLE(Option.valOf(Int.fromString(String.substring(yytext,1, String.size(yytext) -3))))) end
+  102 => let val yytext=yymktext() in SUBSTR (SINGLE(Option.valOf(Int.fromString(String.substring(yytext,1, String.size(yytext) -3))))) end
+| 109 => let val yytext=yymktext() in SUBSTR (BOUNDED(splitter yytext)) end
+| 112 => (KEYWORD (IF))
+| 116 => (KEYWORD (LET))
+| 121 => (KEYWORD (THEN))
+| 126 => (KEYWORD (ELSE))
+| 130 => (KEYWORD (END))
+| 133 => let val yytext=yymktext() in IDENTIFIER (yytext) end
+| 135 => (lex())
+| 137 => let val yytext=yymktext() in error ( "error found at " ^ yytext ) ; lex()  end
+| 17 => let val yytext=yymktext() in FLOAT (Option.valOf(Real.fromString(yytext))) end
+| 24 => let val yytext=yymktext() in NUM (Option.valOf(Int.fromString(yytext))) end
+| 34 => let val yytext=yymktext() in BOOLEAN (Option.valOf(Bool.fromString(yytext))) end
+| 38 => (CONNECTIVES (AND))
+| 41 => (CONNECTIVES (OR))
+| 45 => (CONNECTIVES (NOT))
+| 49 => let val yytext=yymktext() in STRING (String.substring(yytext,1,size(yytext)-2)) end
+| 51 => (COMMA)
+| 53 => (COLON)
+| 55 => (LPAREN)
+| 57 => (RPAREN)
+| 59 => (ARITHMETIC (DIV))
+| 61 => (ARITHMETIC (MOD))
+| 63 => (ARITHMETIC (MUL))
+| 67 => (ARITHMETIC (ABS))
+| 71 => (ARITHMETIC (POW))
+| 73 => (ARITHMETIC (SUB))
+| 75 => (ARITHMETIC (ADD))
+| 77 => (CONCAT)
+| 80 => (COMPARATOR (NOTEQUAL))
+| 83 => (COMPARATOR (LESSTHANEQUAL))
+| 86 => (COMPARATOR (GREATERTHANEQUAL))
+| 89 => (COMPARATOR (NOTEQUAL))
+| 91 => (COMPARATOR (GREATERTHAN))
+| 93 => (COMPARATOR (LESSTHAN))
+| 95 => (COMPARATOR (EQUALTO))
 | _ => raise Internal.LexerError
 
 		) end )
