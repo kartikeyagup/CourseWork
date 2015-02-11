@@ -1,0 +1,13 @@
+Batman	Superman	Friend
+Batman	Catwoman	CloseFriend
+Batman	Flash	Aquaintance
+Batman	WonderWoman	Friend
+Batman	Joker	CloseFriend
+Superman	Flash	Friend
+Superman	WonderWoman	CloseFriend
+Superman	Joker	Aquaintance
+Catwoman	Flash	Friend
+Flash	Joker	Aquaintance
+WonderWoman	Joker	CloseFriend
+Erdos	Joker	Friend
+Arrow

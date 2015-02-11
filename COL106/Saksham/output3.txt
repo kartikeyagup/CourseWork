@@ -1,0 +1,1266 @@
+COL 106 Assignment 6 : Facebook
+===============================
+
+input filename : facebook-graph.txt
+
+----------------------------------------------------------------------------
+
+Graph:
+
+V(Sheldon) connected to
+V(Leonard) [W=1]    V(Raj) [W=2]    V(Howard) [W=2]    V(Penny) [W=2]    V(Amy) [W=1]    V(Bernadette) [W=2]    V(Erdos) [W=3]    
+
+V(Leonard) connected to
+V(Sheldon) [W=1]    V(Raj) [W=2]    V(Howard) [W=2]    V(Penny) [W=1]    V(Amy) [W=3]    V(Bernadette) [W=2]    V(Stuart) [W=2]    
+
+V(Raj) connected to
+V(Leonard) [W=2]    V(Howard) [W=1]    V(Sheldon) [W=2]    V(Penny) [W=3]    V(Amy) [W=3]    V(Bernadette) [W=3]    V(Stuart) [W=3]    
+
+V(Howard) connected to
+V(Raj) [W=1]    V(Sheldon) [W=2]    V(Leonard) [W=2]    V(Penny) [W=3]    V(Amy) [W=3]    V(Bernadette) [W=1]    V(Stuart) [W=2]    
+
+V(Penny) connected to
+V(Leonard) [W=1]    V(Raj) [W=3]    V(Howard) [W=3]    V(Sheldon) [W=2]    V(Amy) [W=2]    V(Bernadette) [W=1]    V(Stuart) [W=2]    
+
+V(Amy) connected to
+V(Sheldon) [W=1]    V(Raj) [W=3]    V(Howard) [W=3]    V(Leonard) [W=3]    V(Penny) [W=2]    V(Bernadette) [W=2]    
+
+V(Bernadette) connected to
+V(Amy) [W=2]    V(Penny) [W=1]    V(Howard) [W=1]    V(Leonard) [W=2]    V(Raj) [W=3]    V(Sheldon) [W=2]    
+
+V(Stuart) connected to
+V(Howard) [W=2]    V(Leonard) [W=2]    V(Raj) [W=3]    V(Penny) [W=2]    
+
+V(Erdos) connected to
+V(Sheldon) [W=3]    
+
+V(Leslie) connected to
+
+
+
+----------------------------------------------------------------------------
+
+
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username : V(Erdos)
+erdos number = 0
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username : V(Sheldon)
+erdos number = 1
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username : V(Leonard)
+erdos number = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username : no path exists between Erdos and Leslie
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username : V(Amy)
+erdos number = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username : V(Bernadette)
+erdos number = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username : V(Penny)
+erdos number = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username : V(Raj)
+erdos number = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username : V(Howard)
+erdos number = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username : V(Stuart)
+erdos number = 3
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Erdos reachable from Erdos : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Erdos reachable from Sheldon : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Erdos reachable from Leonard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Erdos reachable from Leslie : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Erdos reachable from Amy : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Erdos reachable from Bernadette : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Erdos reachable from Penny : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Erdos reachable from Raj : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Erdos reachable from Howard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Erdos reachable from Stuart : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Sheldon reachable from Erdos : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Sheldon reachable from Sheldon : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Sheldon reachable from Leonard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Sheldon reachable from Leslie : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Sheldon reachable from Amy : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Sheldon reachable from Bernadette : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Sheldon reachable from Penny : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Sheldon reachable from Raj : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Sheldon reachable from Howard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Sheldon reachable from Stuart : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leonard reachable from Erdos : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leonard reachable from Sheldon : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leonard reachable from Leonard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leonard reachable from Leslie : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leonard reachable from Amy : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leonard reachable from Bernadette : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leonard reachable from Penny : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leonard reachable from Raj : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leonard reachable from Howard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leonard reachable from Stuart : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leslie reachable from Erdos : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leslie reachable from Sheldon : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leslie reachable from Leonard : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leslie reachable from Leslie : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leslie reachable from Amy : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leslie reachable from Bernadette : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leslie reachable from Penny : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leslie reachable from Raj : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leslie reachable from Howard : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Leslie reachable from Stuart : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Amy reachable from Erdos : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Amy reachable from Sheldon : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Amy reachable from Leonard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Amy reachable from Leslie : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Amy reachable from Amy : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Amy reachable from Bernadette : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Amy reachable from Penny : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Amy reachable from Raj : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Amy reachable from Howard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Amy reachable from Stuart : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Bernadette reachable from Erdos : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Bernadette reachable from Sheldon : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Bernadette reachable from Leonard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Bernadette reachable from Leslie : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Bernadette reachable from Amy : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Bernadette reachable from Bernadette : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Bernadette reachable from Penny : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Bernadette reachable from Raj : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Bernadette reachable from Howard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Bernadette reachable from Stuart : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Penny reachable from Erdos : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Penny reachable from Sheldon : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Penny reachable from Leonard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Penny reachable from Leslie : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Penny reachable from Amy : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Penny reachable from Bernadette : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Penny reachable from Penny : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Penny reachable from Raj : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Penny reachable from Howard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Penny reachable from Stuart : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Raj reachable from Erdos : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Raj reachable from Sheldon : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Raj reachable from Leonard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Raj reachable from Leslie : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Raj reachable from Amy : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Raj reachable from Bernadette : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Raj reachable from Penny : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Raj reachable from Raj : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Raj reachable from Howard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Raj reachable from Stuart : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Howard reachable from Erdos : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Howard reachable from Sheldon : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Howard reachable from Leonard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Howard reachable from Leslie : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Howard reachable from Amy : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Howard reachable from Bernadette : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Howard reachable from Penny : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Howard reachable from Raj : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Howard reachable from Howard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Howard reachable from Stuart : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Stuart reachable from Erdos : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Stuart reachable from Sheldon : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Stuart reachable from Leonard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Stuart reachable from Leslie : false
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Stuart reachable from Amy : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Stuart reachable from Bernadette : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Stuart reachable from Penny : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Stuart reachable from Raj : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Stuart reachable from Howard : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : is Stuart reachable from Stuart : true
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Erdos) 
+path weight = 0
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Erdos) V(Sheldon) 
+path weight = 3
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Erdos) V(Sheldon) V(Leonard) 
+path weight = 4
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Erdos) V(Sheldon) V(Amy) 
+path weight = 4
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Erdos) V(Sheldon) V(Bernadette) 
+path weight = 5
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Erdos) V(Sheldon) V(Penny) 
+path weight = 5
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Erdos) V(Sheldon) V(Raj) 
+path weight = 5
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Erdos) V(Sheldon) V(Howard) 
+path weight = 5
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Erdos) V(Sheldon) V(Leonard) V(Stuart) 
+path weight = 6
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Sheldon) V(Erdos) 
+path weight = 3
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Sheldon) 
+path weight = 0
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Sheldon) V(Leonard) 
+path weight = 1
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Sheldon) V(Amy) 
+path weight = 1
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Sheldon) V(Bernadette) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Sheldon) V(Penny) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Sheldon) V(Raj) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Sheldon) V(Howard) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Sheldon) V(Leonard) V(Stuart) 
+path weight = 3
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Leonard) V(Sheldon) V(Erdos) 
+path weight = 4
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Leonard) V(Sheldon) 
+path weight = 1
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Leonard) 
+path weight = 0
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Leonard) V(Sheldon) V(Amy) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Leonard) V(Bernadette) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Leonard) V(Penny) 
+path weight = 1
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Leonard) V(Raj) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Leonard) V(Howard) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Leonard) V(Stuart) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Leslie) 
+path weight = 0
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Amy) V(Sheldon) V(Erdos) 
+path weight = 4
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Amy) V(Sheldon) 
+path weight = 1
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Amy) V(Sheldon) V(Leonard) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Amy) 
+path weight = 0
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Amy) V(Bernadette) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Amy) V(Penny) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Amy) V(Raj) 
+path weight = 3
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Amy) V(Howard) 
+path weight = 3
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Amy) V(Sheldon) V(Leonard) V(Stuart) 
+path weight = 4
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Bernadette) V(Sheldon) V(Erdos) 
+path weight = 5
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Bernadette) V(Sheldon) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Bernadette) V(Leonard) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Bernadette) V(Amy) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Bernadette) 
+path weight = 0
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Bernadette) V(Penny) 
+path weight = 1
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Bernadette) V(Howard) V(Raj) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Bernadette) V(Howard) 
+path weight = 1
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Bernadette) V(Penny) V(Stuart) 
+path weight = 3
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Penny) V(Sheldon) V(Erdos) 
+path weight = 5
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Penny) V(Sheldon) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Penny) V(Leonard) 
+path weight = 1
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Penny) V(Amy) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Penny) V(Bernadette) 
+path weight = 1
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Penny) 
+path weight = 0
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Penny) V(Raj) 
+path weight = 3
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Penny) V(Bernadette) V(Howard) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Penny) V(Stuart) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Raj) V(Sheldon) V(Erdos) 
+path weight = 5
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Raj) V(Sheldon) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Raj) V(Leonard) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Raj) V(Amy) 
+path weight = 3
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Raj) V(Howard) V(Bernadette) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Raj) V(Penny) 
+path weight = 3
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Raj) 
+path weight = 0
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Raj) V(Howard) 
+path weight = 1
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Raj) V(Stuart) 
+path weight = 3
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Howard) V(Sheldon) V(Erdos) 
+path weight = 5
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Howard) V(Sheldon) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Howard) V(Leonard) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Howard) V(Amy) 
+path weight = 3
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Howard) V(Bernadette) 
+path weight = 1
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Howard) V(Bernadette) V(Penny) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Howard) V(Raj) 
+path weight = 1
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Howard) 
+path weight = 0
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Howard) V(Stuart) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Stuart) V(Leonard) V(Sheldon) V(Erdos) 
+path weight = 6
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Stuart) V(Leonard) V(Sheldon) 
+path weight = 3
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Stuart) V(Leonard) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : no path exists
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Stuart) V(Leonard) V(Sheldon) V(Amy) 
+path weight = 4
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Stuart) V(Leonard) V(Bernadette) 
+path weight = 4
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Stuart) V(Penny) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Stuart) V(Raj) 
+path weight = 3
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Stuart) V(Howard) 
+path weight = 2
+do you wish to continue? 
+enter 1 to compute erdos number of a user : 
+enter 2 to check if a user can reach another through a series of friends : 
+enter 3 to compute the shortest path between two users : 
+enter username 1 : enter username 2 : minimum weight path : 
+V(Stuart) 
+path weight = 0
+do you wish to continue? 

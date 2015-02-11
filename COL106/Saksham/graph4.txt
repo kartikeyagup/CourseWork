@@ -1,0 +1,20 @@
+Ronak	Akansha	CloseFriend
+Prakhar	Ashwin	Friend
+Prakhar	Manish	CloseFriend
+Manish	Ebrahim	Friend
+Prakhar	Pulkit	Acquaintance
+Prakhar	Ishaan	CloseFriend
+Ebrahim	Prakhar	Friend
+Ronak	Kartikeya	Friend
+Kartikeya	Faran	CloseFriend
+Anupam	Faran	Friend
+Prateek	Kartikeya	CloseFriend
+Praneet	Ronak	Friend
+Praneet	Priyam	CloseFriend
+Erdos	Ronak	Friend
+Ronak	Garima	CloseFriend
+Ritika	Akansha	CloseFriend
+Anisha	Divyansh	Acquaintance
+Divyansh	Yuvraj	CloseFriend
+Yuvraj	Kartikeya	Acquaintance
+Mona

@@ -1,0 +1,21 @@
+Erdos	Ronak	Acquaintance
+Erdos	Nikhil	Friend
+Nikhil	Druvank	Acquaintance
+Suban	Sak	CloseFriend
+Sak	Kolin	Acquaintance
+Suban	Kartikeya	CloseFriend
+Sak	Kartikeya	Acquaintance
+Kartikeya	Shweta	Friend
+Shweta	Ronak	Acquaintance
+Ronak	Kartikeya	CloseFriend
+Ronak	Suban	Acquaintance
+Shubham	Ronak	Friend
+Shubham	Anmol	Acquaintance
+Shubham	Amit	CloseFriend
+Amit	Suban	CloseFriend
+Suban	Nitin	Acquaintance
+Yash	Bala	CloseFriend
+Bala	Suban	Acquaintance
+Naveen	Shweta	Friend
+Amit	Shweta	CloseFriend
+Kulkarni

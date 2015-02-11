@@ -1,0 +1,18 @@
+Oliver	Lorel	CloseFriend
+Digg	Rob	Acquaintance
+Robert	Oliver	CloseFriend
+Jim	Harvey	CloseFriend
+Fish	Harvey	Friend
+Falcone	Marooney	Acquaintance
+NedStark	Oliver	Acquaintance
+Berry	Iris	CloseFriend
+Iris	Oliver	Friend
+Joe	Berry	Friend
+Rob	Fish	Acquaintance
+Wells	Berry	CloseFriend
+Cisco	Wells	Friend
+Harvey	Erdos	Friend
+Mike	Sherlock	Acquaintance
+Robert	Mike	Friend
+Jim	Falcone	Acquaintance
+Ronak

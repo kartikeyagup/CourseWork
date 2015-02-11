@@ -1,0 +1,162 @@
+--------------------------------------------------------------------------------------------------------------
+push_back:
+deque size = 1
+seven
+
+deque size = 2
+seven
+years
+
+deque size = 3
+seven
+years
+ago
+
+--------------------------------------------------------------------------------------------------------------
+pop_back:
+element removed : ago
+deque size = 2
+seven
+years
+
+element removed : years
+deque size = 1
+seven
+
+element removed : seven
+deque size = 0
+
+--------------------------------------------------------------------------------------------------------------
+isEmpty / size:
+1 / 0
+0 / 1
+0 / 2
+0 / 3
+0 / 2
+0 / 1
+1 / 0
+--------------------------------------------------------------------------------------------------------------
+clear:
+deque size = 6
+four
+score
+and
+seven
+years
+ago
+
+deque size = 0
+
+--------------------------------------------------------------------------------------------------------------
+push_front:
+deque size = 1
+and
+
+deque size = 2
+score
+and
+
+deque size = 3
+four
+score
+and
+
+deque size = 4
+four
+score
+and
+seven
+
+deque size = 5
+four
+score
+and
+seven
+years
+
+deque size = 6
+four
+score
+and
+seven
+years
+ago
+
+--------------------------------------------------------------------------------------------------------------
+pop_front:
+element removed : four
+deque size = 5
+score
+and
+seven
+years
+ago
+
+element removed : score
+deque size = 4
+and
+seven
+years
+ago
+
+element removed : and
+deque size = 3
+seven
+years
+ago
+
+element removed : seven
+deque size = 2
+years
+ago
+
+element removed : years
+deque size = 1
+ago
+
+element removed : ago
+deque size = 0
+
+--------------------------------------------------------------------------------------------------------------
+add/remove-Front/Back together:
+deque size = 6
+four
+score
+and
+seven
+years
+ago
+
+element removed : ago
+deque size = 5
+four
+score
+and
+seven
+years
+
+element removed : four
+deque size = 4
+score
+and
+seven
+years
+
+element removed : years
+deque size = 3
+score
+and
+seven
+
+element removed : score
+deque size = 2
+and
+seven
+
+element removed : seven
+deque size = 1
+and
+
+element removed : and
+deque size = 0
+

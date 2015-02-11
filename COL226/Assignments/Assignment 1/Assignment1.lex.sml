@@ -51,9 +51,9 @@ val s = [
 \\000"
 ),
  (1, 
-"\003\003\003\003\003\003\003\003\003\081\082\003\003\003\003\003\
+"\003\003\003\003\003\003\003\003\003\083\084\003\003\003\003\003\
 \\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\003\
-\\081\003\078\003\003\077\003\003\076\075\074\073\072\071\003\070\
+\\083\003\080\003\003\079\003\003\078\077\076\075\074\073\003\072\
 \\069\067\067\067\067\067\067\067\067\067\066\003\063\062\060\003\
 \\003\014\014\014\014\014\014\014\014\014\014\014\014\014\014\014\
 \\014\014\014\014\014\014\014\014\014\014\014\052\003\003\051\003\
@@ -516,22 +516,44 @@ val s = [
 "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
 \\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
 \\000\000\000\000\000\000\000\000\000\000\000\000\000\000\006\000\
-\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\071\070\070\070\070\070\070\070\070\070\000\000\000\000\000\000\
 \\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
 \\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
 \\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
 \\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
 \\000"
 ),
- (78, 
+ (70, 
 "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
 \\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
-\\079\000\080\000\000\000\000\000\000\000\000\000\000\000\000\000\
 \\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
-\\000\079\079\079\079\079\079\079\079\079\079\079\079\079\079\079\
-\\079\079\079\079\079\079\079\079\079\079\079\000\000\000\000\000\
-\\000\079\079\079\079\079\079\079\079\079\079\079\079\079\079\079\
-\\079\079\079\079\079\079\079\079\079\079\079\000\000\000\000\000\
+\\070\070\070\070\070\070\070\070\070\070\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000"
+),
+ (71, 
+"\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\071\070\070\070\070\070\070\070\070\070\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000"
+),
+ (80, 
+"\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\081\000\082\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\
+\\000\081\081\081\081\081\081\081\081\081\081\081\081\081\081\081\
+\\081\081\081\081\081\081\081\081\081\081\081\000\000\000\000\000\
+\\000\081\081\081\081\081\081\081\081\081\081\081\081\081\081\081\
+\\081\081\081\081\081\081\081\081\081\081\081\000\000\000\000\000\
 \\000"
 ),
 (0, "")]
@@ -545,8 +567,8 @@ in Vector.fromList(List.map g
 [{fin = [], trans = 0},
 {fin = [], trans = 1},
 {fin = [], trans = 1},
-{fin = [(N 137)], trans = 0},
-{fin = [(N 137)], trans = 4},
+{fin = [(N 141)], trans = 0},
+{fin = [(N 141)], trans = 4},
 {fin = [(N 24)], trans = 5},
 {fin = [], trans = 6},
 {fin = [(N 17)], trans = 7},
@@ -556,75 +578,77 @@ in Vector.fromList(List.map g
 {fin = [(N 17)], trans = 11},
 {fin = [(N 17)], trans = 0},
 {fin = [], trans = 13},
-{fin = [(N 133),(N 137)], trans = 14},
-{fin = [(N 133)], trans = 14},
-{fin = [(N 133),(N 137)], trans = 16},
-{fin = [(N 133)], trans = 17},
-{fin = [(N 133)], trans = 18},
-{fin = [(N 34),(N 133)], trans = 14},
-{fin = [(N 133)], trans = 20},
-{fin = [(N 133)], trans = 21},
-{fin = [(N 121),(N 133)], trans = 14},
-{fin = [(N 133),(N 137)], trans = 23},
-{fin = [(N 133)], trans = 24},
-{fin = [(N 71),(N 133)], trans = 14},
-{fin = [(N 133),(N 137)], trans = 26},
-{fin = [(N 41),(N 133)], trans = 14},
-{fin = [(N 133),(N 137)], trans = 28},
-{fin = [(N 133)], trans = 29},
-{fin = [(N 45),(N 133)], trans = 14},
-{fin = [(N 133),(N 137)], trans = 31},
-{fin = [(N 133)], trans = 32},
-{fin = [(N 116),(N 133)], trans = 14},
-{fin = [(N 133),(N 137)], trans = 34},
-{fin = [(N 112),(N 133)], trans = 14},
-{fin = [(N 133),(N 137)], trans = 36},
-{fin = [(N 133)], trans = 37},
-{fin = [(N 133)], trans = 38},
-{fin = [(N 133)], trans = 18},
-{fin = [(N 133),(N 137)], trans = 40},
-{fin = [(N 133)], trans = 41},
-{fin = [(N 130),(N 133)], trans = 14},
-{fin = [(N 133)], trans = 43},
-{fin = [(N 133)], trans = 44},
-{fin = [(N 126),(N 133)], trans = 14},
-{fin = [(N 133),(N 137)], trans = 46},
-{fin = [(N 133)], trans = 47},
-{fin = [(N 38),(N 133)], trans = 14},
-{fin = [(N 133)], trans = 49},
-{fin = [(N 67),(N 133)], trans = 14},
-{fin = [(N 77),(N 137)], trans = 0},
-{fin = [(N 137)], trans = 52},
+{fin = [(N 137),(N 141)], trans = 14},
+{fin = [(N 137)], trans = 14},
+{fin = [(N 137),(N 141)], trans = 16},
+{fin = [(N 137)], trans = 17},
+{fin = [(N 137)], trans = 18},
+{fin = [(N 38),(N 137)], trans = 14},
+{fin = [(N 137)], trans = 20},
+{fin = [(N 137)], trans = 21},
+{fin = [(N 125),(N 137)], trans = 14},
+{fin = [(N 137),(N 141)], trans = 23},
+{fin = [(N 137)], trans = 24},
+{fin = [(N 75),(N 137)], trans = 14},
+{fin = [(N 137),(N 141)], trans = 26},
+{fin = [(N 45),(N 137)], trans = 14},
+{fin = [(N 137),(N 141)], trans = 28},
+{fin = [(N 137)], trans = 29},
+{fin = [(N 49),(N 137)], trans = 14},
+{fin = [(N 137),(N 141)], trans = 31},
+{fin = [(N 137)], trans = 32},
+{fin = [(N 120),(N 137)], trans = 14},
+{fin = [(N 137),(N 141)], trans = 34},
+{fin = [(N 116),(N 137)], trans = 14},
+{fin = [(N 137),(N 141)], trans = 36},
+{fin = [(N 137)], trans = 37},
+{fin = [(N 137)], trans = 38},
+{fin = [(N 137)], trans = 18},
+{fin = [(N 137),(N 141)], trans = 40},
+{fin = [(N 137)], trans = 41},
+{fin = [(N 134),(N 137)], trans = 14},
+{fin = [(N 137)], trans = 43},
+{fin = [(N 137)], trans = 44},
+{fin = [(N 130),(N 137)], trans = 14},
+{fin = [(N 137),(N 141)], trans = 46},
+{fin = [(N 137)], trans = 47},
+{fin = [(N 42),(N 137)], trans = 14},
+{fin = [(N 137)], trans = 49},
+{fin = [(N 71),(N 137)], trans = 14},
+{fin = [(N 81),(N 141)], trans = 0},
+{fin = [(N 141)], trans = 52},
 {fin = [], trans = 52},
 {fin = [], trans = 54},
 {fin = [], trans = 55},
-{fin = [(N 109)], trans = 0},
+{fin = [(N 113)], trans = 0},
 {fin = [], trans = 57},
 {fin = [], trans = 58},
-{fin = [(N 102)], trans = 0},
-{fin = [(N 91),(N 137)], trans = 60},
-{fin = [(N 86)], trans = 0},
-{fin = [(N 95),(N 137)], trans = 0},
-{fin = [(N 93),(N 137)], trans = 63},
-{fin = [(N 80),(N 89)], trans = 0},
-{fin = [(N 83)], trans = 0},
-{fin = [(N 53),(N 137)], trans = 0},
-{fin = [(N 24),(N 137)], trans = 67},
-{fin = [(N 24)], trans = 67},
-{fin = [(N 24),(N 137)], trans = 69},
-{fin = [(N 59),(N 137)], trans = 0},
-{fin = [(N 73),(N 137)], trans = 0},
-{fin = [(N 51),(N 137)], trans = 0},
-{fin = [(N 75),(N 137)], trans = 0},
-{fin = [(N 63),(N 137)], trans = 0},
-{fin = [(N 57),(N 137)], trans = 0},
-{fin = [(N 55),(N 137)], trans = 0},
-{fin = [(N 61),(N 137)], trans = 0},
-{fin = [(N 137)], trans = 78},
-{fin = [], trans = 78},
-{fin = [(N 49)], trans = 0},
-{fin = [(N 135),(N 137)], trans = 0},
-{fin = [(N 135)], trans = 0}])
+{fin = [(N 106)], trans = 0},
+{fin = [(N 95),(N 141)], trans = 60},
+{fin = [(N 90)], trans = 0},
+{fin = [(N 99),(N 141)], trans = 0},
+{fin = [(N 97),(N 141)], trans = 63},
+{fin = [(N 84),(N 93)], trans = 0},
+{fin = [(N 87)], trans = 0},
+{fin = [(N 57),(N 141)], trans = 0},
+{fin = [(N 24),(N 28),(N 141)], trans = 67},
+{fin = [(N 24),(N 28)], trans = 67},
+{fin = [(N 24),(N 28),(N 141)], trans = 69},
+{fin = [(N 28)], trans = 70},
+{fin = [(N 28)], trans = 71},
+{fin = [(N 63),(N 141)], trans = 0},
+{fin = [(N 77),(N 141)], trans = 0},
+{fin = [(N 55),(N 141)], trans = 0},
+{fin = [(N 79),(N 141)], trans = 0},
+{fin = [(N 67),(N 141)], trans = 0},
+{fin = [(N 61),(N 141)], trans = 0},
+{fin = [(N 59),(N 141)], trans = 0},
+{fin = [(N 65),(N 141)], trans = 0},
+{fin = [(N 141)], trans = 80},
+{fin = [], trans = 80},
+{fin = [(N 53)], trans = 0},
+{fin = [(N 139),(N 141)], trans = 0},
+{fin = [(N 139)], trans = 0}])
 end
 structure StartStates =
 	struct
@@ -666,42 +690,43 @@ let fun continue() = lex() in
 
 			(* Application actions *)
 
-  102 => let val yytext=yymktext() in SUBSTR (SINGLE(Option.valOf(Int.fromString(String.substring(yytext,1, String.size(yytext) -3))))) end
-| 109 => let val yytext=yymktext() in SUBSTR (BOUNDED(splitter yytext)) end
-| 112 => (KEYWORD (IF))
-| 116 => (KEYWORD (LET))
-| 121 => (KEYWORD (THEN))
-| 126 => (KEYWORD (ELSE))
-| 130 => (KEYWORD (END))
-| 133 => let val yytext=yymktext() in IDENTIFIER (yytext) end
-| 135 => (lex())
-| 137 => let val yytext=yymktext() in error ( "error found at " ^ yytext ) ; lex()  end
+  106 => let val yytext=yymktext() in SUBSTR (SINGLE(Option.valOf(Int.fromString(String.substring(yytext,1, String.size(yytext) -3))))) end
+| 113 => let val yytext=yymktext() in SUBSTR (BOUNDED(splitter yytext)) end
+| 116 => (KEYWORD (IF))
+| 120 => (KEYWORD (LET))
+| 125 => (KEYWORD (THEN))
+| 130 => (KEYWORD (ELSE))
+| 134 => (KEYWORD (END))
+| 137 => let val yytext=yymktext() in IDENTIFIER (yytext) end
+| 139 => (lex())
+| 141 => let val yytext=yymktext() in error ( "error found at " ^ yytext ) ; lex()  end
 | 17 => let val yytext=yymktext() in FLOAT (Option.valOf(Real.fromString(yytext))) end
 | 24 => let val yytext=yymktext() in NUM (Option.valOf(Int.fromString(yytext))) end
-| 34 => let val yytext=yymktext() in BOOLEAN (Option.valOf(Bool.fromString(yytext))) end
-| 38 => (CONNECTIVES (AND))
-| 41 => (CONNECTIVES (OR))
-| 45 => (CONNECTIVES (NOT))
-| 49 => let val yytext=yymktext() in STRING (String.substring(yytext,1,size(yytext)-2)) end
-| 51 => (COMMA)
-| 53 => (COLON)
-| 55 => (LPAREN)
-| 57 => (RPAREN)
-| 59 => (ARITHMETIC (DIV))
-| 61 => (ARITHMETIC (MOD))
-| 63 => (ARITHMETIC (MUL))
-| 67 => (ARITHMETIC (ABS))
-| 71 => (ARITHMETIC (POW))
-| 73 => (ARITHMETIC (SUB))
-| 75 => (ARITHMETIC (ADD))
-| 77 => (CONCAT)
-| 80 => (COMPARATOR (NOTEQUAL))
-| 83 => (COMPARATOR (LESSTHANEQUAL))
-| 86 => (COMPARATOR (GREATERTHANEQUAL))
-| 89 => (COMPARATOR (NOTEQUAL))
-| 91 => (COMPARATOR (GREATERTHAN))
-| 93 => (COMPARATOR (LESSTHAN))
-| 95 => (COMPARATOR (EQUALTO))
+| 28 => let val yytext=yymktext() in error ("Bad token: " ^yytext) ; lex() end
+| 38 => let val yytext=yymktext() in BOOLEAN (Option.valOf(Bool.fromString(yytext))) end
+| 42 => (CONNECTIVES (AND))
+| 45 => (CONNECTIVES (OR))
+| 49 => (CONNECTIVES (NOT))
+| 53 => let val yytext=yymktext() in STRING (String.substring(yytext,1,size(yytext)-2)) end
+| 55 => (COMMA)
+| 57 => (COLON)
+| 59 => (LPAREN)
+| 61 => (RPAREN)
+| 63 => (ARITHMETIC (DIV))
+| 65 => (ARITHMETIC (MOD))
+| 67 => (ARITHMETIC (MUL))
+| 71 => (ARITHMETIC (ABS))
+| 75 => (ARITHMETIC (POW))
+| 77 => (ARITHMETIC (SUB))
+| 79 => (ARITHMETIC (ADD))
+| 81 => (CONCAT)
+| 84 => (COMPARATOR (NOTEQUAL))
+| 87 => (COMPARATOR (LESSTHANEQUAL))
+| 90 => (COMPARATOR (GREATERTHANEQUAL))
+| 93 => (COMPARATOR (NOTEQUAL))
+| 95 => (COMPARATOR (GREATERTHAN))
+| 97 => (COMPARATOR (LESSTHAN))
+| 99 => (COMPARATOR (EQUALTO))
 | _ => raise Internal.LexerError
 
 		) end )

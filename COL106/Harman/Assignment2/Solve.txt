@@ -1,0 +1,91 @@
+void solve(Maze * maze, DequeADT<Point> * dq)
+{
+   
+	Point first=maze->getStartPoint();
+    Point last=maze->getEndPoint();
+    dq->push_front(first);
+
+    while (dq->size()>0)
+    {
+ 
+        Point pt=dq->front();
+		dq->pop_front();
+
+        
+        if ((maze->isVisited(pt))||(maze->isWall(pt)))
+        {
+            							// DO NOTHING
+        }
+        
+        else if (last.isEqual(pt))
+        {
+
+		//maze->setVisited(last);
+            break;  					//GOT THE END POINT
+        }
+
+        else
+        {
+
+            
+            int originrow=pt.getRow();
+             int origincolumn=pt.getColumn();
+              int dist=last.distanceFrom(pt);
+           
+            Point up= Point(originrow-1,origincolumn);
+             Point right=Point(originrow,origincolumn+1);
+              Point left= Point(originrow,origincolumn-1);
+                Point down=Point(originrow+1,origincolumn);
+
+            
+            int distup=last.distanceFrom(up);
+             int distdown=last.distanceFrom(down);
+              int distleft=last.distanceFrom(left);
+                int distright=last.distanceFrom(right);
+
+            
+            if (distup<dist)
+            {
+                dq->push_front(up);
+            }
+            else
+            {
+                dq->push_back(up);
+            }
+            
+           
+            if (distdown<dist)
+            {
+                dq->push_front(down);
+            }
+            else
+            {
+                dq->push_back(down);
+            }
+            
+           
+            if (distleft<dist)
+            {
+                dq->push_front(left);
+            }
+            else
+            {
+                dq->push_back(left);
+            }
+            
+         
+            if (distright<dist)
+            {
+                dq->push_front(right);
+            }
+            else
+            {
+                dq->push_back(right);
+            }
+        
+	    maze->setVisited(pt);
+        }
+
+      
+    }
+}

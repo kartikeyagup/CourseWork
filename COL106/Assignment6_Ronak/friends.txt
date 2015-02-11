@@ -1,0 +1,15 @@
+Chandler	Monica	CloseFriend
+Chandler	Joey	CloseFriend
+Ross	Rachel	CloseFriend
+Phoebe	Gunthor	Acquaintance
+Rachel Ralph	Acquaintance
+Monica	Richard	CloseFriend
+Erdos	Ross	Friend
+Susan Ross	Acquaintance
+Rachel Tag	CloseFriend
+Gunthor	Rachel	Friend
+Janice	Chandler	CloseFriend
+Tag	Erdos	CloseFriend
+Phoebe	Chandler	Friend
+Rachel	Joey	CloseFriend
+Mona

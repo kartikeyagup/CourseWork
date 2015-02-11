@@ -1,0 +1,26 @@
+
+
+pushing 3 elements : 
+
+size = 3
+
+top() = (2, 2) 
+
+pushing 7 elements : 
+
+size = 10
+
+isEmpty() = 0
+
+top() = (1, 2) 
+
+----------------------------
+
+popping all elements :
+
+(1, 2) (2, 2) (3, 1) (3, 2) (4, 3) (3, 4) (4, 5) (8, 3) (5, 6) (6, 7) 
+
+size = 0
+
+isEmpty() = 1
+
