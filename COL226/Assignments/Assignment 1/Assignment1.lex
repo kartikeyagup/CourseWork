@@ -35,7 +35,7 @@ val splitter 	= fn x 	=> let val lim = getlim (explode(x))  in  (Option.valOf(In
 ("~0"|"~"?0[0-9]+)																=> (error ("Bad token int: " ^yytext) ; lex());
 [0-9"\.""~"]+"E"("~"?0[0-9]+|"~0")?												=> (error ("Bad token real right: " ^yytext) ; lex());	
 ("~0"|"~"?0[0-9]+)?("\."[0-9"~"]*)?("E"["~"0-9]*)?								=> (error ("Bad token real left l: " ^yytext) ; lex());
-[0-9"~"]*"\."?("~"[0-9]*|"~"?0[0-9]*)*("E"["~"0-9]*)?							=> (error ("Bad token real left r: " ^yytext) ; lex());
+[0-9"~"]*"\."?("~"[0-9]*|"~"?0[0-9]*|[0-9]*[1-9][0]*)*("E"["~"0-9]*)?			=> (error ("Bad token real left r: " ^yytext) ; lex());
 "true"|"false"																	=> (BOOLEAN (Option.valOf(Bool.fromString(yytext))));
 "and"																			=> (CONNECTIVES (AND));
 "or"																			=> (CONNECTIVES (OR));
