@@ -31,12 +31,15 @@ val splitter 	= fn x 	=> let val lim = getlim (explode(x))  in  (Option.valOf(In
 ("~"[1-9][0-9]*|0|[1-9][0-9]*)"\."([0-9]*[1-9]|0)("E"("~"[1-9][0-9]*|0|[1-9][0-9]*))?		
 																				=> (FLOAT (Option.valOf(Real.fromString(yytext))));
 ("~"[1-9][0-9]*|0|[1-9][0-9]*)													=> (NUM (Option.valOf(Int.fromString(yytext))));
-0*[0-9]+																		=> (error ("Bad token: " ^yytext) ; lex());
+["\""][^"\""]*["\""]															=> (STRING (String.substring(yytext,1,size(yytext)-2)));
+("~0"|"~"?0[0-9]+)																=> (error ("Bad token int: " ^yytext) ; lex());
+[0-9"\.""~"]+"E"("~"?0[0-9]+|"~0")?												=> (error ("Bad token real right: " ^yytext) ; lex());	
+("~0"|"~"?0[0-9]+)?("\."[0-9"~"]*)?("E"["~"0-9]*)?								=> (error ("Bad token real left l: " ^yytext) ; lex());
+[0-9"~"]*"\."?("~"[0-9]*|"~"?0[0-9]*)*("E"["~"0-9]*)?							=> (error ("Bad token real left r: " ^yytext) ; lex());
 "true"|"false"																	=> (BOOLEAN (Option.valOf(Bool.fromString(yytext))));
 "and"																			=> (CONNECTIVES (AND));
 "or"																			=> (CONNECTIVES (OR));
 "not"																			=> (CONNECTIVES (NOT));
-"\""[a-zA-Z\ ]*"\""																=> (STRING (String.substring(yytext,1,size(yytext)-2)));
 ","																				=> (COMMA);
 ":"																				=> (COLON);
 "("																				=> (LPAREN);
@@ -56,8 +59,8 @@ val splitter 	= fn x 	=> let val lim = getlim (explode(x))  in  (Option.valOf(In
 ">"																				=> (COMPARATOR (GREATERTHAN));
 "<"																				=> (COMPARATOR (LESSTHAN));
 "="																				=> (COMPARATOR (EQUALTO));
-"\["[0-9]*"...\]"																=> (SUBSTR (SINGLE(Option.valOf(Int.fromString(String.substring(yytext,1, String.size(yytext) -3))))));
-"\["[0-9]*".."[0-9]*"\]"														=> (SUBSTR (BOUNDED(splitter yytext)));
+"\["[0-9]+"...\]"																=> (SUBSTR (SINGLE(Option.valOf(Int.fromString(String.substring(yytext,1, String.size(yytext) -3))))));
+"\["[0-9]+".."[0-9]+"\]"														=> (SUBSTR (BOUNDED(splitter yytext)));
 "if"																			=> (KEYWORD (IF));
 "let"																			=> (KEYWORD (LET));
 "then"																			=> (KEYWORD (THEN));
