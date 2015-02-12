@@ -1,5 +1,5 @@
-all: interpreter ass1.asm
-	./interpreter.exe ass1.asm
+all: interpreter hardy.asm
+	./interpreter.exe hardy.asm
 
 interpreter: interpreter.c
 	gcc -o interpreter interpreter.c
