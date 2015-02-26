@@ -13,27 +13,86 @@
 @TODO: Do memory in C file 
 
 .main:
-	mov r0, 1
-	st r0, [sp]
-	mov r0, 2
-	st r0, 4[sp]
-	@ld r0, 4[sp]
-	@.print r0
-	mov r0, 3
-	st r0, 8[sp]
-	mov r0, 4
-	st r0, 12[sp]
-	mov r0, 5
-	st r0, 16[sp]
-	mov r0, 6
-	st r0, 20[sp]
-	mov r0, 7
-	st r0, 24[sp]
-	mov r0, 8
-	st r0, 28[sp]
-	
+	@mov r0, 1
+	@st r0, [sp]
+	@mov r0, 2
+	@st r0, 4[sp]
+	@@ld r0, 4[sp]
+	@@.print r0
+	@mov r0, 3
+	@st r0, 8[sp]
+	@mov r0, 4
+	@st r0, 12[sp]
+	@mov r0, 5
+	@st r0, 16[sp]
+	@mov r0, 6
+	@st r0, 20[sp]
+	@mov r0, 7
+	@st r0, 24[sp]
+	@mov r0, 8
+	@st r0, 28[sp]
+
 	mov r1, 0				@ i =0
-	mov r3, 2 				@ dim =2
+	mov r3, r0 				@ dim =2
+	b .istep
+
+.initmat1:
+	mov r1, 0				@ i=0
+	b .iloop
+
+.iloop:
+	cmp r1, r3				@ check if i=dim
+	beq .initmat2			@ done with mat 1
+
+	mov r2, 0				@ init r2
+	b .jloop				@ start loop for j
+
+.jloop:
+	cmp r2, r3				@ check if j = dim
+	beq .jinitequal			@ j=n
+
+	add r12, r2, r3 		@ r12= i+ j
+	mod r12, r12, 17		@ r12= i+j %17
+	st r12, [r6]			@ storing value for mat1 i j
+	add r6, r6, 4 			@ position in mat1 increment
+
+	add r2, r2, 1  			@ increment j
+	b .jloop
+
+.jinitequal:
+	add r1, r1, 1 			@ increment i
+	mul r6, r3, 4 			@ 4* n
+	mul r6, r6, r1 			@ 4*n*i
+	b .iloop 				@ start loop of i
+
+.initmat2:
+	mul r7,r3, r3			@ position in mat2
+	mul r7, r7, 16 			@ 16*n*n
+
+.i2loop:
+	cmp r1, r3				@ check if i = dim
+	beq .reset				@ start multiplication
+
+	mov r2, 0
+	b .j2loop
+
+.j2loop:
+	cmp r2, r3 				@ check j = dim
+	b .j2equal
+	@ TODO
+	add 
+	add r2, r2, 1
+
+
+.j2equal:
+	add r1, r1, 1 			@ i +=1
+
+
+	b .i2loop
+
+
+.reset:
+	mov r1, 0
 	b .istep
 
 .istep:

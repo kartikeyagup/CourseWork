@@ -11,6 +11,8 @@ int flags[2];
 // Data Memory of 4096 bytes
 int Mem[1024];
 
+int* ExtraMemory;
+
 // rd stores destination register, rs1 and rs2 store the source registers and imm is the immediate
 int rd, rs1, rs2, imm;
 
@@ -88,7 +90,7 @@ int main(int argc, char* argv[])
 {
 
 	k = 1;
-
+	reg[0] = atoi(argv[2]);
 	//Code for opening the file and computing the size of the program
 	long int size;
 	FILE* f = fopen(argv[1], "r");		// argv[1] is the name of the file in which the program is written
@@ -408,7 +410,8 @@ void executeInstruction(void)
 						printf("Cannot access a memory location which is not a multiple of 4 !!!\n");
 						invalidInst();
 					}
-					Mem[(reg[rs1]+imm)/4] = reg[rd];
+					// printf ("%d\n", (reg[rs1]+imm)/4);
+					ExtraMemory[(reg[rs1]+imm)/4] = reg[rd];
 				}
 
 
@@ -981,7 +984,7 @@ void executeInstruction(void)
 						printf("Cannot access a memory location which is not a multiple of 4 !!!\n");
 						invalidInst();
 					}
-					reg[rd] = Mem[(reg[rs1]+imm)/4];
+					reg[rd] = ExtraMemory[(reg[rs1]+imm)/4];
 				}
 
 				else
@@ -1093,6 +1096,113 @@ void executeInstruction(void)
 							break;
 						++i;
 					}
+				}
+				else if (inst[i+1] == 'a' && inst[i+2] == 'l' && inst[i+3] == 'l' && inst[i+4] == 'o' && inst[i+5] == 'c' && (inst[i+6] == ' ' || inst[i+6] == '\t'))
+				{
+					i += 7;
+					// HERE
+					int c = 0;
+					int num1,num2;
+					while (c<2)
+					{
+						while(inst[i] == ' ' || inst[i] == '\t')
+							i++;
+						if(inst[i] == 's' && inst[i+1] == 'p')
+						{
+							rs2 = 14;
+							i += 2;
+							isImm = 0;
+						}
+						else if(inst[i] == 'r')	// if we have rs2
+						{
+							++i;
+							if(inst[i] == 'a')
+							{
+								rs2 = 15;
+								++i;
+								isImm = 0;
+							}
+							else if(isdigit(inst[i]))
+							{
+								rs2 = inst[i] - '0';
+								++i;
+								if(isdigit(inst[i]))
+								{
+									rs2 = rs2*10 + (inst[i] - '0');
+									++i;
+								}
+								isImm = 0;	//since the instruction does not have an immediate
+							}
+							else
+								invalidInst();
+							if(rs2 < 0 || rs2 > 15)
+								invalidInst();
+							num2=reg[rd];
+						}
+					
+						else if(inst[i] == '0' && inst[i+1] == 'x')	// if we have a hexadecimal immediate
+						{
+							i = i + 2;
+							while(inst[i] == ' ' || inst[i] == '\t')
+								++i;
+							if(inst[i] == '\0')
+								invalidInst();
+							int hexIndex = 0;
+							while(inst[i] != '\0' && hexIndex < 4)
+							{
+								hexImm[hexIndex++] = dec(inst[i++]);
+								while(inst[i] == ' ' || inst[i] == '\t')
+									++i;
+							}
+							if(inst[i] != '\0')
+								invalidInst();
+							imm = 0;
+							int q = 0;
+							while(q < hexIndex)
+								imm = 16*imm + hexImm[q++];
+							if(hexIndex == 4)
+							{
+								if(m != 1 && hexImm[0] >= 8)
+									imm -= 65536;
+							}
+							if(m == 2)
+								imm *= 65536;
+							isImm = 1;
+						}
+					
+						else if(isdigit(inst[i]))	// if we have a positive decimal immediate
+						{ 
+							imm = 0;
+							while(isdigit(inst[i]))
+							{
+								imm = imm*10 + (inst[i] - '0');
+								i++;
+							}
+							if(imm > 65535)
+								invalidInst(); 		// The immediate cannot be greater than 16 bits and largest 16 bit unsigned number is 0xFFFF = 65535
+							if(m == 0 || m == 2)
+							{
+								if(imm > 32767)
+									invalidInst();	//The largest positive number in 16 bit signed numbers is 0x7FFF = 32767
+							}
+							if(m == 2)
+								imm *= 65536;
+							isImm = 1;
+						}
+						if (isImm == 1)
+						{
+							if (c==0)
+							{
+								num1= imm;
+							}
+							else
+							{
+								num2= imm;
+							}
+						}
+						c +=1;
+					}
+						ExtraMemory = malloc(num2 * sizeof(int));
 				}
 
 				else if(inst[i+1] == 'e' && inst[i+2] == 'n' && inst[i+3] == 'c' && inst[i+4] == 'o' && inst[i+5] == 'd' && inst[i+6] == 'e' && (inst[i+7] == ' ' || inst[i+7] == '\t'))	// .encode

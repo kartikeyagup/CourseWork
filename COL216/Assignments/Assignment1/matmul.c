@@ -18,7 +18,9 @@ void initMat2(){
 	int i,j;
 	for (i=0; i<N; i++){
 		for(j=0; j< N; j++){
-			b[i][j] = (i - j + 64)%6 + (i * j)% 8;
+            b[i][j] = (i - j + 64)%6 ;
+            /*b[i][j] = (i - j + 64)%6 + (i * j)% 8;*/
+			/*b[i][j] = (i * j)% 8;*/
 		}
 	}
 }
@@ -41,7 +43,7 @@ int matSum(){
 	sum = 0;
 	for (i=0; i<N; i++)
 		for(j=0; j< N; j++)
-			sum += c[i][j];
+			sum += b[i][j];
 	return sum;
 }
 
