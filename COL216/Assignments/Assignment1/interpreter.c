@@ -1089,7 +1089,7 @@ void executeInstruction(void)
 						}
 						if(rd < 0 || rd > 15)
 							invalidInst();
-						printf("r%-2d: %d\n",rd, reg[rd]);
+						printf("%d\n",reg[rd]);
 						while(inst[i] == ' ' || inst[i] == '\t')
 							i++;
 						if(inst[i] != ',')
