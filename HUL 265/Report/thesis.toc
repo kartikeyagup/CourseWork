@@ -18,9 +18,8 @@
 \contentsline {subsection}{\numberline {4.1.1}Goals}{7}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Methods}{7}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Mobilizing Strategies}{8}{section.4.2}
-\contentsline {section}{\numberline {4.3}Some Case Studies}{8}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Cotton guy}{8}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Photocopy guy}{8}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.3}Case Study}{8}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Rajiv Jat - Photocopy shop}{8}{subsection.4.3.1}
 \contentsline {chapter}{\numberline {5}Positive Changes}{9}{chapter.5}
 \contentsline {section}{\numberline {5.1}Child line}{9}{section.5.1}
 \contentsline {section}{\numberline {5.2}Villages}{9}{section.5.2}

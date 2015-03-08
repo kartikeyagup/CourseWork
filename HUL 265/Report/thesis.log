@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.31)  8 MAR 2015 18:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.31)  8 MAR 2015 18:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -333,7 +333,7 @@ Package grfext Info: Graphics extension search list:
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-)) <iitd_logo.png, id=132, 2007.5pt x 2007.5pt>
+)) <iitd_logo.png, id=128, 2007.5pt x 2007.5pt>
 File: iitd_logo.png Graphic file (type png)
 <use iitd_logo.png>
 Package pdftex.def Info: iitd_logo.png used on input line 75.
@@ -468,27 +468,27 @@ top/CourseWork/HUL 265/Report/Appendix1/appendix1.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: EA87EEF91D9C5E3B64847AFEEA5F2C08;1943.
+(rerunfilecheck)             Checksum: 320FED30056D17A4895AD290456F5B4D;1880.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
  ) 
 Here is how much of TeX's memory you used:
- 7210 strings out of 495028
- 108576 string characters out of 6181497
+ 7208 strings out of 495028
+ 108542 string characters out of 6181497
  192228 words of memory out of 5000000
- 10169 multiletter control sequences out of 15000+600000
+ 10168 multiletter control sequences out of 15000+600000
  10756 words of font info for 40 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 39i,11n,48p,1226b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,11n,47p,1226b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
 Output written on "/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.pdf
-" (19 pages, 308821 bytes).
+" (19 pages, 309460 bytes).
 PDF statistics:
- 300 PDF objects out of 1000 (max. 8388607)
- 269 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 294 PDF objects out of 1000 (max. 8388607)
+ 263 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 254 words of extra memory for PDF output out of 10000 (max. 10000000)
 
