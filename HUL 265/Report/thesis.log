@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.31)  4 MAR 2015 21:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.31)  8 MAR 2015 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -264,23 +264,16 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 165.
 
-) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/StyleFiles/watermark.sty
-
-LaTeX Warning: You have requested package `StyleFiles/watermark',
-               but the package provides `watermark'.
-
-Package: watermark 2002/01/29 v1.00 Watermarks (NCC)
 ) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.aux (/home/kartikey
 a/Desktop/CourseWork/HUL 265/Report/Abstract/abstract.aux)
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Introduction/introduction.au
 x) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter1/chapter1.aux) (/
 home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter2/chapter2.aux) (/home/
 kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter3/chapter3.aux) (/home/karti
-keya/Desktop/CourseWork/HUL 265/Report/Chapter4/chapter4.aux) (/home/kartikeya/
-Desktop/CourseWork/HUL 265/Report/Positive/positive.aux) (/home/kartikeya/Deskt
-op/CourseWork/HUL 265/Report/Negative/negative.aux) (/home/kartikeya/Desktop/Co
-urseWork/HUL 265/Report/Conclusions/conclusions.aux) (/home/kartikeya/Desktop/C
-ourseWork/HUL 265/Report/Appendix1/appendix1.aux))
+keya/Desktop/CourseWork/HUL 265/Report/Positive/positive.aux) (/home/kartikeya/
+Desktop/CourseWork/HUL 265/Report/Negative/negative.aux) (/home/kartikeya/Deskt
+op/CourseWork/HUL 265/Report/Conclusions/conclusions.aux) (/home/kartikeya/Desk
+top/CourseWork/HUL 265/Report/Appendix1/appendix1.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
@@ -340,7 +333,7 @@ Package grfext Info: Graphics extension search list:
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-)) <iitd_logo.png, id=147, 2007.5pt x 2007.5pt>
+)) <iitd_logo.png, id=132, 2007.5pt x 2007.5pt>
 File: iitd_logo.png Graphic file (type png)
 <use iitd_logo.png>
 Package pdftex.def Info: iitd_logo.png used on input line 75.
@@ -358,11 +351,11 @@ se out of memory (use non-interlaced PNG to fix this)
 
 
 ]) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 7.
+LaTeX Font Info:    Try loading font information for U+msa on input line 6.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 7.
+LaTeX Font Info:    Try loading font information for U+msb on input line 6.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2
@@ -396,81 +389,70 @@ Chapter 1.
 
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter1/chapter1.tex
 Chapter 2.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 16.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
+[2
 
-Package natbib Warning: Citation `texbook' on page 2 undefined on input line 31
-.
-
-) [2
 
 
-
-]
+]) [3] [4]
 \openout2 = `Chapter2/chapter2.aux'.
 
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter2/chapter2.tex
 Chapter 3.
-) [3
+[5
 
 
 
-]
+]) [6]
 \openout2 = `Chapter3/chapter3.aux'.
 
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter3/chapter3.tex
 Chapter 4.
-) [4
+[7
 
 
 
-] [5]
-\openout2 = `Chapter4/chapter4.aux'.
-
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter4/chapter4.tex
-Chapter 5.
-) [6
-
-
-
-]
+]) [8]
 \openout2 = `Positive/positive.aux'.
 
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Positive/positive.tex
-Chapter 6.
-) [7
+Chapter 5.
+[9
 
 
 
-]
+]) [10]
 \openout2 = `Negative/negative.aux'.
 
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Negative/negative.tex
-Chapter 7.
-) [8
+Chapter 6.
+[11
 
 
 
-]
+]) [12]
 \openout2 = `Conclusions/conclusions.aux'.
 
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Conclusions/conclusions.tex
-Chapter 8.
-) [9
+Chapter 7.
+) [13
 
 
 
 ]
 \openout2 = `Appendix1/appendix1.aux'.
 
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Appendix1/appendix1.tex) [10
+(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Appendix1/appendix1.tex) [14
 
 
 
 
 ]
-No file thesis.bbl.
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.aux (/home/kartikeya/
@@ -479,34 +461,34 @@ Desktop/CourseWork/HUL 265/Report/Abstract/abstract.aux)
 x) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter1/chapter1.aux) (/
 home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter2/chapter2.aux) (/home/
 kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter3/chapter3.aux) (/home/karti
-keya/Desktop/CourseWork/HUL 265/Report/Chapter4/chapter4.aux) (/home/kartikeya/
-Desktop/CourseWork/HUL 265/Report/Positive/positive.aux) (/home/kartikeya/Deskt
-op/CourseWork/HUL 265/Report/Negative/negative.aux) (/home/kartikeya/Desktop/Co
-urseWork/HUL 265/Report/Conclusions/conclusions.aux) (/home/kartikeya/Desktop/C
-ourseWork/HUL 265/Report/Appendix1/appendix1.aux))
+keya/Desktop/CourseWork/HUL 265/Report/Positive/positive.aux) (/home/kartikeya/
+Desktop/CourseWork/HUL 265/Report/Negative/negative.aux) (/home/kartikeya/Deskt
+op/CourseWork/HUL 265/Report/Conclusions/conclusions.aux) (/home/kartikeya/Desk
+top/CourseWork/HUL 265/Report/Appendix1/appendix1.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1B2E535F56AC4A7B8130DF8F52419E90;2169.
+(rerunfilecheck)             Checksum: EA87EEF91D9C5E3B64847AFEEA5F2C08;1943.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
  ) 
 Here is how much of TeX's memory you used:
- 7222 strings out of 495028
- 109307 string characters out of 6181497
- 192855 words of memory out of 5000000
- 10179 multiletter control sequences out of 15000+600000
+ 7210 strings out of 495028
+ 108576 string characters out of 6181497
+ 192228 words of memory out of 5000000
+ 10169 multiletter control sequences out of 15000+600000
  10756 words of font info for 40 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 39i,12n,50p,284b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,11n,48p,1226b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
 Output written on "/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.pdf
-" (15 pages, 285433 bytes).
+" (19 pages, 308821 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
- 294 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 300 PDF objects out of 1000 (max. 8388607)
+ 269 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 262 words of extra memory for PDF output out of 10000 (max. 10000000)
 

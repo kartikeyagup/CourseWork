@@ -1,37 +1,33 @@
 \select@language {english}
 \contentsline {chapter}{Contents}{ii}{chapter*.1}
 \contentsline {chapter}{List of Figures}{iv}{chapter*.2}
-\contentsline {chapter}{Nomenclature}{iv}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Synergy Sansthan}{2}{chapter.2}
 \contentsline {section}{\numberline {2.1}Founders}{2}{section.2.1}
-\contentsline {section}{\numberline {2.2}Vision}{2}{section.2.2}
-\contentsline {section}{\numberline {2.3}Objectives}{2}{section.2.3}
-\contentsline {section}{\numberline {2.4}Funding}{2}{section.2.4}
-\contentsline {chapter}{\numberline {3}Childline}{3}{chapter.3}
-\contentsline {section}{\numberline {3.1}About Childline}{3}{section.3.1}
-\contentsline {section}{\numberline {3.2}Involvement of Synergy Sansthan}{3}{section.3.2}
-\contentsline {section}{\numberline {3.3}Some case studies}{3}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Jalim Singh}{3}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Vivek}{3}{subsection.3.3.2}
-\contentsline {chapter}{\numberline {4}Entrepreneurship Development Program}{4}{chapter.4}
-\contentsline {section}{\numberline {4.1}About EDP}{4}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Inception}{4}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Goal}{4}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Ways of attracting people}{4}{section.4.2}
-\contentsline {section}{\numberline {4.3}Some Case Studies}{5}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Cotton guy}{5}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Photocopy guy}{5}{subsection.4.3.2}
-\contentsline {chapter}{\numberline {5}Asha Training and NRHM}{6}{chapter.5}
-\contentsline {section}{\numberline {5.1}About Asha training}{6}{section.5.1}
-\contentsline {section}{\numberline {5.2}About NRHM}{6}{section.5.2}
-\contentsline {section}{\numberline {5.3}Examples}{6}{section.5.3}
-\contentsline {chapter}{\numberline {6}Positive Changes}{7}{chapter.6}
-\contentsline {section}{\numberline {6.1}In child line}{7}{section.6.1}
-\contentsline {section}{\numberline {6.2}In villages}{7}{section.6.2}
-\contentsline {section}{\numberline {6.3}In EDP}{7}{section.6.3}
-\contentsline {chapter}{\numberline {7}Negative things}{8}{chapter.7}
-\contentsline {section}{\numberline {7.1}Low awareness}{8}{section.7.1}
-\contentsline {section}{\numberline {7.2}Employees}{8}{section.7.2}
-\contentsline {chapter}{\numberline {8}My Conclusions ...}{9}{chapter.8}
-\contentsline {chapter}{Overall experience}{10}{appendix*.3}
+\contentsline {section}{\numberline {2.2}Vision}{3}{section.2.2}
+\contentsline {section}{\numberline {2.3}Objectives}{3}{section.2.3}
+\contentsline {section}{\numberline {2.4}Funding}{3}{section.2.4}
+\contentsline {chapter}{\numberline {3}Childline}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}About Childline}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}Involvement of Synergy Sansthan}{5}{section.3.2}
+\contentsline {section}{\numberline {3.3}Some case studies}{6}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Jalim Singh}{6}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Lokesh}{6}{subsection.3.3.2}
+\contentsline {chapter}{\numberline {4}Entrepreneurship Development Program}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}About}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Goals}{7}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Methods}{7}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Mobilizing Strategies}{8}{section.4.2}
+\contentsline {section}{\numberline {4.3}Some Case Studies}{8}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Cotton guy}{8}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Photocopy guy}{8}{subsection.4.3.2}
+\contentsline {chapter}{\numberline {5}Positive Changes}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}Child line}{9}{section.5.1}
+\contentsline {section}{\numberline {5.2}Villages}{9}{section.5.2}
+\contentsline {section}{\numberline {5.3}Entrepreneurship development program}{10}{section.5.3}
+\contentsline {chapter}{\numberline {6}Negative things}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}Low awareness}{11}{section.6.1}
+\contentsline {section}{\numberline {6.2}Employees}{11}{section.6.2}
+\contentsline {section}{\numberline {6.3}Low funds}{12}{section.6.3}
+\contentsline {chapter}{\numberline {7}Conclusions}{13}{chapter.7}
+\contentsline {chapter}{Overall experience}{14}{appendix*.3}
