@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.31)  8 MAR 2015 18:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.31)  9 MAR 2015 23:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -264,16 +264,126 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 165.
 
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen113
+\captionmargin@=\dimen114
+\captionwidth=\dimen115
+\caption@tempdima=\dimen116
+\caption@indent=\dimen117
+\caption@parindent=\dimen118
+\caption@hangindent=\dimen119
+)
+\c@ContinuedFloat=\count103
+Package caption Info: hyperref package is loaded.
+)
+\c@subfigure=\count104
+\c@subtable=\count105
 ) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.aux (/home/kartikey
 a/Desktop/CourseWork/HUL 265/Report/Abstract/abstract.aux)
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Introduction/introduction.au
-x) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter1/chapter1.aux) (/
-home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter2/chapter2.aux) (/home/
-kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter3/chapter3.aux) (/home/karti
-keya/Desktop/CourseWork/HUL 265/Report/Positive/positive.aux) (/home/kartikeya/
-Desktop/CourseWork/HUL 265/Report/Negative/negative.aux) (/home/kartikeya/Deskt
-op/CourseWork/HUL 265/Report/Conclusions/conclusions.aux) (/home/kartikeya/Desk
-top/CourseWork/HUL 265/Report/Appendix1/appendix1.aux))
+x) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter1/chapter1.aux
+
+LaTeX Warning: Label `FigAir' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `figstart' multiply defined.
+
+) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter2/chapter2.aux
+
+LaTeX Warning: Label `FigAir' multiply defined.
+
+
+LaTeX Warning: Label `FigAir' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `figstart' multiply defined.
+
+) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter3/chapter3.aux
+
+LaTeX Warning: Label `FigAir' multiply defined.
+
+
+LaTeX Warning: Label `FigAir' multiply defined.
+
+) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Positive/positive.aux
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `figstart' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `figstart' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `figstart' multiply defined.
+
+) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Negative/negative.aux) (/h
+ome/kartikeya/Desktop/CourseWork/HUL 265/Report/Conclusions/conclusions.aux) (/
+home/kartikeya/Desktop/CourseWork/HUL 265/Report/Appendix1/appendix1.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
@@ -292,16 +402,16 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
 LaTeX Font Info:    ... okay on input line 54.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count103
-\scratchdimen=\dimen113
+\scratchcounter=\count106
+\scratchdimen=\dimen120
 \scratchbox=\box26
-\nofMPsegments=\count104
-\nofMParguments=\count105
+\nofMPsegments=\count107
+\nofMParguments=\count108
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count106
-\MPscratchDim=\dimen114
-\MPnumerator=\count107
-\makeMPintoPDFobject=\count108
+\MPscratchCnt=\count109
+\MPscratchDim=\dimen121
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
 \everyMPtoPDFconversion=\toks18
 )
 \AtBeginShipoutBox=\box27
@@ -312,7 +422,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count109
+\c@section@level=\count112
 )
 LaTeX Info: Redefining \ref on input line 54.
 LaTeX Info: Redefining \pageref on input line 54.
@@ -333,7 +443,10 @@ Package grfext Info: Graphics extension search list:
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
-)) <iitd_logo.png, id=128, 2007.5pt x 2007.5pt>
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+<iitd_logo.png, id=128, 2007.5pt x 2007.5pt>
 File: iitd_logo.png Graphic file (type png)
 <use iitd_logo.png>
 Package pdftex.def Info: iitd_logo.png used on input line 75.
@@ -380,11 +493,33 @@ No file thesis.nls.
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Introduction/introduction.te
 x
 Chapter 1.
-) [1
+<Introduction/IntroductionFigs/logo.png, id=215, 221.82875pt x 170.6375pt>
+File: Introduction/IntroductionFigs/logo.png Graphic file (type png)
+<use Introduction/IntroductionFigs/logo.png>
+Package pdftex.def Info: Introduction/IntroductionFigs/logo.png used on input l
+ine 15.
+(pdftex.def)             Requested size: 187.91219pt x 144.54pt.
+[1
 
 
 
-]
+ <./Introduction/IntroductionFigs/logo.png>] <Introduction/IntroductionFigs/har
+da.png, id=221, 669.50125pt x 501.875pt>
+File: Introduction/IntroductionFigs/harda.png Graphic file (type png)
+<use Introduction/IntroductionFigs/harda.png>
+Package pdftex.def Info: Introduction/IntroductionFigs/harda.png used on input 
+line 31.
+(pdftex.def)             Requested size: 187.90244pt x 140.85333pt.
+
+<Introduction/IntroductionFigs/railwayharda.png, id=222, 677.53125pt x 508.9012
+5pt>
+File: Introduction/IntroductionFigs/railwayharda.png Graphic file (type png)
+<use Introduction/IntroductionFigs/railwayharda.png>
+Package pdftex.def Info: Introduction/IntroductionFigs/railwayharda.png used on
+ input line 37.
+(pdftex.def)             Requested size: 187.90244pt x 141.13246pt.
+) [2 <./Introduction/IntroductionFigs/harda.png> <./Introduction/IntroductionFi
+gs/railwayharda.png>]
 \openout2 = `Chapter1/chapter1.aux'.
 
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter1/chapter1.tex
@@ -395,59 +530,159 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
-[2
+[3
 
 
 
-]) [3] [4]
+] <Chapter1/Chapter1Figs/mainbuilding.png, id=235, 958.58125pt x 718.685pt>
+File: Chapter1/Chapter1Figs/mainbuilding.png Graphic file (type png)
+<use Chapter1/Chapter1Figs/mainbuilding.png>
+Package pdftex.def Info: Chapter1/Chapter1Figs/mainbuilding.png used on input l
+ine 47.
+(pdftex.def)             Requested size: 337.38069pt x 252.94499pt.
+[4 <./Chapter1/Chapter1Figs/mainbuilding.png>] <Chapter1/Chapter1Figs/pravah.pn
+g, id=241, 200.75pt x 189.70876pt>
+File: Chapter1/Chapter1Figs/pravah.png Graphic file (type png)
+<use Chapter1/Chapter1Figs/pravah.png>
+Package pdftex.def Info: Chapter1/Chapter1Figs/pravah.png used on input line 70
+.
+(pdftex.def)             Requested size: 187.90244pt x 177.5794pt.
+<Chapter1/Chapter1Figs/nrhm.png, id=242, 182.6825pt x 156.585pt>
+File: Chapter1/Chapter1Figs/nrhm.png Graphic file (type png)
+<use Chapter1/Chapter1Figs/nrhm.png>
+Package pdftex.def Info: Chapter1/Chapter1Figs/nrhm.png used on input line 76.
+(pdftex.def)             Requested size: 187.90244pt x 161.06691pt.
+) [5 <./Chapter1/Chapter1Figs/pravah.png> <./Chapter1/Chapter1Figs/nrhm.png>]
 \openout2 = `Chapter2/chapter2.aux'.
 
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter2/chapter2.tex
 Chapter 3.
-[5
+<Chapter2/Chapter2Figs/1098.png, id=250, 259.97125pt x 195.73125pt>
+File: Chapter2/Chapter2Figs/1098.png Graphic file (type png)
+<use Chapter2/Chapter2Figs/1098.png>
+Package pdftex.def Info: Chapter2/Chapter2Figs/1098.png used on input line 16.
+(pdftex.def)             Requested size: 95.9895pt x 72.26999pt.
+<Chapter2/Chapter2Figs/childlinekids.png, id=251, 984.67876pt x 739.76375pt>
+File: Chapter2/Chapter2Figs/childlinekids.png Graphic file (type png)
+<use Chapter2/Chapter2Figs/childlinekids.png>
+Package pdftex.def Info: Chapter2/Chapter2Figs/childlinekids.png used on input 
+line 31.
+(pdftex.def)             Requested size: 336.67949pt x 252.94499pt.
+[6
 
 
 
-]) [6]
+ <./Chapter2/Chapter2Figs/1098.png>] [7 <./Chapter2/Chapter2Figs/childlinekids.
+png>] <Chapter2/Chapter2Figs/jalimsingh.png, id=262, 794.97pt x 597.23125pt>
+File: Chapter2/Chapter2Figs/jalimsingh.png Graphic file (type png)
+<use Chapter2/Chapter2Figs/jalimsingh.png>
+Package pdftex.def Info: Chapter2/Chapter2Figs/jalimsingh.png used on input lin
+e 77.
+(pdftex.def)             Requested size: 180.67499pt x 135.72906pt.
+<Chapter2/Chapter2Figs/othekid.png, id=263, 636.3775pt x 505.89pt>
+File: Chapter2/Chapter2Figs/othekid.png Graphic file (type png)
+<use Chapter2/Chapter2Figs/othekid.png>
+Package pdftex.def Info: Chapter2/Chapter2Figs/othekid.png used on input line 8
+3.
+(pdftex.def)             Requested size: 180.67499pt x 143.62436pt.
+) [8 <./Chapter2/Chapter2Figs/jalimsingh.png> <./Chapter2/Chapter2Figs/othekid.
+png>]
 \openout2 = `Chapter3/chapter3.aux'.
 
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter3/chapter3.tex
 Chapter 4.
-[7
+<Chapter3/Chapter3Figs/pamphlet.png, id=271, 1044.90375pt x 739.76375pt>
+File: Chapter3/Chapter3Figs/pamphlet.png Graphic file (type png)
+<use Chapter3/Chapter3Figs/pamphlet.png>
+Package pdftex.def Info: Chapter3/Chapter3Figs/pamphlet.png used on input line 
+19.
+(pdftex.def)             Requested size: 469.75499pt x 332.57454pt.
 
+Overfull \hbox (57.19003pt too wide) in paragraph at lines 17--23
+ [] 
+ []
 
-
-]) [8]
-\openout2 = `Positive/positive.aux'.
-
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Positive/positive.tex
-Chapter 5.
 [9
 
 
 
-]) [10]
+] [10 <./Chapter3/Chapter3Figs/pamphlet.png>] <Chapter3/Chapter3Figs/computergu
+y.png, id=283, 445.665pt x 334.24875pt>
+File: Chapter3/Chapter3Figs/computerguy.png Graphic file (type png)
+<use Chapter3/Chapter3Figs/computerguy.png>
+Package pdftex.def Info: Chapter3/Chapter3Figs/computerguy.png used on input li
+ne 75.
+(pdftex.def)             Requested size: 289.07999pt x 216.81029pt.
+) [11 <./Chapter3/Chapter3Figs/computerguy.png>]
+\openout2 = `Positive/positive.aux'.
+
+(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Positive/positive.tex
+Chapter 5.
+<Positive/PositiveFigs/Happykids.png, id=292, 675.52374pt x 507.8975pt>
+File: Positive/PositiveFigs/Happykids.png Graphic file (type png)
+<use Positive/PositiveFigs/Happykids.png>
+Package pdftex.def Info: Positive/PositiveFigs/Happykids.png used on input line
+ 22.
+(pdftex.def)             Requested size: 187.90244pt x 141.2726pt.
+<Positive/PositiveFigs/Computer.png, id=293, 967.615pt x 725.71124pt>
+File: Positive/PositiveFigs/Computer.png Graphic file (type png)
+<use Positive/PositiveFigs/Computer.png>
+Package pdftex.def Info: Positive/PositiveFigs/Computer.png used on input line 
+28.
+(pdftex.def)             Requested size: 187.90244pt x 140.92068pt.
+[12
+
+
+
+ <./Positive/PositiveFigs/Happykids.png> <./Positive/PositiveFigs/Computer.png>
+] <Positive/PositiveFigs/withvishan.png, id=300, 832.10875pt x 624.3325pt>
+File: Positive/PositiveFigs/withvishan.png Graphic file (type png)
+<use Positive/PositiveFigs/withvishan.png>
+Package pdftex.def Info: Positive/PositiveFigs/withvishan.png used on input lin
+e 42.
+(pdftex.def)             Requested size: 187.90244pt x 140.98318pt.
+<Positive/PositiveFigs/vellagefarmer.png, id=301, 766.865pt x 575.14874pt>
+File: Positive/PositiveFigs/vellagefarmer.png Graphic file (type png)
+<use Positive/PositiveFigs/vellagefarmer.png>
+Package pdftex.def Info: Positive/PositiveFigs/vellagefarmer.png used on input 
+line 48.
+(pdftex.def)             Requested size: 187.90244pt x 140.92583pt.
+<Positive/PositiveFigs/college.png, id=302, 923.45pt x 692.5875pt>
+File: Positive/PositiveFigs/college.png Graphic file (type png)
+<use Positive/PositiveFigs/college.png>
+Package pdftex.def Info: Positive/PositiveFigs/college.png used on input line 6
+4.
+(pdftex.def)             Requested size: 187.90244pt x 140.92455pt.
+<Positive/PositiveFigs/members.png, id=303, 679.53876pt x 509.905pt>
+File: Positive/PositiveFigs/members.png Graphic file (type png)
+<use Positive/PositiveFigs/members.png>
+Package pdftex.def Info: Positive/PositiveFigs/members.png used on input line 7
+0.
+(pdftex.def)             Requested size: 187.90244pt x 140.99068pt.
+[13 <./Positive/PositiveFigs/withvishan.png> <./Positive/PositiveFigs/vellagefa
+rmer.png>]) [14 <./Positive/PositiveFigs/college.png> <./Positive/PositiveFigs/
+members.png>]
 \openout2 = `Negative/negative.aux'.
 
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Negative/negative.tex
 Chapter 6.
-[11
+[15
 
 
 
-]) [12]
+]) [16]
 \openout2 = `Conclusions/conclusions.aux'.
 
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Conclusions/conclusions.tex
 Chapter 7.
-) [13
+) [17
 
 
 
 ]
 \openout2 = `Appendix1/appendix1.aux'.
 
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Appendix1/appendix1.tex) [14
+(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Appendix1/appendix1.tex) [18
 
 
 
@@ -468,27 +703,31 @@ top/CourseWork/HUL 265/Report/Appendix1/appendix1.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 320FED30056D17A4895AD290456F5B4D;1880.
+(rerunfilecheck)             Checksum: BA9A4F36A34491DF2982ADE3DCA84664;1881.
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
  ) 
 Here is how much of TeX's memory you used:
- 7208 strings out of 495028
- 108542 string characters out of 6181497
- 192228 words of memory out of 5000000
- 10168 multiletter control sequences out of 15000+600000
- 10756 words of font info for 40 fonts, out of 8000000 for 9000
+ 8390 strings out of 495028
+ 131618 string characters out of 6181497
+ 213379 words of memory out of 5000000
+ 11292 multiletter control sequences out of 15000+600000
+ 11056 words of font info for 41 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 39i,11n,47p,1226b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,11n,47p,1226b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmti12.pfb>
 Output written on "/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.pdf
-" (19 pages, 309460 bytes).
+" (23 pages, 14084979 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
- 263 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 379 PDF objects out of 1000 (max. 8388607)
+ 306 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 344 words of extra memory for PDF output out of 10000 (max. 10000000)
 

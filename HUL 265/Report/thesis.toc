@@ -2,31 +2,31 @@
 \contentsline {chapter}{Contents}{ii}{chapter*.1}
 \contentsline {chapter}{List of Figures}{iv}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Synergy Sansthan}{2}{chapter.2}
-\contentsline {section}{\numberline {2.1}Founders}{2}{section.2.1}
-\contentsline {section}{\numberline {2.2}Vision}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}Objectives}{3}{section.2.3}
-\contentsline {section}{\numberline {2.4}Funding}{3}{section.2.4}
-\contentsline {chapter}{\numberline {3}Childline}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}About Childline}{5}{section.3.1}
-\contentsline {section}{\numberline {3.2}Involvement of Synergy Sansthan}{5}{section.3.2}
-\contentsline {section}{\numberline {3.3}Some case studies}{6}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Jalim Singh}{6}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Lokesh}{6}{subsection.3.3.2}
-\contentsline {chapter}{\numberline {4}Entrepreneurship Development Program}{7}{chapter.4}
-\contentsline {section}{\numberline {4.1}About}{7}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Goals}{7}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Methods}{7}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Mobilizing Strategies}{8}{section.4.2}
-\contentsline {section}{\numberline {4.3}Case Study}{8}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Rajiv Jat - Photocopy shop}{8}{subsection.4.3.1}
-\contentsline {chapter}{\numberline {5}Positive Changes}{9}{chapter.5}
-\contentsline {section}{\numberline {5.1}Child line}{9}{section.5.1}
-\contentsline {section}{\numberline {5.2}Villages}{9}{section.5.2}
-\contentsline {section}{\numberline {5.3}Entrepreneurship development program}{10}{section.5.3}
-\contentsline {chapter}{\numberline {6}Negative things}{11}{chapter.6}
-\contentsline {section}{\numberline {6.1}Low awareness}{11}{section.6.1}
-\contentsline {section}{\numberline {6.2}Employees}{11}{section.6.2}
-\contentsline {section}{\numberline {6.3}Low funds}{12}{section.6.3}
-\contentsline {chapter}{\numberline {7}Conclusions}{13}{chapter.7}
-\contentsline {chapter}{Overall experience}{14}{appendix*.3}
+\contentsline {chapter}{\numberline {2}Synergy Sansthan}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Founders}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Vision}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}Objectives}{5}{section.2.3}
+\contentsline {section}{\numberline {2.4}Funding}{5}{section.2.4}
+\contentsline {chapter}{\numberline {3}Childline}{6}{chapter.3}
+\contentsline {section}{\numberline {3.1}About Childline}{6}{section.3.1}
+\contentsline {section}{\numberline {3.2}Involvement of Synergy Sansthan}{6}{section.3.2}
+\contentsline {section}{\numberline {3.3}Some case studies}{7}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Jalim Singh}{7}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Lokesh}{8}{subsection.3.3.2}
+\contentsline {chapter}{\numberline {4}Entrepreneurship Development Program}{9}{chapter.4}
+\contentsline {section}{\numberline {4.1}About}{9}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Goals}{9}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Methods}{9}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Mobilizing Strategies}{10}{section.4.2}
+\contentsline {section}{\numberline {4.3}Case Study}{11}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Rajiv Jat - Photocopy shop}{11}{subsection.4.3.1}
+\contentsline {chapter}{\numberline {5}Positive Changes}{12}{chapter.5}
+\contentsline {section}{\numberline {5.1}Child line}{12}{section.5.1}
+\contentsline {section}{\numberline {5.2}Villages}{13}{section.5.2}
+\contentsline {section}{\numberline {5.3}Entrepreneurship development program}{14}{section.5.3}
+\contentsline {chapter}{\numberline {6}Negative things}{15}{chapter.6}
+\contentsline {section}{\numberline {6.1}Low awareness}{15}{section.6.1}
+\contentsline {section}{\numberline {6.2}Employees}{15}{section.6.2}
+\contentsline {section}{\numberline {6.3}Low funds}{16}{section.6.3}
+\contentsline {chapter}{\numberline {7}Conclusions}{17}{chapter.7}
+\contentsline {chapter}{Overall experience}{18}{appendix*.15}
