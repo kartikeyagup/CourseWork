@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.31)  9 MAR 2015 23:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.31)  9 MAR 2015 23:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -386,20 +386,20 @@ ome/kartikeya/Desktop/CourseWork/HUL 265/Report/Conclusions/conclusions.aux) (/
 home/kartikeya/Desktop/CourseWork/HUL 265/Report/Appendix1/appendix1.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count106
@@ -415,8 +415,8 @@ LaTeX Font Info:    ... okay on input line 54.
 \everyMPtoPDFconversion=\toks18
 )
 \AtBeginShipoutBox=\box27
-Package backref Info: ** backref set up for natbib ** on input line 54.
-Package hyperref Info: Link coloring ON on input line 54.
+Package backref Info: ** backref set up for natbib ** on input line 56.
+Package hyperref Info: Link coloring ON on input line 56.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -424,9 +424,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count112
 )
-LaTeX Info: Redefining \ref on input line 54.
-LaTeX Info: Redefining \pageref on input line 54.
-LaTeX Info: Redefining \nameref on input line 54.
+LaTeX Info: Redefining \ref on input line 56.
+LaTeX Info: Redefining \pageref on input line 56.
+LaTeX Info: Redefining \nameref on input line 56.
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.out) (/home/kartikeya
 /Desktop/CourseWork/HUL 265/Report/thesis.out)
 \@outlinefile=\write4
@@ -449,7 +449,7 @@ Package caption Info: End \AtBeginDocument code.
 <iitd_logo.png, id=128, 2007.5pt x 2007.5pt>
 File: iitd_logo.png Graphic file (type png)
 <use iitd_logo.png>
-Package pdftex.def Info: iitd_logo.png used on input line 75.
+Package pdftex.def Info: iitd_logo.png used on input line 77.
 (pdftex.def)             Requested size: 113.81102pt x 113.79767pt.
 [0
 
@@ -688,8 +688,8 @@ Chapter 7.
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.aux (/home/kartikeya/
 Desktop/CourseWork/HUL 265/Report/Abstract/abstract.aux)
 (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Introduction/introduction.au
@@ -700,19 +700,19 @@ keya/Desktop/CourseWork/HUL 265/Report/Positive/positive.aux) (/home/kartikeya/
 Desktop/CourseWork/HUL 265/Report/Negative/negative.aux) (/home/kartikeya/Deskt
 op/CourseWork/HUL 265/Report/Conclusions/conclusions.aux) (/home/kartikeya/Desk
 top/CourseWork/HUL 265/Report/Appendix1/appendix1.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: BA9A4F36A34491DF2982ADE3DCA84664;1881.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
  ) 
 Here is how much of TeX's memory you used:
  8390 strings out of 495028
  131618 string characters out of 6181497
- 213379 words of memory out of 5000000
+ 213378 words of memory out of 5000000
  11292 multiletter control sequences out of 15000+600000
  11056 words of font info for 41 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -724,10 +724,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb>
 Output written on "/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.pdf
-" (23 pages, 14084979 bytes).
+" (23 pages, 14084630 bytes).
 PDF statistics:
  379 PDF objects out of 1000 (max. 8388607)
- 306 compressed objects within 4 object streams
+ 307 compressed objects within 4 object streams
  76 named destinations out of 1000 (max. 500000)
  344 words of extra memory for PDF output out of 10000 (max. 10000000)
 

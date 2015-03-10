@@ -1,0 +1,39 @@
+%%
+
+%eop EOF SEMI
+
+(* %pos declares the type of positions for terminals.
+   Each symbol has an associated left and right position. *)
+
+%pos int
+
+%left SUB PLUS
+%left TIMES DIV
+%right CARAT
+
+%term ID of string | NUM of int | PLUS | TIMES | PRINT |
+      SEMI | EOF | CARAT | DIV | SUB
+%nonterm EXP of Absyn.node | START of Absyn.node option
+
+%name Calc
+
+%subst PRINT for ID
+%prefer PLUS TIMES DIV SUB
+%keyword PRINT SEMI
+
+%noshift EOF
+%verbose
+%%
+
+(* the parser returns the value associated with the expression *)
+
+  START : PRINT EXP (SOME EXP)
+        | EXP (SOME EXP)
+        | (NONE)
+  EXP : NUM             (Absyn.LEAFI NUM)
+      | ID              (Absyn.NODE ("lookup", [Absyn.LEAFS ID]))
+      | EXP PLUS EXP    (Absyn.NODE ("add", [EXP1, EXP2]))
+      | EXP TIMES EXP   (Absyn.NODE ("times", [EXP1, EXP2]))
+      | EXP DIV EXP     (Absyn.NODE ("divide", [EXP1, EXP2]))
+      | EXP SUB EXP     (Absyn.NODE ("subtract", [EXP1, EXP2]))
+      | EXP CARAT EXP   (Absyn.NODE ("carat", [EXP1, EXP2]))
