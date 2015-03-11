@@ -13,6 +13,8 @@ fun error (e,l,_) = TextIO.output (TextIO.stdOut, String.concat[
 %%
 %header (functor CalcLexFun(structure Tokens: Calc_TOKENS));
 alpha=[A-Za-z];
+caps=[A-Z];
+sm=[a-z];
 digit=[0-9];
 ws = [\ \t];
 %%
@@ -41,9 +43,13 @@ ws = [\ \t];
 "<"		 => (Tokens.LESSER(!pos,!pos));
 "if"	 => (Tokens.IF(!pos,!pos));
 "\." 	 => (Tokens.DOT(!pos,!pos));
+";"		 => (Tokens.SEMI(!pos,!pos));
 "(" 	 => (Tokens.LPAREN(!pos,!pos));
 ")" 	 => (Tokens.RPAREN(!pos,!pos));
 "true" 	 => (Tokens.BOOLEAN(true,!pos, !pos));
 "false"  => (Tokens.BOOLEAN(false,!pos, !pos));
-{alpha}+ => (Tokens.IDEN(yytext,!pos,!pos));
+{caps}{alpha}*
+		 => (Tokens.VAR(yytext,!pos,!pos));
+{sm}{alpha}* 
+		 => (Tokens.IDEN(yytext,!pos,!pos));
 "."      => (error ("ignoring bad character "^yytext,!pos,!pos); lex());
