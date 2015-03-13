@@ -1,0 +1,132 @@
+
+state 0:
+
+	PROG : . TERMLIST 
+
+	IDEN	shift 5
+	CONSINT	shift 4
+	CONSREAL	shift 3
+
+	PROG	goto 11
+	TERM	goto 2
+	TERMLIST	goto 1
+
+	.	error
+
+
+state 1:
+
+	PROG : TERMLIST .  (reduce by rule 0)
+
+
+
+	.	reduce by rule 0
+
+
+state 2:
+
+	TERMLIST : TERM .  (reduce by rule 1)
+	TERMLIST : TERM . COMMA TERMLIST 
+
+	COMMA	shift 6
+
+
+	.	reduce by rule 1
+
+
+state 3:
+
+	TERM : CONSREAL .  (reduce by rule 4)
+
+
+
+	.	reduce by rule 4
+
+
+state 4:
+
+	TERM : CONSINT .  (reduce by rule 3)
+
+
+
+	.	reduce by rule 3
+
+
+state 5:
+
+	TERM : IDEN .  (reduce by rule 5)
+	TERM : IDEN . LPAREN TERMLIST RPAREN 
+
+	LPAREN	shift 7
+
+
+	.	reduce by rule 5
+
+
+state 6:
+
+	TERMLIST : TERM COMMA . TERMLIST 
+
+	IDEN	shift 5
+	CONSINT	shift 4
+	CONSREAL	shift 3
+
+	TERM	goto 2
+	TERMLIST	goto 8
+
+	.	error
+
+
+state 7:
+
+	TERM : IDEN LPAREN . TERMLIST RPAREN 
+
+	IDEN	shift 5
+	CONSINT	shift 4
+	CONSREAL	shift 3
+
+	TERM	goto 2
+	TERMLIST	goto 9
+
+	.	error
+
+
+state 8:
+
+	TERMLIST : TERM COMMA TERMLIST .  (reduce by rule 2)
+
+
+
+	.	reduce by rule 2
+
+
+state 9:
+
+	TERM : IDEN LPAREN TERMLIST . RPAREN 
+
+	RPAREN	shift 10
+
+
+	.	error
+
+
+state 10:
+
+	TERM : IDEN LPAREN TERMLIST RPAREN .  (reduce by rule 6)
+
+
+
+	.	reduce by rule 6
+
+
+state 11:
+
+
+	EOF	accept
+	SEMI	accept
+
+
+	.	error
+
+8 of 26 action table entries left after compaction
+7 goto table entries

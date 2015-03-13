@@ -7,5 +7,14 @@ CM.make "sources.cm";
 (*predsym = yo *)
 (*pred = yo (Hello, 982.3)*)
 (*fact= pred .*)
-Calc.parse_string "yo;";
-(*Calc.parse_string "yo (Hello, 982.3) .;"*)
+(*Calc.parse_string "yo;";*)
+Calc.parse_string "f ( A, B) .;";
+Calc.parse_string("apples(A) if oranges(B) , oran(C) .;");
+Calc.parse_string "apples(O) if lol(Lol) , app(not (App)). ;";
+Calc.parse_string "apples(A) if oranges(B) , oran(C) .;";
+Calc.parse_string "app(true and false).;";
+Calc.parse_string "app(A,B).;";
+Calc.parse_string "app( 45/34 + 26 - 23.04 + 23.2E2 + 45 pow 5 ).;";
+Calc.parse_string "app(Orange).;";
+Calc.parse_string "app(Apples and Orange).;";
+Calc.parse_string "app( not (Applies) ).;";

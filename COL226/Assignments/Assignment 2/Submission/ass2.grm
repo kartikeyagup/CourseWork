@@ -7,8 +7,8 @@
 
 %pos int
 
-%left SUB PLUS
-%left MULT DIV
+%right MULT DIV
+%right SUB PLUS
 %right AND OR EQUALTO NOTEQUAL GREATER GREATEREQ LESSER LESSEREQ
 
 %term IDEN of string
@@ -61,6 +61,8 @@
 %name Calc
 
 %prefer PLUS MULT DIV SUB
+
+%start PROG
 
 %noshift EOF
 %verbose

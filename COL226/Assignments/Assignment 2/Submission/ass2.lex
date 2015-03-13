@@ -20,8 +20,9 @@ ws = [\ \t];
 %%
 \n       => (pos := (!pos) + 1; lex());
 {ws}+    => (lex());
-{digit}+ => (Tokens.CONSINT(Option.valOf(Int.fromString(yytext)), !pos, !pos));
-{digit}+"\."{digit}+
+("~"[1-9][0-9]*|0|[1-9][0-9]*) 
+		=> (Tokens.CONSINT(Option.valOf(Int.fromString(yytext)), !pos, !pos));
+("~"[1-9][0-9]*|0|[1-9][0-9]*)"\."([0-9]*[1-9]|0)("E"("~"[1-9][0-9]*|0|[1-9][0-9]*))?		
 		 => (Tokens.CONSREAL(Option.valOf(Real.fromString(yytext)),!pos,!pos));
 "+"      => (Tokens.PLUS(!pos,!pos));
 "*"      => (Tokens.MULT(!pos,!pos));

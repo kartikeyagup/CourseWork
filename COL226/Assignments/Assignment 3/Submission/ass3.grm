@@ -1,0 +1,44 @@
+%%
+
+%eop EOF SEMI
+
+(* %pos declares the type of positions for terminals.
+   Each symbol has an associated left and right position. *)
+
+%pos int
+
+
+%term IDEN of string
+	| CONSINT of int 
+	| CONSREAL of real
+	| DOT
+	| LPAREN
+	| COMMA
+	| RPAREN
+	| EOF
+	| SEMI
+
+%nonterm 
+	  PROG of Program.Program
+	| TERM of Program.Term
+	| TERMLIST of Program.Term list
+
+%name Calc
+
+%start PROG
+
+%noshift EOF
+%verbose
+%%
+
+(* the parser returns the value associated with the expression *)
+
+PROG: TERMLIST						(Program.ProgList TERMLIST)
+
+TERMLIST: TERM 						([TERM])
+		| TERM COMMA TERMLIST		([TERM]@TERMLIST)
+
+TERM: CONSINT						(Program.Term_int CONSINT)
+	| CONSREAL	 					(Program.Term_real CONSREAL)
+	| IDEN 							(Program.Term_var IDEN)
+	| IDEN LPAREN TERMLIST RPAREN 	(Program.Term_Oper (IDEN,TERMLIST))
