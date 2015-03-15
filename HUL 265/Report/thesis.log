@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.9)  15 MAR 2015 12:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.9)  15 MAR 2015 18:39
 entering extended mode
 **C:/Users/kartikeya/Desktop/GIT*Stuff/Coursework/HUL*265/Report/thesis.tex
 ("C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/thesis.tex"
@@ -411,7 +411,20 @@ ive.aux")
 ("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Conclusions/co
 nclusions.aux")
 ("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Appendix1/appe
-ndix1.aux"))
+ndix1.aux"
+
+LaTeX Warning: Label `figstart' multiply defined.
+
+
+LaTeX Warning: Label `figstart' multiply defined.
+
+
+LaTeX Warning: Label `figstart' multiply defined.
+
+
+LaTeX Warning: Label `figstart' multiply defined.
+
+))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
@@ -500,7 +513,7 @@ No file thesis.nls.
 ("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Introduction/i
 ntroduction.tex"
 Chapter 1.
-<Introduction/IntroductionFigs/logo.png, id=215, 221.82875pt x 170.6375pt>
+<Introduction/IntroductionFigs/logo.png, id=217, 221.82875pt x 170.6375pt>
 File: Introduction/IntroductionFigs/logo.png Graphic file (type png)
 <use Introduction/IntroductionFigs/logo.png>
 Package pdftex.def Info: Introduction/IntroductionFigs/logo.png used on input l
@@ -511,7 +524,7 @@ ine 15.
 
 
  <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Introduction/I
-ntroductionFigs/logo.png>] <Introduction/IntroductionFigs/harda.png, id=221, 66
+ntroductionFigs/logo.png>] <Introduction/IntroductionFigs/harda.png, id=223, 66
 9.50125pt x 501.875pt>
 File: Introduction/IntroductionFigs/harda.png Graphic file (type png)
 <use Introduction/IntroductionFigs/harda.png>
@@ -519,7 +532,7 @@ Package pdftex.def Info: Introduction/IntroductionFigs/harda.png used on input
 line 31.
 (pdftex.def)             Requested size: 187.90244pt x 140.85333pt.
 
-<Introduction/IntroductionFigs/railwayharda.png, id=222, 677.53125pt x 508.9012
+<Introduction/IntroductionFigs/railwayharda.png, id=224, 677.53125pt x 508.9012
 5pt>
 File: Introduction/IntroductionFigs/railwayharda.png Graphic file (type png)
 <use Introduction/IntroductionFigs/railwayharda.png>
@@ -542,21 +555,21 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 
 
 
-] <Chapter1/Chapter1Figs/mainbuilding.png, id=235, 958.58125pt x 718.685pt>
+] <Chapter1/Chapter1Figs/mainbuilding.png, id=237, 958.58125pt x 718.685pt>
 File: Chapter1/Chapter1Figs/mainbuilding.png Graphic file (type png)
 <use Chapter1/Chapter1Figs/mainbuilding.png>
 Package pdftex.def Info: Chapter1/Chapter1Figs/mainbuilding.png used on input l
 ine 47.
 (pdftex.def)             Requested size: 337.38069pt x 252.94499pt.
 [4 <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Chapter1/Cha
-pter1Figs/mainbuilding.png>] <Chapter1/Chapter1Figs/pravah.png, id=241, 200.75p
+pter1Figs/mainbuilding.png>] <Chapter1/Chapter1Figs/pravah.png, id=243, 200.75p
 t x 189.70876pt>
 File: Chapter1/Chapter1Figs/pravah.png Graphic file (type png)
 <use Chapter1/Chapter1Figs/pravah.png>
 Package pdftex.def Info: Chapter1/Chapter1Figs/pravah.png used on input line 70
 .
 (pdftex.def)             Requested size: 187.90244pt x 177.5794pt.
-<Chapter1/Chapter1Figs/nrhm.png, id=242, 182.6825pt x 156.585pt>
+<Chapter1/Chapter1Figs/nrhm.png, id=244, 182.6825pt x 156.585pt>
 File: Chapter1/Chapter1Figs/nrhm.png Graphic file (type png)
 <use Chapter1/Chapter1Figs/nrhm.png>
 Package pdftex.def Info: Chapter1/Chapter1Figs/nrhm.png used on input line 76.
@@ -567,12 +580,12 @@ hapter1Figs/pravah.png> <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 26
 ("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Chapter2/chapt
 er2.tex"
 Chapter 3.
-<Chapter2/Chapter2Figs/1098.png, id=250, 259.97125pt x 195.73125pt>
+<Chapter2/Chapter2Figs/1098.png, id=252, 259.97125pt x 195.73125pt>
 File: Chapter2/Chapter2Figs/1098.png Graphic file (type png)
 <use Chapter2/Chapter2Figs/1098.png>
 Package pdftex.def Info: Chapter2/Chapter2Figs/1098.png used on input line 16.
 (pdftex.def)             Requested size: 95.9895pt x 72.26999pt.
-<Chapter2/Chapter2Figs/childlinekids.png, id=251, 984.67876pt x 739.76375pt>
+<Chapter2/Chapter2Figs/childlinekids.png, id=253, 984.67876pt x 739.76375pt>
 File: Chapter2/Chapter2Figs/childlinekids.png Graphic file (type png)
 <use Chapter2/Chapter2Figs/childlinekids.png>
 Package pdftex.def Info: Chapter2/Chapter2Figs/childlinekids.png used on input 
@@ -585,13 +598,13 @@ line 31.
  <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Chapter2/Chapt
 er2Figs/1098.png>] [7 <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/
 Report/Chapter2/Chapter2Figs/childlinekids.png>] <Chapter2/Chapter2Figs/jalimsi
-ngh.png, id=262, 794.97pt x 597.23125pt>
+ngh.png, id=264, 794.97pt x 597.23125pt>
 File: Chapter2/Chapter2Figs/jalimsingh.png Graphic file (type png)
 <use Chapter2/Chapter2Figs/jalimsingh.png>
 Package pdftex.def Info: Chapter2/Chapter2Figs/jalimsingh.png used on input lin
 e 77.
 (pdftex.def)             Requested size: 180.67499pt x 135.72906pt.
-<Chapter2/Chapter2Figs/othekid.png, id=263, 636.3775pt x 505.89pt>
+<Chapter2/Chapter2Figs/othekid.png, id=265, 636.3775pt x 505.89pt>
 File: Chapter2/Chapter2Figs/othekid.png Graphic file (type png)
 <use Chapter2/Chapter2Figs/othekid.png>
 Package pdftex.def Info: Chapter2/Chapter2Figs/othekid.png used on input line 8
@@ -603,7 +616,7 @@ L 265/Report/Chapter2/Chapter2Figs/othekid.png>]
 ("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Chapter3/chapt
 er3.tex"
 Chapter 4.
-<Chapter3/Chapter3Figs/pamphlet.png, id=271, 1044.90375pt x 739.76375pt>
+<Chapter3/Chapter3Figs/pamphlet.png, id=273, 1044.90375pt x 739.76375pt>
 File: Chapter3/Chapter3Figs/pamphlet.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/pamphlet.png>
 Package pdftex.def Info: Chapter3/Chapter3Figs/pamphlet.png used on input line 
@@ -619,7 +632,7 @@ Overfull \hbox (57.19003pt too wide) in paragraph at lines 17--23
 
 
 ] [10 <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Chapter3/
-Chapter3Figs/pamphlet.png>] <Chapter3/Chapter3Figs/computerguy.png, id=283, 445
+Chapter3Figs/pamphlet.png>] <Chapter3/Chapter3Figs/computerguy.png, id=285, 445
 .665pt x 334.24875pt>
 File: Chapter3/Chapter3Figs/computerguy.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/computerguy.png>
@@ -631,13 +644,13 @@ Chapter3Figs/computerguy.png>]
 ("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Positive/posit
 ive.tex"
 Chapter 5.
-<Positive/PositiveFigs/Happykids.png, id=292, 675.52374pt x 507.8975pt>
+<Positive/PositiveFigs/Happykids.png, id=294, 675.52374pt x 507.8975pt>
 File: Positive/PositiveFigs/Happykids.png Graphic file (type png)
 <use Positive/PositiveFigs/Happykids.png>
 Package pdftex.def Info: Positive/PositiveFigs/Happykids.png used on input line
  22.
 (pdftex.def)             Requested size: 187.90244pt x 141.2726pt.
-<Positive/PositiveFigs/Computer.png, id=293, 967.615pt x 725.71124pt>
+<Positive/PositiveFigs/Computer.png, id=295, 967.615pt x 725.71124pt>
 File: Positive/PositiveFigs/Computer.png Graphic file (type png)
 <use Positive/PositiveFigs/Computer.png>
 Package pdftex.def Info: Positive/PositiveFigs/Computer.png used on input line 
@@ -650,25 +663,25 @@ Package pdftex.def Info: Positive/PositiveFigs/Computer.png used on input line
  <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Positive/Posit
 iveFigs/Happykids.png> <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265
 /Report/Positive/PositiveFigs/Computer.png>] <Positive/PositiveFigs/withvishan.
-png, id=300, 832.10875pt x 624.3325pt>
+png, id=303, 832.10875pt x 624.3325pt>
 File: Positive/PositiveFigs/withvishan.png Graphic file (type png)
 <use Positive/PositiveFigs/withvishan.png>
 Package pdftex.def Info: Positive/PositiveFigs/withvishan.png used on input lin
 e 42.
 (pdftex.def)             Requested size: 187.90244pt x 140.98318pt.
-<Positive/PositiveFigs/vellagefarmer.png, id=301, 766.865pt x 575.14874pt>
+<Positive/PositiveFigs/vellagefarmer.png, id=304, 766.865pt x 575.14874pt>
 File: Positive/PositiveFigs/vellagefarmer.png Graphic file (type png)
 <use Positive/PositiveFigs/vellagefarmer.png>
 Package pdftex.def Info: Positive/PositiveFigs/vellagefarmer.png used on input 
 line 48.
 (pdftex.def)             Requested size: 187.90244pt x 140.92583pt.
-<Positive/PositiveFigs/college.png, id=302, 923.45pt x 692.5875pt>
+<Positive/PositiveFigs/college.png, id=305, 923.45pt x 692.5875pt>
 File: Positive/PositiveFigs/college.png Graphic file (type png)
 <use Positive/PositiveFigs/college.png>
 Package pdftex.def Info: Positive/PositiveFigs/college.png used on input line 6
 4.
 (pdftex.def)             Requested size: 187.90244pt x 140.92455pt.
-<Positive/PositiveFigs/members.png, id=303, 679.53876pt x 509.905pt>
+<Positive/PositiveFigs/members.png, id=306, 679.53876pt x 509.905pt>
 File: Positive/PositiveFigs/members.png Graphic file (type png)
 <use Positive/PositiveFigs/members.png>
 Package pdftex.def Info: Positive/PositiveFigs/members.png used on input line 7
@@ -697,12 +710,60 @@ Chapter 7.
 
 ]
 ("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Appendix1/appe
-ndix1.tex") [18
+ndix1.tex" [18
 
 
 
 
-]
+] <Appendix1/im1.PNG, id=340, 450.9347pt x 338.76563pt>
+File: Appendix1/im1.PNG Graphic file (type png)
+<use Appendix1/im1.PNG>
+Package pdftex.def Info: Appendix1/im1.PNG used on input line 27.
+(pdftex.def)             Requested size: 177.06128pt x 133.01749pt.
+<Appendix1/im2.PNG, id=341, 476.53032pt x 356.0803pt>
+File: Appendix1/im2.PNG Graphic file (type png)
+<use Appendix1/im2.PNG>
+Package pdftex.def Info: Appendix1/im2.PNG used on input line 33.
+(pdftex.def)             Requested size: 177.06128pt x 132.30728pt.
+<Appendix1/im3.PNG, id=342, 466.74374pt x 350.05782pt>
+File: Appendix1/im3.PNG Graphic file (type png)
+<use Appendix1/im3.PNG>
+Package pdftex.def Info: Appendix1/im3.PNG used on input line 44.
+(pdftex.def)             Requested size: 177.06128pt x 132.79366pt.
+<Appendix1/im4.PNG, id=343, 462.22687pt x 343.2825pt>
+File: Appendix1/im4.PNG Graphic file (type png)
+<use Appendix1/im4.PNG>
+Package pdftex.def Info: Appendix1/im4.PNG used on input line 50.
+(pdftex.def)             Requested size: 177.06128pt x 131.4963pt.
+<Appendix1/im5.PNG, id=344, 430.60875pt x 324.46219pt>
+File: Appendix1/im5.PNG Graphic file (type png)
+<use Appendix1/im5.PNG>
+Package pdftex.def Info: Appendix1/im5.PNG used on input line 61.
+(pdftex.def)             Requested size: 177.06128pt x 133.41652pt.
+<Appendix1/im6.PNG, id=345, 291.33844pt x 222.8325pt>
+File: Appendix1/im6.PNG Graphic file (type png)
+<use Appendix1/im6.PNG>
+Package pdftex.def Info: Appendix1/im6.PNG used on input line 67.
+(pdftex.def)             Requested size: 177.06128pt x 135.4278pt.
+<Appendix1/im7.PNG, id=346, 609.77812pt x 453.94594pt>
+File: Appendix1/im7.PNG Graphic file (type png)
+<use Appendix1/im7.PNG>
+Package pdftex.def Info: Appendix1/im7.PNG used on input line 79.
+(pdftex.def)             Requested size: 177.06128pt x 131.81412pt.
+<Appendix1/im8.PNG, id=347, 453.19313pt x 339.51843pt>
+File: Appendix1/im8.PNG Graphic file (type png)
+<use Appendix1/im8.PNG>
+Package pdftex.def Info: Appendix1/im8.PNG used on input line 85.
+(pdftex.def)             Requested size: 177.06128pt x 132.64995pt.
+) [19 <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Appendix1
+/im1.PNG> <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Appen
+dix1/im2.PNG> <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/A
+ppendix1/im3.PNG> <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Repo
+rt/Appendix1/im4.PNG> <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/
+Report/Appendix1/im5.PNG> <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 
+265/Report/Appendix1/im6.PNG> <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/
+HUL 265/Report/Appendix1/im7.PNG> <C:/Users/kartikeya/Desktop/GIT Stuff/Coursew
+ork/HUL 265/Report/Appendix1/im8.PNG>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
 ("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\thesis.aux"
@@ -734,10 +795,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
  ) 
 Here is how much of TeX's memory you used:
- 8191 strings out of 493921
- 129586 string characters out of 3147271
- 210054 words of memory out of 3000000
- 11189 multiletter control sequences out of 15000+200000
+ 8237 strings out of 493921
+ 130417 string characters out of 3147271
+ 210073 words of memory out of 3000000
+ 11221 multiletter control sequences out of 15000+200000
  11056 words of font info for 41 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  42i,11n,47p,1238b,468s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -748,10 +809,10 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
 s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmti12.pfb>
 Output written on "C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Repo
-rt/thesis.pdf" (23 pages, 13827346 bytes).
+rt/thesis.pdf" (24 pages, 19338984 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 307 compressed objects within 4 object streams
- 76 named destinations out of 1000 (max. 500000)
- 344 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 405 PDF objects out of 1000 (max. 8388607)
+ 316 compressed objects within 4 object streams
+ 81 named destinations out of 1000 (max. 500000)
+ 384 words of extra memory for PDF output out of 10000 (max. 10000000)
 
