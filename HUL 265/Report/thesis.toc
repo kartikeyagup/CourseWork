@@ -24,7 +24,7 @@
 \contentsline {section}{\numberline {5.1}Child line}{12}{section.5.1}
 \contentsline {section}{\numberline {5.2}Villages}{13}{section.5.2}
 \contentsline {section}{\numberline {5.3}Entrepreneurship development program}{14}{section.5.3}
-\contentsline {chapter}{\numberline {6}Negative things}{15}{chapter.6}
+\contentsline {chapter}{\numberline {6}Shortcomings}{15}{chapter.6}
 \contentsline {section}{\numberline {6.1}Low awareness}{15}{section.6.1}
 \contentsline {section}{\numberline {6.2}Employees}{15}{section.6.2}
 \contentsline {section}{\numberline {6.3}Low funds}{16}{section.6.3}

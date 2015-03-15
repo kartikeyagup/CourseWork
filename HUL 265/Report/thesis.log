@@ -1,21 +1,29 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.31)  9 MAR 2015 23:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.9)  15 MAR 2015 12:06
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**"/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.tex"
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.tex
+**C:/Users/kartikeya/Desktop/GIT*Stuff/Coursework/HUL*265/Report/thesis.tex
+("C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/thesis.tex"
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 2 languages loaded.
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
 
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Classes/CUEDthesisPSnPDF.cls
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Classes/CUEDth
+esisPSnPDF.cls"
 
 LaTeX Warning: You have requested document class `Classes/CUEDthesisPSnPDF',
                but the document class provides `CUEDthesisPSnPDF'.
 
 Document Class: CUEDthesisPSnPDF 2010/07/14 v1.1 CUED thesis class
-(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\bk12.clo"
 File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -30,24 +38,28 @@ File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+) (C:\Users\kartikeya\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.st
+y
 Package: setspace 2011/12/19 v6.7a set line spacing
-) (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+)
+(C:\Users\kartikeya\AppData\Roaming\MiKTeX\2.9\tex\latex\tocbibind\tocbibind.st
+y
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks14
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+)) (C:\Users\kartikeya\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.s
+ty
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
 \f@ncyO@erh=\skip45
@@ -57,41 +69,45 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 \f@ncyO@erf=\skip49
 \f@ncyO@olf=\skip50
 \f@ncyO@orf=\skip51
-) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/eucal.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\eucal.sty"
 Package: eucal 2009/06/22 v3.00 Euler Script fonts
 LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
 (Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
-) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2013/12/03 3.9h The Babel package
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2012/08/20 v3.3p English support from the babel system
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2013/12/03 3.9h Babel common definitions
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2008/07/08 v3.8m The Babel package
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\english.ldf"
+Language: english 2005/03/30 v3.3o English support from the babel system
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
-\l@british = a dialect from \language\l@english 
-\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
-)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count89
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
 File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
-)) (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
+)) (C:\Users\kartikeya\AppData\Roaming\MiKTeX\2.9\tex\latex\footmisc\footmisc.s
+ty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks15
 \footnotemargin=\dimen104
@@ -105,35 +121,33 @@ Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
 Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
-) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+) (C:\Users\kartikeya\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip52
 \bibsep=\skip53
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count92
-) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
-) (/usr/share/texlive/texmf-dist/tex/latex/nomencl/nomencl.sty
+) (C:\Users\kartikeya\AppData\Roaming\MiKTeX\2.9\tex\latex\nomencl\nomencl.sty
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 \nomlabelwidth=\dimen105
 \nom@tempdim=\dimen106
 \nomitemsep=\skip54
 )
 \@nomenclaturefile=\write3
-\openout3 = `thesis.nlo'.
-
 Writing nomenclature file thesis.nlo
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
-Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
@@ -163,31 +177,31 @@ Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
 Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
-) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen107
 \Hy@linkcounter=\count93
 \Hy@pagecounter=\count94
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count95
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `plainpages' set `false' on input line 4319.
@@ -208,15 +222,15 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing ON on input line 4461.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\backref.sty"
 Package: backref 2012/07/25 v1.38 Bibliographical back referencing
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
 \c@Hy@tempcnt=\count96
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+(C:\Users\kartikeya\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -241,19 +255,19 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver: hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count101
 \c@bookmark@seq@number=\count102
 \Hy@SectionHShift=\skip55
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
@@ -264,11 +278,12 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 165.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+)
+(C:\Users\kartikeya\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(C:\Users\kartikeya\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+(C:\Users\kartikeya\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen113
@@ -284,10 +299,13 @@ Package caption Info: hyperref package is loaded.
 )
 \c@subfigure=\count104
 \c@subtable=\count105
-) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.aux (/home/kartikey
-a/Desktop/CourseWork/HUL 265/Report/Abstract/abstract.aux)
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Introduction/introduction.au
-x) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter1/chapter1.aux
+) ("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\thesis.aux"
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Abstract/abstr
+act.aux")
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Introduction/i
+ntroduction.aux")
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Chapter1/chapt
+er1.aux"
 
 LaTeX Warning: Label `FigAir' multiply defined.
 
@@ -306,7 +324,9 @@ LaTeX Warning: Label `sub@fig:sub2' multiply defined.
 
 LaTeX Warning: Label `figstart' multiply defined.
 
-) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter2/chapter2.aux
+)
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Chapter2/chapt
+er2.aux"
 
 LaTeX Warning: Label `FigAir' multiply defined.
 
@@ -328,14 +348,18 @@ LaTeX Warning: Label `sub@fig:sub2' multiply defined.
 
 LaTeX Warning: Label `figstart' multiply defined.
 
-) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter3/chapter3.aux
+)
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Chapter3/chapt
+er3.aux"
 
 LaTeX Warning: Label `FigAir' multiply defined.
 
 
 LaTeX Warning: Label `FigAir' multiply defined.
 
-) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Positive/positive.aux
+)
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Positive/posit
+ive.aux"
 
 LaTeX Warning: Label `fig:sub1' multiply defined.
 
@@ -381,11 +405,13 @@ LaTeX Warning: Label `sub@fig:sub2' multiply defined.
 
 LaTeX Warning: Label `figstart' multiply defined.
 
-) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Negative/negative.aux) (/h
-ome/kartikeya/Desktop/CourseWork/HUL 265/Report/Conclusions/conclusions.aux) (/
-home/kartikeya/Desktop/CourseWork/HUL 265/Report/Appendix1/appendix1.aux))
-\openout1 = `thesis.aux'.
-
+)
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Negative/negat
+ive.aux")
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Conclusions/co
+nclusions.aux")
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Appendix1/appe
+ndix1.aux"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
@@ -400,7 +426,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+(C:\Users\kartikeya\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count106
 \scratchdimen=\dimen120
@@ -417,9 +443,9 @@ LaTeX Font Info:    ... okay on input line 56.
 \AtBeginShipoutBox=\box27
 Package backref Info: ** backref set up for natbib ** on input line 56.
 Package hyperref Info: Link coloring ON on input line 56.
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count112
@@ -427,23 +453,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 56.
 LaTeX Info: Redefining \pageref on input line 56.
 LaTeX Info: Redefining \nameref on input line 56.
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.out) (/home/kartikeya
-/Desktop/CourseWork/HUL 265/Report/thesis.out)
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\thesis.out") (
+"C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\thesis.out")
 \@outlinefile=\write4
-\openout4 = `thesis.out'.
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-)
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.jpg,.pdf,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 <iitd_logo.png, id=128, 2007.5pt x 2007.5pt>
@@ -453,23 +465,24 @@ Package pdftex.def Info: iitd_logo.png used on input line 77.
 (pdftex.def)             Requested size: 113.81102pt x 113.79767pt.
 [0
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./iitd_logo.png
+{C:/Users/kartikeya/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/User
+s/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/iitd_logo.png
 
-pdfTeX warning: pdflatex (file ./iitd_logo.png): large interlaced PNG might cau
-se out of memory (use non-interlaced PNG to fix this)
+pdfTeX warning: pdflatex (file C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/
+HUL 265/Report/iitd_logo.png): large interlaced PNG might cause out of memory (
+use non-interlaced PNG to fix this)
 >]
-\openout2 = `Abstract/abstract.aux'.
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Abstract/abstr
+act.tex" [1
 
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Abstract/abstract.tex [1
 
-
-]) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.toc
+]) ("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\thesis.toc"
 LaTeX Font Info:    Try loading font information for U+msa on input line 6.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 6.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2
 \FN@pp@footnotehinttrue 
@@ -477,21 +490,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ])
 \tf@toc=\write5
-\openout5 = `thesis.toc'.
-
-[3] (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.lof)
+[3] ("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\thesis.lof
+")
 \tf@lof=\write6
-\openout6 = `thesis.lof'.
-
 No file thesis.nls.
 [4
 
 ]
-\openout2 = `Introduction/introduction.aux'.
-
-
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Introduction/introduction.te
-x
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Introduction/i
+ntroduction.tex"
 Chapter 1.
 <Introduction/IntroductionFigs/logo.png, id=215, 221.82875pt x 170.6375pt>
 File: Introduction/IntroductionFigs/logo.png Graphic file (type png)
@@ -503,8 +510,9 @@ ine 15.
 
 
 
- <./Introduction/IntroductionFigs/logo.png>] <Introduction/IntroductionFigs/har
-da.png, id=221, 669.50125pt x 501.875pt>
+ <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Introduction/I
+ntroductionFigs/logo.png>] <Introduction/IntroductionFigs/harda.png, id=221, 66
+9.50125pt x 501.875pt>
 File: Introduction/IntroductionFigs/harda.png Graphic file (type png)
 <use Introduction/IntroductionFigs/harda.png>
 Package pdftex.def Info: Introduction/IntroductionFigs/harda.png used on input 
@@ -518,14 +526,14 @@ File: Introduction/IntroductionFigs/railwayharda.png Graphic file (type png)
 Package pdftex.def Info: Introduction/IntroductionFigs/railwayharda.png used on
  input line 37.
 (pdftex.def)             Requested size: 187.90244pt x 141.13246pt.
-) [2 <./Introduction/IntroductionFigs/harda.png> <./Introduction/IntroductionFi
-gs/railwayharda.png>]
-\openout2 = `Chapter1/chapter1.aux'.
-
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter1/chapter1.tex
+) [2 <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Introducti
+on/IntroductionFigs/harda.png> <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework
+/HUL 265/Report/Introduction/IntroductionFigs/railwayharda.png>]
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Chapter1/chapt
+er1.tex"
 Chapter 2.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 16.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -540,8 +548,9 @@ File: Chapter1/Chapter1Figs/mainbuilding.png Graphic file (type png)
 Package pdftex.def Info: Chapter1/Chapter1Figs/mainbuilding.png used on input l
 ine 47.
 (pdftex.def)             Requested size: 337.38069pt x 252.94499pt.
-[4 <./Chapter1/Chapter1Figs/mainbuilding.png>] <Chapter1/Chapter1Figs/pravah.pn
-g, id=241, 200.75pt x 189.70876pt>
+[4 <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Chapter1/Cha
+pter1Figs/mainbuilding.png>] <Chapter1/Chapter1Figs/pravah.png, id=241, 200.75p
+t x 189.70876pt>
 File: Chapter1/Chapter1Figs/pravah.png Graphic file (type png)
 <use Chapter1/Chapter1Figs/pravah.png>
 Package pdftex.def Info: Chapter1/Chapter1Figs/pravah.png used on input line 70
@@ -552,10 +561,11 @@ File: Chapter1/Chapter1Figs/nrhm.png Graphic file (type png)
 <use Chapter1/Chapter1Figs/nrhm.png>
 Package pdftex.def Info: Chapter1/Chapter1Figs/nrhm.png used on input line 76.
 (pdftex.def)             Requested size: 187.90244pt x 161.06691pt.
-) [5 <./Chapter1/Chapter1Figs/pravah.png> <./Chapter1/Chapter1Figs/nrhm.png>]
-\openout2 = `Chapter2/chapter2.aux'.
-
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter2/chapter2.tex
+) [5 <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Chapter1/C
+hapter1Figs/pravah.png> <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 26
+5/Report/Chapter1/Chapter1Figs/nrhm.png>]
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Chapter2/chapt
+er2.tex"
 Chapter 3.
 <Chapter2/Chapter2Figs/1098.png, id=250, 259.97125pt x 195.73125pt>
 File: Chapter2/Chapter2Figs/1098.png Graphic file (type png)
@@ -572,8 +582,10 @@ line 31.
 
 
 
- <./Chapter2/Chapter2Figs/1098.png>] [7 <./Chapter2/Chapter2Figs/childlinekids.
-png>] <Chapter2/Chapter2Figs/jalimsingh.png, id=262, 794.97pt x 597.23125pt>
+ <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Chapter2/Chapt
+er2Figs/1098.png>] [7 <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/
+Report/Chapter2/Chapter2Figs/childlinekids.png>] <Chapter2/Chapter2Figs/jalimsi
+ngh.png, id=262, 794.97pt x 597.23125pt>
 File: Chapter2/Chapter2Figs/jalimsingh.png Graphic file (type png)
 <use Chapter2/Chapter2Figs/jalimsingh.png>
 Package pdftex.def Info: Chapter2/Chapter2Figs/jalimsingh.png used on input lin
@@ -585,11 +597,11 @@ File: Chapter2/Chapter2Figs/othekid.png Graphic file (type png)
 Package pdftex.def Info: Chapter2/Chapter2Figs/othekid.png used on input line 8
 3.
 (pdftex.def)             Requested size: 180.67499pt x 143.62436pt.
-) [8 <./Chapter2/Chapter2Figs/jalimsingh.png> <./Chapter2/Chapter2Figs/othekid.
-png>]
-\openout2 = `Chapter3/chapter3.aux'.
-
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter3/chapter3.tex
+) [8 <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Chapter2/C
+hapter2Figs/jalimsingh.png> <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HU
+L 265/Report/Chapter2/Chapter2Figs/othekid.png>]
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Chapter3/chapt
+er3.tex"
 Chapter 4.
 <Chapter3/Chapter3Figs/pamphlet.png, id=271, 1044.90375pt x 739.76375pt>
 File: Chapter3/Chapter3Figs/pamphlet.png Graphic file (type png)
@@ -606,17 +618,18 @@ Overfull \hbox (57.19003pt too wide) in paragraph at lines 17--23
 
 
 
-] [10 <./Chapter3/Chapter3Figs/pamphlet.png>] <Chapter3/Chapter3Figs/computergu
-y.png, id=283, 445.665pt x 334.24875pt>
+] [10 <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Chapter3/
+Chapter3Figs/pamphlet.png>] <Chapter3/Chapter3Figs/computerguy.png, id=283, 445
+.665pt x 334.24875pt>
 File: Chapter3/Chapter3Figs/computerguy.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/computerguy.png>
 Package pdftex.def Info: Chapter3/Chapter3Figs/computerguy.png used on input li
 ne 75.
 (pdftex.def)             Requested size: 289.07999pt x 216.81029pt.
-) [11 <./Chapter3/Chapter3Figs/computerguy.png>]
-\openout2 = `Positive/positive.aux'.
-
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Positive/positive.tex
+) [11 <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Chapter3/
+Chapter3Figs/computerguy.png>]
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Positive/posit
+ive.tex"
 Chapter 5.
 <Positive/PositiveFigs/Happykids.png, id=292, 675.52374pt x 507.8975pt>
 File: Positive/PositiveFigs/Happykids.png Graphic file (type png)
@@ -634,8 +647,10 @@ Package pdftex.def Info: Positive/PositiveFigs/Computer.png used on input line
 
 
 
- <./Positive/PositiveFigs/Happykids.png> <./Positive/PositiveFigs/Computer.png>
-] <Positive/PositiveFigs/withvishan.png, id=300, 832.10875pt x 624.3325pt>
+ <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Positive/Posit
+iveFigs/Happykids.png> <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265
+/Report/Positive/PositiveFigs/Computer.png>] <Positive/PositiveFigs/withvishan.
+png, id=300, 832.10875pt x 624.3325pt>
 File: Positive/PositiveFigs/withvishan.png Graphic file (type png)
 <use Positive/PositiveFigs/withvishan.png>
 Package pdftex.def Info: Positive/PositiveFigs/withvishan.png used on input lin
@@ -659,30 +674,30 @@ File: Positive/PositiveFigs/members.png Graphic file (type png)
 Package pdftex.def Info: Positive/PositiveFigs/members.png used on input line 7
 0.
 (pdftex.def)             Requested size: 187.90244pt x 140.99068pt.
-[13 <./Positive/PositiveFigs/withvishan.png> <./Positive/PositiveFigs/vellagefa
-rmer.png>]) [14 <./Positive/PositiveFigs/college.png> <./Positive/PositiveFigs/
-members.png>]
-\openout2 = `Negative/negative.aux'.
-
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Negative/negative.tex
+[13 <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Positive/Po
+sitiveFigs/withvishan.png> <C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL
+ 265/Report/Positive/PositiveFigs/vellagefarmer.png>]) [14 <C:/Users/kartikeya/
+Desktop/GIT Stuff/Coursework/HUL 265/Report/Positive/PositiveFigs/college.png> 
+<C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Report/Positive/Positi
+veFigs/members.png>]
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Negative/negat
+ive.tex"
 Chapter 6.
 [15
 
 
 
 ]) [16]
-\openout2 = `Conclusions/conclusions.aux'.
-
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Conclusions/conclusions.tex
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Conclusions/co
+nclusions.tex"
 Chapter 7.
 ) [17
 
 
 
 ]
-\openout2 = `Appendix1/appendix1.aux'.
-
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Appendix1/appendix1.tex) [18
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Appendix1/appe
+ndix1.tex") [18
 
 
 
@@ -690,41 +705,50 @@ Chapter 7.
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.aux (/home/kartikeya/
-Desktop/CourseWork/HUL 265/Report/Abstract/abstract.aux)
-(/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Introduction/introduction.au
-x) (/home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter1/chapter1.aux) (/
-home/kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter2/chapter2.aux) (/home/
-kartikeya/Desktop/CourseWork/HUL 265/Report/Chapter3/chapter3.aux) (/home/karti
-keya/Desktop/CourseWork/HUL 265/Report/Positive/positive.aux) (/home/kartikeya/
-Desktop/CourseWork/HUL 265/Report/Negative/negative.aux) (/home/kartikeya/Deskt
-op/CourseWork/HUL 265/Report/Conclusions/conclusions.aux) (/home/kartikeya/Desk
-top/CourseWork/HUL 265/Report/Appendix1/appendix1.aux))
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\thesis.aux"
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Abstract/abstr
+act.aux")
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Introduction/i
+ntroduction.aux")
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Chapter1/chapt
+er1.aux")
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Chapter2/chapt
+er2.aux")
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Chapter3/chapt
+er3.aux")
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Positive/posit
+ive.aux")
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Negative/negat
+ive.aux")
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Conclusions/co
+nclusions.aux")
+("C:\Users\kartikeya\Desktop\GIT Stuff\Coursework\HUL 265\Report\Appendix1/appe
+ndix1.aux"))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: BA9A4F36A34491DF2982ADE3DCA84664;1881.
+(rerunfilecheck)             Checksum: D980D0C732F748B9204E16F919F288A7;1909.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
  ) 
 Here is how much of TeX's memory you used:
- 8390 strings out of 495028
- 131618 string characters out of 6181497
- 213378 words of memory out of 5000000
- 11292 multiletter control sequences out of 15000+600000
- 11056 words of font info for 41 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 42i,11n,47p,1226b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "/home/kartikeya/Desktop/CourseWork/HUL 265/Report/thesis.pdf
-" (23 pages, 14084630 bytes).
+ 8191 strings out of 493921
+ 129586 string characters out of 3147271
+ 210054 words of memory out of 3000000
+ 11189 multiletter control sequences out of 15000+200000
+ 11056 words of font info for 41 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 42i,11n,47p,1238b,468s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmti12.pfb>
+Output written on "C:/Users/kartikeya/Desktop/GIT Stuff/Coursework/HUL 265/Repo
+rt/thesis.pdf" (23 pages, 13827346 bytes).
 PDF statistics:
  379 PDF objects out of 1000 (max. 8388607)
  307 compressed objects within 4 object streams
