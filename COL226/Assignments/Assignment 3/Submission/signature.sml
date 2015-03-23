@@ -11,6 +11,7 @@ signature Signature =
 	val CheckValidSymList	: Symbol*SymbolList -> bool
 	val ExistsSymbol 		: string*SymbolList -> bool
 	val GetArity			: string*SymbolList -> int
+	val check_sig			: SymbolList -> bool
 end
 
 structure SIGNATURE:>Signature = 
@@ -44,11 +45,14 @@ structure SIGNATURE:>Signature =
 			val Symb(sym1s,sym1i) = x
 			val Symb(sym2s,sym2i) = y
 		in
-			if (sym1s=sym2s) then
-				if (sym1i=sym2i) then  true
-				else false
+			if (sym1i>0 andalso sym2i>0) then 
+				if (sym1s=sym2s) then
+					if (sym1i=sym2i) then  true
+					else false
+				else
+					true
 			else
-				true
+				false
 		end
 
 	fun CheckValidSymList(inpsym:Symbol,y:SymbolList) =
@@ -86,6 +90,8 @@ structure SIGNATURE:>Signature =
 		in
 			helper_arr(s1,GetListOfSymbols(y))
 		end
+
+	fun check_sig(x)= CheckValidSig(x);
 end
 
 open SIGNATURE;
@@ -113,9 +119,13 @@ fun CheckWellFormedTerm (Program.Term_real(x),term1) = true
 	)
 ;
 
-fun wff(Program.ProgList([]),Correctsig) = true
-	|wff(Program.ProgList(x::xs),Correctsig) = CheckWellFormedTerm(x,Correctsig) andalso wff(Program.ProgList(xs),Correctsig)
+fun wff_h(Program.ProgList([]),Correctsig) = true
+	|wff_h(Program.ProgList(x::xs),Correctsig) = CheckWellFormedTerm(x,Correctsig) andalso wff_h(Program.ProgList(xs),Correctsig)
 ;
+
+exception Invalid_sig;
+
+fun wff(x,y)= if (check_sig(y)) then wff_h(x,y) else raise Invalid_sig;
 
 signature Substitution = 
 	sig
@@ -167,9 +177,9 @@ exception FailUnify;
 
 fun ContainsVar(s,Program.Term_real(a)) = false
 	|ContainsVar(s,Program.Term_int(a)) = false
-	|ContainsVar(s,Program.Term_var(a)) = (s=a)
+	|ContainsVar(s,Program.Term_var(a)) = if (s=a) then true else false
 	|ContainsVar(s,Program.Term_Oper(a,[]))= false
-	|ContainsVar(s,Program.Term_Oper(a,x::xs)) = ContainsVar(s,x) orelse ContainsVar(a,Program.Term_Oper(a,xs))
+	|ContainsVar(s,Program.Term_Oper(a,x::xs)) = ContainsVar(s,x) orelse ContainsVar(s,Program.Term_Oper(a,xs))
 ;
 
 fun UnifyTerms (Program.Term_real(x),Program.Term_real(a),unifier)=(if (Real.==(a,x)) then unifier else raise FailUnify) 
@@ -215,15 +225,16 @@ fun UnifyProg(Program.ProgList(m))=
 	end
 ;
 
+fun mgu(x,y)=UnifyProg(Program.ProgList([x,y]));
+
 val s1= Symb("kg",2);
-val s2= Symb("anu",2);
+val s2= Symb("anu",6);
 val s3= Symb("soccer",2);
 val s4= Symb("faran",2);
-val s5= Symb("kg",3);
+val s5= Symb("kg",2);
 val l1=SymbList [s1,s2,s3,s4,s5,s3];
 
-CheckValidSig l1;
-
+check_sig l1;
 val e1=Calc.parse_string "sub(plus (3 ,plus (4,1) ),45.3);"
 val c1= Symb("plus",2);
 val c2= Symb("sub",2);
@@ -232,7 +243,7 @@ val corrects=SymbList [c1,c2,c3];
 wff(e1,corrects);
 
 val e2=Calc.parse_string "sub(plus (x ,plus (4,y) ),x);";
-val dosubs=SubsList [("x",Program.Term_real(4.0))];
+val dosubs=SubsList [("x",Program.Term_real(4.0)),("z",Program.Term_var("y"))];
 CompleteSubstitution(e2,dosubs);
 
 val e3=Calc.parse_string "sub(x,y);";
@@ -241,19 +252,23 @@ val e4=Calc.parse_string "sub(add(sub(3,4),m),3);";
 val Program.ProgList(l)=e3;
 val Program.ProgList(m)=e4;
 UnifyTerms(hd(l),hd(l),SubsList([]));
+mgu(hd(l),hd(m));
 UnifyProg(e3);
 
 val e5=Calc.parse_string "f(h(1,2),x) , f(y,h(x,2));";
-(*UnifyProg(e5);*)
 val e6=Calc.parse_string "f(h(1,y),x) , f(x,h(2,y));";
-(*UnifyProg(e6);*)
 val e7=Calc.parse_string "f(h(x,1),y) , f(z,h(2,x));";
 UnifyProg(e7);
 val e8=Calc.parse_string "f(h(1,x),h(x,2)) , f(h(1,2),h(z,x)); ";
 UnifyProg(e8);
 val e9=Calc.parse_string "f(x,x), f(y,1) ;";
 val n=UnifyProg(e9);
-CompleteSubstitution(e9,n);
+
+val e10=Calc.parse_string "x,plus(z,y),plus(2,w),plus(2,2),plus(2,2),plus(y,w);";
+val j = UnifyProg(e10);
+val e11=Calc.parse_string "plus(2,x);";
+val Program.ProgList(p12)=e11;
+ContainsVar("x",hd(p12));
 
 (*val e10=Calc.parse_string "f(x,y) ;";*)
 (*val newsubs=SubsList [("x",Program.Term_var("y")),("y",Program.Term_int(1))];*)
