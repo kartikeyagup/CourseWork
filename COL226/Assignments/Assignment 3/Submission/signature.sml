@@ -227,11 +227,11 @@ fun UnifyProg(Program.ProgList(m))=
 
 fun mgu(x,y)=UnifyProg(Program.ProgList([x,y]));
 
-val s1= Symb("kg",2);
-val s2= Symb("anu",6);
-val s3= Symb("soccer",2);
-val s4= Symb("faran",2);
-val s5= Symb("kg",2);
+val s1= Symb("add",2);
+val s2= Symb("pow",6);
+val s3= Symb("mul",2);
+val s4= Symb("sub",2);
+val s5= Symb("add",2);
 val l1=SymbList [s1,s2,s3,s4,s5,s3];
 
 check_sig l1;
@@ -251,7 +251,7 @@ val e4=Calc.parse_string "sub(add(sub(3,4),m),3);";
 
 val Program.ProgList(l)=e3;
 val Program.ProgList(m)=e4;
-UnifyTerms(hd(l),hd(l),SubsList([]));
+(*UnifyTerms(hd(l),hd(l),SubsList([]));*)
 mgu(hd(l),hd(m));
 UnifyProg(e3);
 
@@ -269,7 +269,3 @@ val j = UnifyProg(e10);
 val e11=Calc.parse_string "plus(2,x);";
 val Program.ProgList(p12)=e11;
 ContainsVar("x",hd(p12));
-
-(*val e10=Calc.parse_string "f(x,y) ;";*)
-(*val newsubs=SubsList [("x",Program.Term_var("y")),("y",Program.Term_int(1))];*)
-(*val n=CompleteSubstitution(e10,newsubs);*)
