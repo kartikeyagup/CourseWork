@@ -1,0 +1,235 @@
+
+state 0:
+
+	PROG : . TERMLIST 
+
+	IDEN	shift 4
+
+	PROG	goto 21
+	TERM	goto 3
+	TERMLIST	goto 2
+	QUERY	goto 1
+
+	.	error
+
+
+state 1:
+
+	TERM : QUERY . DOT 
+	TERM : QUERY . IF BODY DOT 
+
+	DOT	shift 6
+	IF	shift 5
+
+
+	.	error
+
+
+state 2:
+
+	PROG : TERMLIST .  (reduce by rule 0)
+
+
+
+	.	reduce by rule 0
+
+
+state 3:
+
+	TERMLIST : TERM .  (reduce by rule 1)
+	TERMLIST : TERM . TERMLIST 
+
+	IDEN	shift 4
+
+	TERM	goto 3
+	TERMLIST	goto 7
+	QUERY	goto 1
+
+	.	reduce by rule 1
+
+
+state 4:
+
+	QUERY : IDEN . LPAREN STRINGLIST RPAREN 
+
+	LPAREN	shift 8
+
+
+	.	error
+
+
+state 5:
+
+	TERM : QUERY IF . BODY DOT 
+
+	IDEN	shift 4
+
+	BODY	goto 10
+	QUERY	goto 9
+
+	.	error
+
+
+state 6:
+
+	TERM : QUERY DOT .  (reduce by rule 3)
+
+
+
+	.	reduce by rule 3
+
+
+state 7:
+
+	TERMLIST : TERM TERMLIST .  (reduce by rule 2)
+
+
+
+	.	reduce by rule 2
+
+
+state 8:
+
+	QUERY : IDEN LPAREN . STRINGLIST RPAREN 
+
+	IDEN	shift 14
+	VAR	shift 13
+
+	STRINGLIST	goto 12
+	DATA	goto 11
+
+	.	error
+
+
+state 9:
+
+	BODY : QUERY .  (reduce by rule 5)
+	BODY : QUERY . COMMA BODY 
+
+	COMMA	shift 15
+
+
+	.	reduce by rule 5
+
+
+state 10:
+
+	TERM : QUERY IF BODY . DOT 
+
+	DOT	shift 16
+
+
+	.	error
+
+
+state 11:
+
+	STRINGLIST : DATA .  (reduce by rule 8)
+	STRINGLIST : DATA . COMMA STRINGLIST 
+
+	COMMA	shift 17
+
+
+	.	reduce by rule 8
+
+
+state 12:
+
+	QUERY : IDEN LPAREN STRINGLIST . RPAREN 
+
+	RPAREN	shift 18
+
+
+	.	error
+
+
+state 13:
+
+	DATA : VAR .  (reduce by rule 11)
+
+
+
+	.	reduce by rule 11
+
+
+state 14:
+
+	DATA : IDEN .  (reduce by rule 10)
+
+
+
+	.	reduce by rule 10
+
+
+state 15:
+
+	BODY : QUERY COMMA . BODY 
+
+	IDEN	shift 4
+
+	BODY	goto 19
+	QUERY	goto 9
+
+	.	error
+
+
+state 16:
+
+	TERM : QUERY IF BODY DOT .  (reduce by rule 4)
+
+
+
+	.	reduce by rule 4
+
+
+state 17:
+
+	STRINGLIST : DATA COMMA . STRINGLIST 
+
+	IDEN	shift 14
+	VAR	shift 13
+
+	STRINGLIST	goto 20
+	DATA	goto 11
+
+	.	error
+
+
+state 18:
+
+	QUERY : IDEN LPAREN STRINGLIST RPAREN .  (reduce by rule 7)
+
+
+
+	.	reduce by rule 7
+
+
+state 19:
+
+	BODY : QUERY COMMA BODY .  (reduce by rule 6)
+
+
+
+	.	reduce by rule 6
+
+
+state 20:
+
+	STRINGLIST : DATA COMMA STRINGLIST .  (reduce by rule 9)
+
+
+
+	.	reduce by rule 9
+
+
+state 21:
+
+
+	EOF	accept
+	SEMI	accept
+
+
+	.	error
+
+13 of 39 action table entries left after compaction
+15 goto table entries

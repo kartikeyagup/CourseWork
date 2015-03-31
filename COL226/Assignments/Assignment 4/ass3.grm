@@ -1,0 +1,57 @@
+%%
+
+%eop EOF SEMI
+
+(* %pos declares the type of positions for terminals.
+   Each symbol has an associated left and right position. *)
+
+%pos int
+
+
+%term IDEN of string
+	| VAR of string
+	| DOT
+	| LPAREN
+	| COMMA
+	| IF
+	| RPAREN
+	| EOF
+	| SEMI
+
+%nonterm 
+	  PROG of Program.Program
+	| TERM of Program.Term
+	| TERMLIST of Program.Term list
+	| BODY of Program.Query list
+	| QUERY of Program.Query
+	| STRINGLIST of Program.Data list
+	| DATA of Program.Data
+
+%name Calc
+
+%start PROG
+
+%noshift EOF
+%verbose
+%%
+
+(* the parser returns the value associated with the expression *)
+
+PROG: TERMLIST						(Program.ProgList TERMLIST)
+
+TERMLIST: TERM 						([TERM])
+	| TERM TERMLIST					([TERM]@TERMLIST)
+
+TERM: QUERY	DOT						(Program.Term_Single QUERY)
+	| QUERY IF BODY DOT 			(Program.Term_Conditional (QUERY, BODY))
+
+BODY: QUERY 						([QUERY])
+	| QUERY COMMA BODY				([QUERY]@BODY)
+
+QUERY: IDEN LPAREN STRINGLIST RPAREN (Program.Query_Oper(IDEN,STRINGLIST))
+
+STRINGLIST: DATA 					([DATA])
+	| DATA COMMA STRINGLIST			([DATA]@STRINGLIST)
+
+DATA : IDEN 						(Program.Data_Cons IDEN)
+	| VAR 							(Program.Data_Var VAR)
