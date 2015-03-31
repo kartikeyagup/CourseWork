@@ -96,7 +96,11 @@ end
 
 open SIGNATURE;
 
-Control.Print.printDepth := 100;
+Control.Print.printDepth := 1000;
+Control.Print.stringDepth := 1000;
+Control.Print.printLength := 1000;
+
+
 CM.make "sources.cm";
 
 
@@ -240,54 +244,6 @@ fun UnifyQueries(Program.Query_Oper(s1,d1),Program.Query_Oper(s2,d2),SubsList(l)
 
 fun Unify(x,y)=UnifyQueries(x,y,SubsList([]));
 
-(*
-
-fun UnifyTerms (Program.Term_real(x),Program.Term_real(a),unifier)=(if (Real.==(a,x)) then unifier else raise FailUnify) 
-	|UnifyTerms(Program.Term_int(x),Program.Term_int(a),unifier) =(if (x=a) then unifier else raise FailUnify)  
-	|UnifyTerms(Program.Term_var(x),Program.Term_var(y),SubsList(l))=(if (x=y) then SubsList(l) else SubsList(l@[(x,Program.Term_var(y))]))
-	|UnifyTerms(Program.Term_var(x),Program.Term_int(y),SubsList(l))  = SubsList(l@[(x,Program.Term_int(y))])
-	|UnifyTerms(Program.Term_var(x),Program.Term_real(y),SubsList(l)) = SubsList(l@[(x,Program.Term_real(y))])
-	|UnifyTerms(Program.Term_int(y),Program.Term_var(x),SubsList(l))  = SubsList(l@[(x,Program.Term_int(y))])
-	|UnifyTerms(Program.Term_real(y),Program.Term_var(x),SubsList(l)) = SubsList(l@[(x,Program.Term_real(y))])
-	|UnifyTerms(Program.Term_var(x),Program.Term_Oper(y,yl),SubsList(l)) =
-	(
-	 	if (ContainsVar(x,Program.Term_Oper(y,yl))) then 
-	 		raise FailUnify 
-	 	else 
-	 		SubsList(l@[(x,Program.Term_Oper(y,yl))])
-	)
-	|UnifyTerms(Program.Term_Oper(y,yl),Program.Term_var(x),unifier) = UnifyTerms(Program.Term_var(x),Program.Term_Oper(y,yl),unifier)
-	|UnifyTerms(Program.Term_Oper(x,xl),Program.Term_Oper(y,yl),unifier) =
-	(
-		if (x=y) then
-		(
-			let
-			 	fun unifyhelper([],[],u)=u
-			 		|unifyhelper(k::ks,b::bs,u)=unifyhelper(ks,bs,UnifyTerms(subst(k,u),subst(b,u),u))
-					|unifyhelper(_,_,u)=u
-			in
-				unifyhelper(xl,yl,unifier)
-			end
-		)
-		else
-			raise FailUnify
-	)
-	|UnifyTerms(_,_,_) = raise FailUnify
-;
-
-fun UnifyProg(Program.ProgList(m))=
-	let
-		fun UnifyProgHelper([],u)=u
-			|UnifyProgHelper([x],u)=u
-			|UnifyProgHelper(x::y::xys,u)= UnifyProgHelper(y::xys,UnifyTerms(subst(x,u),subst(y,u),u))
-	in
-		UnifyProgHelper(m,SubsList [])
-	end
-;
-
-fun mgu(x,y)=UnifyProg(Program.ProgList([x,y]));
-*)
-
 fun MakeList(l) =
 	let
 		val Program.ProgList(p) = Calc.parse_string(l);
@@ -338,6 +294,24 @@ fun ReturnAnswers(l,[],ans) = ans
 	|ReturnAnswers(l,x::xs,ans) = if (first(Unify(l,x))) then ReturnAnswers(l,xs,(second(Unify(l,x))::ans)) else ReturnAnswers(l,xs,ans)
 ;
 
+fun PrettyPrintData(Program.Data_Var(x))= print x
+	|PrettyPrintData(Program.Data_Cons(y)) = print y
+;
+
+fun PrettyPrintQuery(Program.Query_Oper(x,ls))=
+	(
+		let
+			fun helpers([]) = (print "\n")
+				|helpers(x::xs)= (PrettyPrintData(x); print "\t" ; helpers(xs))
+			;
+		in
+			(print x; print "\t" ; helpers(ls) ; print "\n")
+		end
+	)
+;
+fun compose(SubsList(a),SubsList(b))= SubsList(a@b);
+
+
 (*					 query*term list * subst list -> subst list  			*)
 fun CheckQueryRetAns(l,[],mlist,ans)=ans
 	|CheckQueryRetAns(l,Program.Term_Single(a)::ls,mlist,ans)= 
@@ -347,37 +321,102 @@ fun CheckQueryRetAns(l,[],mlist,ans)=ans
 	(
 		if (first(Unify(l,a))) then
 			let
+				(* query list* term list * subst -> subst list  *)
 				fun listiterator([],plist,a1) = [a1]
 					|listiterator(x::xs,plist,a1) = 
 						let
 							val applied= subst_query(x,a1);
 							val answerappl = CheckQueryRetAns(applied,plist,plist,[]);
 
-							fun helper(xs,[],proglist,p)=p
-								|helper(xs,a::ls,proglist,p)= helper(xs,ls,proglist,listiterator(xs,proglist,a)@p)
+							(* query list * subst list * term list * subst * subst lis0t -> subst list  *)
+							fun helper(xs,[],proglist,prevans,p)=p
+								|helper(xs,a::ls,proglist,prevans,p)= helper(xs,ls,proglist,prevans,listiterator(xs,proglist,compose(prevans,a))@p)
 						in
-							helper(xs,answerappl,plist,[])
+							helper(xs,answerappl,plist,a1,[])
 						end
 			in
-				CheckQueryRetAns(l,ls,mlist,listiterator(b,mlist,second(Unify(l,a))))
+				CheckQueryRetAns(l,ls,mlist,listiterator(b,mlist,second(Unify(l,a)))@ans)
 			end
 		else 
 			CheckQueryRetAns(l,ls,mlist,ans)
 	)
 ;
 
-val listed= MakeList("edge(a,b). edge(b,e). edge(a,c). edge(x,z). reachable(X,Y):-edge(X,Z),edge(Z,Y). ;");
-val p =GetQueryList("edge(a,b). edge(a,e). edge(a,c). edge(x,z). reachable(x,y):-edge(x,Z),edge(Z,y). ;");
+datatype Answer = 
+	Answer_Bool of bool 
+	| Answer_Subs of Subs list
+;
+
+fun GetVarsList([],p)=p
+	|GetVarsList(Program.Data_Var(x)::l,p)=GetVarsList(l,x::p)
+	|GetVarsList(Program.Data_Cons(x)::l,p)=GetVarsList(l,p)
+;
+
+fun GetVarQ(Program.Query_Oper(a,b))= GetVarsList(b,[]);
+
+fun CheckEqual(x,Program.Data_Var(y)) = (x=y)
+	|CheckEqual(x,Program.Data_Cons(y)) = (x=y)
+;
+
+fun RemoveWrapper(Program.Data_Cons(x))= x
+	|RemoveWrapper(Program.Data_Var(x))= x
+;
+
+fun ReturnSubsVal(x,l)=
+	let
+		val ans = GetTermSubs(x,l);
+	in
+		if CheckEqual(x,ans) then ans
+		else ReturnSubsVal(RemoveWrapper(ans),l)
+	end
+;
+
+fun ReturnFinalValues([],l,a)=SubsList(a)
+	|ReturnFinalValues(x::xs,l,a)=ReturnFinalValues(xs,l,(x,ReturnSubsVal(x,l))::a)
+;
+
+fun ReplaceVarslist(varlist,[])=[]
+	|ReplaceVarslist(varlist,x::xs)=ReturnFinalValues(varlist,x,[])::ReplaceVarslist(varlist,xs)
+;
+
+fun DoQuery(x,p)= 
+	let
+		val execans=CheckQueryRetAns(x,p,p,[]);
+		val varlist = GetVarQ(x);
+	in
+		if List.length(varlist)=0 then Answer_Bool(List.length(execans)>0)
+		else if (List.length(execans)=0) then Answer_Bool(false)
+		else Answer_Subs(ReplaceVarslist(varlist,execans))
+	end
+;
+
+(*val listed= MakeList("edge(a,b). edge(b,e). edge(a,c). edge(c,f). edge(x,z). reachable(X,Y):-edge(X,Z),edge(Z,Y). ;");*)
+
+
+(*val listed2= MakeList("append([], T, T). append([X|XS], Y, [X|Z]) :- append(XS, Y, Z). ? append([a], L, [a, b, c]). accRev([H|T],M,R):- accRev(T,[H|M],R). accRev([],A,A). naiverev(D, E) :- accRev(D, [], E). ? naiverev([a, b, c, d], L).;");*)
+(*val listed2= MakeList ("edge(a,b). edge(a,g). edge(b,d). edge(c,d). edge(g,c). edge(g,f). edge(c,e). edge(e,d). path(X,X). path(X,Y) :- edge(X,Y).path(X,Y) :- edge(X,Z), path(Z,Y). ;");*)
+
+
+(*val p =GetQueryList("edge(a,b). edge(a,e). edge(a,c). edge(x,z). reachable(x,y):-edge(x,Z),edge(Z,y). ;");
 val q =GetConditionsList("edge(a,b). edge(b,e). edge(a,c). edge(x,z). reachable(X,Y):-edge(X,Z),edge(Z,Y). ;");
+*)
 
+(*val inp:string = TextIO.input(TextIO.openIn("input.pl"));*)
 
+val interpreted = MakeList(TextIO.input(TextIO.openIn("input.pl")));
+val query = GetQuery(TextIO.input(TextIO.openIn("query.pl")));
 
-val r= GetQuery("reachable(a,e). ;");
+DoQuery(query,interpreted);
+
+(*val r= GetQuery("edge(a,e). ;");*)
+(*val r= GetQuery("reachable(a,W). ;");*)
+(*val r2= GetQuery("path(a,M). ;");*)
 
 (*CheckQueryWithFact(r,p);*)
 (**)
 (*ReturnAnswers(r,p,[]);*)
 
-CheckQueryRetAns(r,listed,listed,[]);
+(*CheckQueryRetAns(r,listed,listed,[]);*)
+(*DoQuery(r,listed);*)
 
 (*Unify(List.nth(p,0),List.nth(p,1));*)
