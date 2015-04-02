@@ -129,7 +129,7 @@ fun wff_h(Program.ProgList([]),Correctsig) = true
 
 exception Invalid_sig;
 
-fun wff(x,y)= if (check_sig(y)) then wff_h(x,y) else raise Invalid_sig;
+fun wff(x,y)= if (check_sig(y)) then wff_h(Program.ProgList(x),y) else raise Invalid_sig;
 
 
 signature Substitution = 
@@ -209,15 +209,6 @@ fun ContainsVar_Term(x,Program.Term_Single(a))= ContainsVar_Query(x,a)
 			ContainsVar_Query(x,a) orelse helperterm(x,b)
 		end
 ;
-
-(*
-fun ContainsVar(s,Program.Term_real(a)) = false
-	|ContainsVar(s,Program.Term_int(a)) = false
-	|ContainsVar(s,Program.Term_var(a)) = if (s=a) then true else false
-	|ContainsVar(s,Program.Term_Oper(a,[]))= false
-	|ContainsVar(s,Program.Term_Oper(a,x::xs)) = ContainsVar(s,x) orelse ContainsVar(s,Program.Term_Oper(a,xs))
-;
-*)
 
 fun UnifyData(Program.Data_Var(x),Program.Data_Var(y),SubsList(unifier))= if (x=y) then (true,SubsList(unifier)) else (true,SubsList((x,Program.Data_Var(y))::unifier))
 	|UnifyData(Program.Data_Cons(x),Program.Data_Cons(y),l)= if (x=y) then (true,l) else (false,l)
@@ -387,6 +378,7 @@ fun DoQuery(x,p)=
 		if List.length(varlist)=0 then Answer_Bool(List.length(execans)>0)
 		else if (List.length(execans)=0) then Answer_Bool(false)
 		else Answer_Subs(ReplaceVarslist(varlist,execans))
+		(*else Answer_Subs(execans)*)
 	end
 ;
 
@@ -403,10 +395,20 @@ val q =GetConditionsList("edge(a,b). edge(b,e). edge(a,c). edge(x,z). reachable(
 
 (*val inp:string = TextIO.input(TextIO.openIn("input.pl"));*)
 
+use "SymbolList.sml";
+
+exception InvalidInput;
+exception InvalidQuery;
+
 val interpreted = MakeList(TextIO.input(TextIO.openIn("input.pl")));
 val query = GetQuery(TextIO.input(TextIO.openIn("query.pl")));
 
-DoQuery(query,interpreted);
+if (wff (interpreted,l1)) then 
+	if (wff(([Program.Term_Single(query)]),l1)) then DoQuery(query,interpreted)
+	else raise InvalidQuery
+else raise InvalidInput;
+
+
 
 (*val r= GetQuery("edge(a,e). ;");*)
 (*val r= GetQuery("reachable(a,W). ;");*)
