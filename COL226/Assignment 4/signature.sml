@@ -160,7 +160,14 @@ fun CheckEqual(Program.Data_Var(x),Program.Data_Var(y)) = (x=y)
 fun subst_data(Program.Data_Var(x),subslist) = GetTermSubs(x,subslist)
 	|subst_data(Program.Data_Cons(x),subslist) = Program.Data_Cons(x)
 	|subst_data(Program.Data_Term(x),subslist) = let val Program.Term_Single(p)= x in Program.Data_Term(Program.Term_Single(subst_query(p,subslist))) end
-	
+	|subst_data(Program.Data_List(x),subslist) =
+		let
+			fun helperlist(Program.Data_List([x]),subslist) = Program.Data_List([subst_data(x,subslist)])
+				|helperlist(Program.Data_List([x,y]),subslist) = Program.Data_List([subst_data(x,subslist),subst_data(y,subslist)])
+		in
+			(helperlist(Program.Data_List(x),subslist))
+		end
+
 and subst_query(Program.Query_Oper(x,datlist),subslist) =
 	let
 		fun helper([],subslist)=[]
@@ -190,6 +197,13 @@ exception FailUnify;
 
 fun ContainsVar_Data(x,Program.Data_Var(y)) = (x=y)
 	|ContainsVar_Data(x,Program.Data_Term(y)) = ContainsVar_Term(x,y)
+	|ContainsVar_Data(x,Program.Data_List(l)) = 
+		let
+			fun listhelper(x,Program.Data_List([k]))= ContainsVar_Data(x,k)
+				|listhelper(x,Program.Data_List([a,b])) = ContainsVar_Data(x,a) orelse ContainsVar_Data(x,b)
+		in
+			listhelper(x,Program.Data_List(l))
+		end
 	|ContainsVar_Data(x,_) = false
 
 and ContainsVar_Query(x,Program.Query_Oper(a,b))=
@@ -227,7 +241,37 @@ and UnifyData(Program.Data_Var(x),Program.Data_Var(y),SubsList(unifier))= if (x=
 		if ContainsVar_Term(x,p) then (false, SubsList(l))
 		else (true, SubsList((x,Program.Data_Term(p))::l))
 	|UnifyData(Program.Data_Term(p),Program.Data_Term(q),SubsList(l)) = UnifyTerms(p,q,SubsList(l))
-	
+	|UnifyData(Program.Data_Cons(x),Program.Data_List(p),l)= if (List.length(p)=1) then UnifyData(Program.Data_Cons(x),hd(p),l) else (false,l)
+	|UnifyData(Program.Data_List(p),Program.Data_Cons(x),l)= if (List.length(p)=1) then UnifyData(Program.Data_Cons(x),hd(p),l) else (false,l)
+	|UnifyData(Program.Data_Term(p),Program.Data_List(x),l)= if (List.length(x)=1) then UnifyData(Program.Data_Term(p),hd(x),l) else (false,l)
+	|UnifyData(Program.Data_List(x),Program.Data_Term(p),l)= if (List.length(x)=1) then UnifyData(Program.Data_Term(p),hd(x),l) else (false,l)
+	|UnifyData(Program.Data_Var(x),Program.Data_List(m),SubsList(l))=
+		if ContainsVar_Data(x,Program.Data_List(m)) then (false,SubsList(l))
+		else (true,SubsList((x,Program.Data_List(m))::l ))
+	|UnifyData(Program.Data_List(m),Program.Data_Var(x),SubsList(l))=
+		if ContainsVar_Data(x,Program.Data_List(m)) then (false,SubsList(l))
+		else (true,SubsList((x,Program.Data_List(m))::l ))
+	|UnifyData(Program.Data_List([a]),Program.Data_List([b]),SubsList(l))=
+		let
+			val (res,SubsList(unified)) = UnifyData(a,b,SubsList [])
+		in
+			if res then (true, SubsList(unified@l))
+			else (false, SubsList(l))
+		end
+	|UnifyData(Program.Data_List([Program.Data_Var(a)]),Program.Data_List([b,c]),SubsList(l))=
+		UnifyData(Program.Data_Var(a),Program.Data_List([b,c]),SubsList(l))
+	|UnifyData(Program.Data_List([b,c]),Program.Data_List([Program.Data_Var(a)]),SubsList(l))=
+		UnifyData(Program.Data_Var(a),Program.Data_List([b,c]),SubsList(l))
+	|UnifyData(Program.Data_List([a,b]),Program.Data_List([c,d]),SubsList(l))=
+		let
+			val (res1,SubsList(l1)) = UnifyData(a,c,SubsList [])
+			val (res2,SubsList(l2)) = UnifyData(b,d,SubsList [])
+		in
+			if (res1 andalso res2) then (true, SubsList(l1 @l2 @ l))
+			else (false,SubsList(l))
+		end
+	| UnifyData(Program.Data_List(a),Program.Data_List(b),l) = (false, l)
+
 
 and UnifyQueries(Program.Query_Oper(s1,d1),Program.Query_Oper(s2,d2),SubsList(l))=
 	if (s1=s2) then 
@@ -359,6 +403,9 @@ fun GetVarsList([],p)=p
 		in
 			GetVarsList(l, GetVarQ(y)@p)
 		end
+	|GetVarsList(Program.Data_List([x])::l,p) = GetVarsList(l,GetVarsList([x],[])@p)
+	|GetVarsList(Program.Data_List([x,y])::l,p) = GetVarsList(l,GetVarsList([x],[])@GetVarsList([y],[])@p)
+
 
 
 and GetVarQ(Program.Query_Oper(a,b))= GetVarsList(b,[]);
@@ -369,7 +416,9 @@ fun CheckEqual(x,Program.Data_Var(y)) = (x=y)
 ;
 
 fun RemoveWrapper(Program.Data_Cons(x))= x
-	|RemoveWrapper(Program.Data_Var(x))= x
+	|RemoveWrapper(Program.Data_Var(x))= x(*
+	|RemoveWrapper(Program.Data_Term(x))= x
+	|RemoveWrapper(Program.Data_List(x))= x*)
 ;
 
 fun ReturnSubsVal(x,l)=
@@ -396,7 +445,8 @@ fun DoQuery(x,p)=
 	in
 		if List.length(varlist)=0 then Answer_Bool(List.length(execans)>0)
 		else if (List.length(execans)=0) then Answer_Bool(false)
-		else Answer_Subs(ReplaceVarslist(varlist,execans))
+		(*else Answer_Subs(ReplaceVarslist(varlist,execans))*)
+		else Answer_Subs(execans)
 	end
 ;
 

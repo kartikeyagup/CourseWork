@@ -1,0 +1,388 @@
+1 shift/reduce conflict
+
+error:  state 22: shift/reduce conflict (shift RBOXPAREN, reduce by rule 17)
+
+state 0:
+
+	PROG : . TERMLIST 
+
+	IDEN	shift 4
+
+	PROG	goto 33
+	TERM	goto 3
+	TERMLIST	goto 2
+	QUERY	goto 1
+
+	.	error
+
+
+state 1:
+
+	TERM : QUERY . DOT 
+	TERM : QUERY . IF BODY DOT 
+	TERM : QUERY .  (reduce by rule 5)
+
+	DOT	shift 6
+	IF	shift 5
+
+
+	.	reduce by rule 5
+
+
+state 2:
+
+	PROG : TERMLIST .  (reduce by rule 0)
+
+
+
+	.	reduce by rule 0
+
+
+state 3:
+
+	TERMLIST : TERM .  (reduce by rule 1)
+	TERMLIST : TERM . TERMLIST 
+
+	IDEN	shift 4
+
+	TERM	goto 3
+	TERMLIST	goto 7
+	QUERY	goto 1
+
+	.	reduce by rule 1
+
+
+state 4:
+
+	QUERY : IDEN . LPAREN STRINGLIST RPAREN 
+
+	LPAREN	shift 8
+
+
+	.	error
+
+
+state 5:
+
+	TERM : QUERY IF . BODY DOT 
+
+	IDEN	shift 4
+
+	BODY	goto 10
+	QUERY	goto 9
+
+	.	error
+
+
+state 6:
+
+	TERM : QUERY DOT .  (reduce by rule 3)
+
+
+
+	.	reduce by rule 3
+
+
+state 7:
+
+	TERMLIST : TERM TERMLIST .  (reduce by rule 2)
+
+
+
+	.	reduce by rule 2
+
+
+state 8:
+
+	QUERY : IDEN LPAREN . STRINGLIST RPAREN 
+
+	IDEN	shift 16
+	VAR	shift 15
+	LBOXPAREN	shift 14
+
+	TERM	goto 13
+	QUERY	goto 1
+	STRINGLIST	goto 12
+	DATA	goto 11
+
+	.	error
+
+
+state 9:
+
+	BODY : QUERY .  (reduce by rule 6)
+	BODY : QUERY . COMMA BODY 
+
+	COMMA	shift 17
+
+
+	.	reduce by rule 6
+
+
+state 10:
+
+	TERM : QUERY IF BODY . DOT 
+
+	DOT	shift 18
+
+
+	.	error
+
+
+state 11:
+
+	STRINGLIST : DATA .  (reduce by rule 9)
+	STRINGLIST : DATA . COMMA STRINGLIST 
+
+	COMMA	shift 19
+
+
+	.	reduce by rule 9
+
+
+state 12:
+
+	QUERY : IDEN LPAREN STRINGLIST . RPAREN 
+
+	RPAREN	shift 20
+
+
+	.	error
+
+
+state 13:
+
+	DATA : TERM .  (reduce by rule 13)
+
+
+
+	.	reduce by rule 13
+
+
+state 14:
+
+	DATA : LBOXPAREN . DATA RBOXPAREN 
+	DATA : LBOXPAREN . DATA SEPARATOR DATA RBOXPAREN 
+	DATA : LBOXPAREN . DATALIST RBOXPAREN 
+
+	IDEN	shift 16
+	VAR	shift 15
+	LBOXPAREN	shift 14
+
+	TERM	goto 13
+	QUERY	goto 1
+	DATA	goto 22
+	DATALIST	goto 21
+
+	.	error
+
+
+state 15:
+
+	DATA : VAR .  (reduce by rule 12)
+
+
+
+	.	reduce by rule 12
+
+
+state 16:
+
+	QUERY : IDEN . LPAREN STRINGLIST RPAREN 
+	DATA : IDEN .  (reduce by rule 11)
+
+	LPAREN	shift 8
+
+
+	.	reduce by rule 11
+
+
+state 17:
+
+	BODY : QUERY COMMA . BODY 
+
+	IDEN	shift 4
+
+	BODY	goto 23
+	QUERY	goto 9
+
+	.	error
+
+
+state 18:
+
+	TERM : QUERY IF BODY DOT .  (reduce by rule 4)
+
+
+
+	.	reduce by rule 4
+
+
+state 19:
+
+	STRINGLIST : DATA COMMA . STRINGLIST 
+
+	IDEN	shift 16
+	VAR	shift 15
+	LBOXPAREN	shift 14
+
+	TERM	goto 13
+	QUERY	goto 1
+	STRINGLIST	goto 24
+	DATA	goto 11
+
+	.	error
+
+
+state 20:
+
+	QUERY : IDEN LPAREN STRINGLIST RPAREN .  (reduce by rule 8)
+
+
+
+	.	reduce by rule 8
+
+
+state 21:
+
+	DATA : LBOXPAREN DATALIST . RBOXPAREN 
+
+	RBOXPAREN	shift 25
+
+
+	.	error
+
+error:  state 22: shift/reduce conflict (shift RBOXPAREN, reduce by rule 17)
+
+state 22:
+
+	DATA : LBOXPAREN DATA . RBOXPAREN 
+	DATA : LBOXPAREN DATA . SEPARATOR DATA RBOXPAREN 
+	DATALIST : DATA .  (reduce by rule 17)
+	DATALIST : DATA . COMMA DATALIST 
+
+	COMMA	shift 28
+	RBOXPAREN	shift 27
+	SEPARATOR	shift 26
+
+
+	.	error
+
+
+state 23:
+
+	BODY : QUERY COMMA BODY .  (reduce by rule 7)
+
+
+
+	.	reduce by rule 7
+
+
+state 24:
+
+	STRINGLIST : DATA COMMA STRINGLIST .  (reduce by rule 10)
+
+
+
+	.	reduce by rule 10
+
+
+state 25:
+
+	DATA : LBOXPAREN DATALIST RBOXPAREN .  (reduce by rule 16)
+
+
+
+	.	reduce by rule 16
+
+
+state 26:
+
+	DATA : LBOXPAREN DATA SEPARATOR . DATA RBOXPAREN 
+
+	IDEN	shift 16
+	VAR	shift 15
+	LBOXPAREN	shift 14
+
+	TERM	goto 13
+	QUERY	goto 1
+	DATA	goto 29
+
+	.	error
+
+
+state 27:
+
+	DATA : LBOXPAREN DATA RBOXPAREN .  (reduce by rule 14)
+
+
+
+	.	reduce by rule 14
+
+
+state 28:
+
+	DATALIST : DATA COMMA . DATALIST 
+
+	IDEN	shift 16
+	VAR	shift 15
+	LBOXPAREN	shift 14
+
+	TERM	goto 13
+	QUERY	goto 1
+	DATA	goto 31
+	DATALIST	goto 30
+
+	.	error
+
+
+state 29:
+
+	DATA : LBOXPAREN DATA SEPARATOR DATA . RBOXPAREN 
+
+	RBOXPAREN	shift 32
+
+
+	.	error
+
+
+state 30:
+
+	DATALIST : DATA COMMA DATALIST .  (reduce by rule 18)
+
+
+
+	.	reduce by rule 18
+
+
+state 31:
+
+	DATALIST : DATA .  (reduce by rule 17)
+	DATALIST : DATA . COMMA DATALIST 
+
+	COMMA	shift 28
+
+
+	.	reduce by rule 17
+
+
+state 32:
+
+	DATA : LBOXPAREN DATA SEPARATOR DATA RBOXPAREN .  (reduce by rule 15)
+
+
+
+	.	reduce by rule 15
+
+
+state 33:
+
+
+	EOF	accept
+	SEMI	accept
+
+
+	.	error
+
+21 of 69 action table entries left after compaction
+30 goto table entries

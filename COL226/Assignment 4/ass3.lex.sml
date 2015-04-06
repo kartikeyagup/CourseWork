@@ -198,13 +198,23 @@ fun yyAction8 (strm, lastMatch : yymatch) = (yystrm := strm;
       (Tokens.RPAREN(!pos,!pos)))
 fun yyAction9 (strm, lastMatch : yymatch) = (yystrm := strm;
       (Tokens.DOT(!pos,!pos)))
-fun yyAction10 (strm, lastMatch : yymatch) = let
+fun yyAction10 (strm, lastMatch : yymatch) = (yystrm := strm;
+      (Tokens.LBOXPAREN(!pos,!pos)))
+fun yyAction11 (strm, lastMatch : yymatch) = (yystrm := strm;
+      (Tokens.RBOXPAREN(!pos,!pos)))
+fun yyAction12 (strm, lastMatch : yymatch) = (yystrm := strm;
+      (Tokens.SEPARATOR(!pos,!pos)))
+fun yyAction13 (strm, lastMatch : yymatch) = let
       val yytext = yymktext(strm)
       in
         yystrm := strm;
         (error ("ignoring bad character "^yytext,!pos,!pos); lex())
       end
-fun yyQ10 (strm, lastMatch : yymatch) = (case (yygetc(strm))
+fun yyQ13 (strm, lastMatch : yymatch) = (case (yygetc(strm))
+       of NONE => yyAction12(strm, yyNO_MATCH)
+        | SOME(inp, strm') => yyAction12(strm, yyNO_MATCH)
+      (* end case *))
+fun yyQ12 (strm, lastMatch : yymatch) = (case (yygetc(strm))
        of NONE => yyAction3(strm, yyNO_MATCH)
         | SOME(inp, strm') =>
             if inp = #"["
@@ -212,14 +222,22 @@ fun yyQ10 (strm, lastMatch : yymatch) = (case (yygetc(strm))
             else if inp < #"["
               then if inp <= #"@"
                   then yyAction3(strm, yyNO_MATCH)
-                  else yyQ10(strm', yyMATCH(strm, yyAction3, yyNO_MATCH))
+                  else yyQ12(strm', yyMATCH(strm, yyAction3, yyNO_MATCH))
             else if inp = #"a"
-              then yyQ10(strm', yyMATCH(strm, yyAction3, yyNO_MATCH))
+              then yyQ12(strm', yyMATCH(strm, yyAction3, yyNO_MATCH))
             else if inp < #"a"
               then yyAction3(strm, yyNO_MATCH)
             else if inp <= #"z"
-              then yyQ10(strm', yyMATCH(strm, yyAction3, yyNO_MATCH))
+              then yyQ12(strm', yyMATCH(strm, yyAction3, yyNO_MATCH))
               else yyAction3(strm, yyNO_MATCH)
+      (* end case *))
+fun yyQ11 (strm, lastMatch : yymatch) = (case (yygetc(strm))
+       of NONE => yyAction11(strm, yyNO_MATCH)
+        | SOME(inp, strm') => yyAction11(strm, yyNO_MATCH)
+      (* end case *))
+fun yyQ10 (strm, lastMatch : yymatch) = (case (yygetc(strm))
+       of NONE => yyAction10(strm, yyNO_MATCH)
+        | SOME(inp, strm') => yyAction10(strm, yyNO_MATCH)
       (* end case *))
 fun yyQ9 (strm, lastMatch : yymatch) = (case (yygetc(strm))
        of NONE => yyAction2(strm, yyNO_MATCH)
@@ -242,7 +260,7 @@ fun yyQ8 (strm, lastMatch : yymatch) = (case (yygetc(strm))
        of NONE => yyAction4(strm, yyNO_MATCH)
         | SOME(inp, strm') => yyAction4(strm, yyNO_MATCH)
       (* end case *))
-fun yyQ11 (strm, lastMatch : yymatch) = (case (yygetc(strm))
+fun yyQ14 (strm, lastMatch : yymatch) = (case (yygetc(strm))
        of NONE => yyAction5(strm, yyNO_MATCH)
         | SOME(inp, strm') => yyAction5(strm, yyNO_MATCH)
       (* end case *))
@@ -250,7 +268,7 @@ fun yyQ7 (strm, lastMatch : yymatch) = (case (yygetc(strm))
        of NONE => yystuck(lastMatch)
         | SOME(inp, strm') =>
             if inp = #"-"
-              then yyQ11(strm', lastMatch)
+              then yyQ14(strm', lastMatch)
               else yystuck(lastMatch)
       (* end case *))
 fun yyQ6 (strm, lastMatch : yymatch) = (case (yygetc(strm))
@@ -292,21 +310,23 @@ fun yyQ0 (strm, lastMatch : yymatch) = (case (yygetc(strm))
               then UserDeclarations.eof(yyarg)
               else yystuck(lastMatch)
         | SOME(inp, strm') =>
-            if inp = #"-"
+            if inp = #"/"
               then if yyInput.eof(!(yystrm))
                   then UserDeclarations.eof(yyarg)
                   else yystuck(lastMatch)
-            else if inp < #"-"
-              then if inp = #"!"
-                  then if yyInput.eof(!(yystrm))
-                      then UserDeclarations.eof(yyarg)
-                      else yystuck(lastMatch)
-                else if inp < #"!"
-                  then if inp = #"\n"
-                      then yyQ2(strm', lastMatch)
-                    else if inp < #"\n"
+            else if inp < #"/"
+              then if inp = #"("
+                  then yyQ3(strm', lastMatch)
+                else if inp < #"("
+                  then if inp = #"\v"
+                      then if yyInput.eof(!(yystrm))
+                          then UserDeclarations.eof(yyarg)
+                          else yystuck(lastMatch)
+                    else if inp < #"\v"
                       then if inp = #"\t"
                           then yyQ1(strm', lastMatch)
+                        else if inp = #"\n"
+                          then yyQ2(strm', lastMatch)
                         else if yyInput.eof(!(yystrm))
                           then UserDeclarations.eof(yyarg)
                           else yystuck(lastMatch)
@@ -315,51 +335,63 @@ fun yyQ0 (strm, lastMatch : yymatch) = (case (yygetc(strm))
                     else if yyInput.eof(!(yystrm))
                       then UserDeclarations.eof(yyarg)
                       else yystuck(lastMatch)
-                else if inp = #")"
-                  then yyQ4(strm', lastMatch)
-                else if inp < #")"
-                  then if inp = #"("
-                      then yyQ3(strm', lastMatch)
-                    else if yyInput.eof(!(yystrm))
-                      then UserDeclarations.eof(yyarg)
-                      else yystuck(lastMatch)
                 else if inp = #","
                   then yyQ5(strm', lastMatch)
-                else if yyInput.eof(!(yystrm))
-                  then UserDeclarations.eof(yyarg)
-                  else yystuck(lastMatch)
-            else if inp = #"<"
-              then if yyInput.eof(!(yystrm))
-                  then UserDeclarations.eof(yyarg)
-                  else yystuck(lastMatch)
-            else if inp < #"<"
-              then if inp = #":"
-                  then yyQ7(strm', lastMatch)
-                else if inp < #":"
-                  then if inp = #"."
-                      then yyQ6(strm', lastMatch)
+                else if inp < #","
+                  then if inp = #")"
+                      then yyQ4(strm', lastMatch)
                     else if yyInput.eof(!(yystrm))
                       then UserDeclarations.eof(yyarg)
                       else yystuck(lastMatch)
-                  else yyQ8(strm', lastMatch)
-            else if inp = #"["
-              then if yyInput.eof(!(yystrm))
-                  then UserDeclarations.eof(yyarg)
-                  else yystuck(lastMatch)
-            else if inp < #"["
-              then if inp <= #"@"
+                else if inp = #"-"
                   then if yyInput.eof(!(yystrm))
                       then UserDeclarations.eof(yyarg)
                       else yystuck(lastMatch)
-                  else yyQ9(strm', lastMatch)
-            else if inp = #"a"
-              then yyQ10(strm', lastMatch)
-            else if inp < #"a"
+                  else yyQ6(strm', lastMatch)
+            else if inp = #"\\"
               then if yyInput.eof(!(yystrm))
                   then UserDeclarations.eof(yyarg)
                   else yystuck(lastMatch)
-            else if inp <= #"z"
-              then yyQ10(strm', lastMatch)
+            else if inp < #"\\"
+              then if inp = #"<"
+                  then if yyInput.eof(!(yystrm))
+                      then UserDeclarations.eof(yyarg)
+                      else yystuck(lastMatch)
+                else if inp < #"<"
+                  then if inp = #":"
+                      then yyQ7(strm', lastMatch)
+                    else if inp = #";"
+                      then yyQ8(strm', lastMatch)
+                    else if yyInput.eof(!(yystrm))
+                      then UserDeclarations.eof(yyarg)
+                      else yystuck(lastMatch)
+                else if inp = #"A"
+                  then yyQ9(strm', lastMatch)
+                else if inp < #"A"
+                  then if yyInput.eof(!(yystrm))
+                      then UserDeclarations.eof(yyarg)
+                      else yystuck(lastMatch)
+                else if inp = #"["
+                  then yyQ10(strm', lastMatch)
+                  else yyQ9(strm', lastMatch)
+            else if inp = #"{"
+              then if yyInput.eof(!(yystrm))
+                  then UserDeclarations.eof(yyarg)
+                  else yystuck(lastMatch)
+            else if inp < #"{"
+              then if inp = #"^"
+                  then if yyInput.eof(!(yystrm))
+                      then UserDeclarations.eof(yyarg)
+                      else yystuck(lastMatch)
+                else if inp < #"^"
+                  then yyQ11(strm', lastMatch)
+                else if inp <= #"`"
+                  then if yyInput.eof(!(yystrm))
+                      then UserDeclarations.eof(yyarg)
+                      else yystuck(lastMatch)
+                  else yyQ12(strm', lastMatch)
+            else if inp = #"|"
+              then yyQ13(strm', lastMatch)
             else if yyInput.eof(!(yystrm))
               then UserDeclarations.eof(yyarg)
               else yystuck(lastMatch)

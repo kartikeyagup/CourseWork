@@ -7,6 +7,8 @@ signature PROGRAM =
 		and Data = Data_Var of string
 				| Data_Cons of string
 				| Data_Term of Term	
+				| Data_List of Data list
+
 end
 
 structure Program :> PROGRAM = 
@@ -18,4 +20,5 @@ structure Program :> PROGRAM =
 		and Data = Data_Var of string
 				| Data_Cons of string
 				| Data_Term of Term
+				| Data_List of Data list
 end;

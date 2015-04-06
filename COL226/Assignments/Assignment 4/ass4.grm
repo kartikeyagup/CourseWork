@@ -44,6 +44,7 @@ TERMLIST: TERM 						([TERM])
 
 TERM: QUERY	DOT						(Program.Term_Single QUERY)
 	| QUERY IF BODY DOT 			(Program.Term_Conditional (QUERY, BODY))
+	| QUERY 						(Program.Term_Single QUERY)
 
 BODY: QUERY 						([QUERY])
 	| QUERY COMMA BODY				([QUERY]@BODY)
@@ -55,3 +56,4 @@ STRINGLIST: DATA 					([DATA])
 
 DATA : IDEN 						(Program.Data_Cons IDEN)
 	| VAR 							(Program.Data_Var VAR)
+	| TERM 							(Program.Data_Term TERM)

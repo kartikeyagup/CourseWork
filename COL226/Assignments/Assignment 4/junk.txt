@@ -1,0 +1,6 @@
+edge (a,M).
+if (wff(([Program.Term_Single(query)]),l1)) then
+
+f(a,g(Y,Y)).
+edge(a,M).
+edge(f,g).

@@ -2,6 +2,9 @@ signature Calc_TOKENS =
 sig
 type ('a,'b) token
 type svalue
+val SEPARATOR:  'a * 'a -> (svalue,'a) token
+val RBOXPAREN:  'a * 'a -> (svalue,'a) token
+val LBOXPAREN:  'a * 'a -> (svalue,'a) token
 val SEMI:  'a * 'a -> (svalue,'a) token
 val EOF:  'a * 'a -> (svalue,'a) token
 val RPAREN:  'a * 'a -> (svalue,'a) token
