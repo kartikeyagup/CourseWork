@@ -1,0 +1,75 @@
+%%
+
+%eop EOF SEMI
+
+
+%pos int
+
+%term INT of int
+	| REAL of real
+	| BOOL of bool
+	| VAR of string
+	| IDEN of string
+	| GOESTO
+	| FN
+	| EQUAL
+	| ASSIGN
+	| NOTEQUAL
+	| LESSERTHAN
+	| GREATERTHAN
+	| IN
+	| LET 
+	| END 
+	| IF 
+	| ELSE
+	| THEN
+	| FI 
+	| LOCAL 
+	| COMMA 
+	| PLUS
+	| LPAREN 
+	| RPAREN 
+	| SUB 
+	| MUL 
+	| DIV
+	| DOT 
+	| AND 
+	| OR 
+	| EOF 
+	| SEMI
+
+
+%nonterm PROG of Absyn.program
+	| EXPR of Absyn.expr
+	| EXPRLIST of Absyn.expr list
+
+%name Calc
+
+%prefer PLUS MUL DIV SUB
+
+%start PROG
+
+%noshift EOF
+%verbose
+%%
+
+
+PROG: EXPRLIST						(Absyn.Program EXPRLIST)
+
+EXPRLIST: EXPR DOT						([EXPR])
+		| EXPR DOT EXPRLIST				([EXPR]@EXPRLIST)
+
+
+EXPR : INT           			(Absyn.Expr_int INT)
+	| REAL						(Absyn.Expr_real REAL)
+	| BOOL 	 	  				(Absyn.Expr_bool (BOOL))
+	| EXPR PLUS EXPR   			(Absyn.Expr_bin (Absyn.ADD, EXPR1, EXPR2))
+	| EXPR MUL EXPR   			(Absyn.Expr_bin (Absyn.MUL, EXPR1, EXPR2))
+	| EXPR DIV EXPR    			(Absyn.Expr_bin (Absyn.DIV, EXPR1, EXPR2))
+	| EXPR SUB EXPR    			(Absyn.Expr_bin (Absyn.SUB, EXPR1, EXPR2))
+	| EXPR AND EXPR				(Absyn.Expr_bin (Absyn.AND,EXPR1,EXPR2))
+	| EXPR OR EXPR				(Absyn.Expr_bin (Absyn.OR,EXPR1,EXPR2))
+	| EXPR EQUAL EXPR			(Absyn.Expr_bin (Absyn.EQUALTO,EXPR1,EXPR2))	
+	| EXPR NOTEQUAL EXPR		(Absyn.Expr_bin (Absyn.NOTEQUAL,EXPR1,EXPR2))				
+	| EXPR GREATERTHAN EXPR		(Absyn.Expr_bin (Absyn.GREATER,EXPR1,EXPR2))				
+	| EXPR LESSERTHAN EXPR		(Absyn.Expr_bin (Absyn.LESSER,EXPR1,EXPR2))
