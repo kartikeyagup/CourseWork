@@ -3,8 +3,11 @@ sig
 type ('a,'b) token
 type svalue
 val SEMI:  'a * 'a -> (svalue,'a) token
+val COLON:  'a * 'a -> (svalue,'a) token
 val EOF:  'a * 'a -> (svalue,'a) token
 val OR:  'a * 'a -> (svalue,'a) token
+val RCURL:  'a * 'a -> (svalue,'a) token
+val LCURL:  'a * 'a -> (svalue,'a) token
 val AND:  'a * 'a -> (svalue,'a) token
 val DOT:  'a * 'a -> (svalue,'a) token
 val DIV:  'a * 'a -> (svalue,'a) token

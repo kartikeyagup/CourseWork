@@ -1,115 +1,134 @@
-100 shift/reduce conflicts
+111 shift/reduce conflicts
+1 rule not reduced
 
-error:  state 17: shift/reduce conflict (shift OR, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift AND, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift DIV, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift MUL, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift SUB, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift PLUS, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift GREATERTHAN, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift LESSERTHAN, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift NOTEQUAL, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift EQUAL, reduce by rule 11)
-error:  state 18: shift/reduce conflict (shift OR, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift AND, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift DIV, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift MUL, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift SUB, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift PLUS, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift GREATERTHAN, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift LESSERTHAN, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift NOTEQUAL, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift EQUAL, reduce by rule 10)
-error:  state 20: shift/reduce conflict (shift OR, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift AND, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift DIV, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift MUL, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift SUB, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift PLUS, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift GREATERTHAN, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift LESSERTHAN, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift NOTEQUAL, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift EQUAL, reduce by rule 8)
-error:  state 21: shift/reduce conflict (shift OR, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift AND, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift DIV, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift MUL, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift SUB, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift PLUS, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift GREATERTHAN, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift LESSERTHAN, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift NOTEQUAL, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift EQUAL, reduce by rule 7)
-error:  state 22: shift/reduce conflict (shift OR, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift AND, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift DIV, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift MUL, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift SUB, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift PLUS, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift GREATERTHAN, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift LESSERTHAN, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift NOTEQUAL, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift EQUAL, reduce by rule 9)
-error:  state 23: shift/reduce conflict (shift OR, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift AND, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift DIV, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift MUL, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift SUB, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift PLUS, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift GREATERTHAN, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift LESSERTHAN, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift NOTEQUAL, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift EQUAL, reduce by rule 6)
-error:  state 24: shift/reduce conflict (shift OR, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift AND, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift DIV, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift MUL, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift SUB, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift PLUS, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift GREATERTHAN, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift LESSERTHAN, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift NOTEQUAL, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift EQUAL, reduce by rule 14)
-error:  state 25: shift/reduce conflict (shift OR, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift AND, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift DIV, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift MUL, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift SUB, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift PLUS, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift GREATERTHAN, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift LESSERTHAN, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift NOTEQUAL, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift EQUAL, reduce by rule 15)
-error:  state 26: shift/reduce conflict (shift OR, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift AND, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift DIV, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift MUL, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift SUB, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift PLUS, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift GREATERTHAN, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift LESSERTHAN, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift NOTEQUAL, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift EQUAL, reduce by rule 13)
-error:  state 27: shift/reduce conflict (shift OR, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift AND, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift DIV, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift MUL, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift SUB, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift PLUS, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift GREATERTHAN, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift LESSERTHAN, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift NOTEQUAL, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift EQUAL, reduce by rule 12)
+warning: rule <STRINGLIST : IDEN > will never be reduced
+error:  state 32: shift/reduce conflict (shift OR, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift AND, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift DIV, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift MUL, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift SUB, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift PLUS, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift GREATERTHAN, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift LESSERTHAN, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift NOTEQUAL, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift EQUAL, reduce by rule 12)
+error:  state 33: shift/reduce conflict (shift OR, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift AND, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift DIV, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift MUL, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift SUB, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift PLUS, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift GREATERTHAN, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift LESSERTHAN, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift NOTEQUAL, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift EQUAL, reduce by rule 11)
+error:  state 35: shift/reduce conflict (shift OR, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift AND, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift DIV, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift MUL, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift SUB, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift PLUS, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift GREATERTHAN, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift LESSERTHAN, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift NOTEQUAL, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift EQUAL, reduce by rule 9)
+error:  state 36: shift/reduce conflict (shift OR, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift AND, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift DIV, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift MUL, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift SUB, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift PLUS, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift GREATERTHAN, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift LESSERTHAN, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift NOTEQUAL, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift EQUAL, reduce by rule 8)
+error:  state 37: shift/reduce conflict (shift OR, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift AND, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift DIV, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift MUL, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift SUB, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift PLUS, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift GREATERTHAN, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift LESSERTHAN, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift NOTEQUAL, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift EQUAL, reduce by rule 10)
+error:  state 38: shift/reduce conflict (shift OR, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift AND, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift DIV, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift MUL, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift SUB, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift PLUS, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift GREATERTHAN, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift LESSERTHAN, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift NOTEQUAL, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift EQUAL, reduce by rule 7)
+error:  state 39: shift/reduce conflict (shift OR, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift AND, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift DIV, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift MUL, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift SUB, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift PLUS, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift GREATERTHAN, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift LESSERTHAN, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift NOTEQUAL, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift EQUAL, reduce by rule 15)
+error:  state 40: shift/reduce conflict (shift OR, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift AND, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift DIV, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift MUL, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift SUB, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift PLUS, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift GREATERTHAN, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift LESSERTHAN, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift NOTEQUAL, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift EQUAL, reduce by rule 16)
+error:  state 41: shift/reduce conflict (shift OR, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift AND, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift DIV, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift MUL, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift SUB, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift PLUS, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift GREATERTHAN, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift LESSERTHAN, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift NOTEQUAL, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift EQUAL, reduce by rule 14)
+error:  state 42: shift/reduce conflict (shift OR, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift AND, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift DIV, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift MUL, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift SUB, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift PLUS, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift GREATERTHAN, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift LESSERTHAN, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift NOTEQUAL, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift EQUAL, reduce by rule 13)
+error:  state 52: shift/reduce conflict (shift COMMA, reduce by rule 23)
+error:  state 53: shift/reduce conflict (shift OR, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift AND, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift DIV, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift MUL, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift SUB, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift PLUS, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift GREATERTHAN, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift LESSERTHAN, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift NOTEQUAL, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift EQUAL, reduce by rule 18)
 
 state 0:
 
 	PROG : . EXPRLIST 
 
-	INT	shift 5
-	REAL	shift 4
-	BOOL	shift 3
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
 
-	PROG	goto 28
+	PROG	goto 76
 	EXPR	goto 2
 	EXPRLIST	goto 1
 
@@ -140,17 +159,17 @@ state 2:
 	EXPRLIST : EXPR . DOT 
 	EXPRLIST : EXPR . DOT EXPRLIST 
 
-	EQUAL	shift 16
-	NOTEQUAL	shift 15
-	LESSERTHAN	shift 14
-	GREATERTHAN	shift 13
-	PLUS	shift 12
-	SUB	shift 11
-	MUL	shift 10
-	DIV	shift 9
-	DOT	shift 8
-	AND	shift 7
-	OR	shift 6
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	DOT	shift 14
+	AND	shift 13
+	OR	shift 12
 
 
 	.	error
@@ -158,23 +177,107 @@ state 2:
 
 state 3:
 
-	EXPR : BOOL .  (reduce by rule 5)
+	EXPR : LPAREN . EXPRLISTC RPAREN 
+
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
+
+	EXPR	goto 24
+	EXPRLISTC	goto 23
+
+	.	error
+
+
+state 4:
+
+	EXPR : LOCAL . DEFN IN DEFN END 
+
+	IDEN	shift 27
+	LCURL	shift 26
+
+	DEFN	goto 25
+
+	.	error
+
+
+state 5:
+
+	EXPR : IF . EXPR THEN EXPR ELSE EXPR FI 
+
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
+
+	EXPR	goto 28
+
+	.	error
+
+
+state 6:
+
+	EXPR : LET . DEFN IN EXPR END 
+
+	IDEN	shift 27
+	LCURL	shift 26
+
+	DEFN	goto 29
+
+	.	error
+
+
+state 7:
+
+	EXPR : FN . LPAREN STRINGLIST COMMA EXPR RPAREN 
+
+	LPAREN	shift 30
+
+
+	.	error
+
+
+state 8:
+
+	EXPR : IDEN .  (reduce by rule 4)
+	EXPR : IDEN . ASSIGN EXPR 
+
+	ASSIGN	shift 31
+
+
+	.	reduce by rule 4
+
+
+state 9:
+
+	EXPR : BOOL .  (reduce by rule 6)
+
+
+
+	.	reduce by rule 6
+
+
+state 10:
+
+	EXPR : REAL .  (reduce by rule 5)
 
 
 
 	.	reduce by rule 5
 
 
-state 4:
-
-	EXPR : REAL .  (reduce by rule 4)
-
-
-
-	.	reduce by rule 4
-
-
-state 5:
+state 11:
 
 	EXPR : INT .  (reduce by rule 3)
 
@@ -183,403 +286,226 @@ state 5:
 	.	reduce by rule 3
 
 
-state 6:
+state 12:
 
 	EXPR : EXPR OR . EXPR 
 
-	INT	shift 5
-	REAL	shift 4
-	BOOL	shift 3
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
 
-	EXPR	goto 17
-
-	.	error
-
-
-state 7:
-
-	EXPR : EXPR AND . EXPR 
-
-	INT	shift 5
-	REAL	shift 4
-	BOOL	shift 3
-
-	EXPR	goto 18
-
-	.	error
-
-
-state 8:
-
-	EXPRLIST : EXPR DOT .  (reduce by rule 1)
-	EXPRLIST : EXPR DOT . EXPRLIST 
-
-	INT	shift 5
-	REAL	shift 4
-	BOOL	shift 3
-
-	EXPR	goto 2
-	EXPRLIST	goto 19
-
-	.	reduce by rule 1
-
-
-state 9:
-
-	EXPR : EXPR DIV . EXPR 
-
-	INT	shift 5
-	REAL	shift 4
-	BOOL	shift 3
-
-	EXPR	goto 20
-
-	.	error
-
-
-state 10:
-
-	EXPR : EXPR MUL . EXPR 
-
-	INT	shift 5
-	REAL	shift 4
-	BOOL	shift 3
-
-	EXPR	goto 21
-
-	.	error
-
-
-state 11:
-
-	EXPR : EXPR SUB . EXPR 
-
-	INT	shift 5
-	REAL	shift 4
-	BOOL	shift 3
-
-	EXPR	goto 22
-
-	.	error
-
-
-state 12:
-
-	EXPR : EXPR PLUS . EXPR 
-
-	INT	shift 5
-	REAL	shift 4
-	BOOL	shift 3
-
-	EXPR	goto 23
+	EXPR	goto 32
 
 	.	error
 
 
 state 13:
 
-	EXPR : EXPR GREATERTHAN . EXPR 
+	EXPR : EXPR AND . EXPR 
 
-	INT	shift 5
-	REAL	shift 4
-	BOOL	shift 3
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
 
-	EXPR	goto 24
+	EXPR	goto 33
 
 	.	error
 
 
 state 14:
 
-	EXPR : EXPR LESSERTHAN . EXPR 
+	EXPRLIST : EXPR DOT .  (reduce by rule 1)
+	EXPRLIST : EXPR DOT . EXPRLIST 
 
-	INT	shift 5
-	REAL	shift 4
-	BOOL	shift 3
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
 
-	EXPR	goto 25
+	EXPR	goto 2
+	EXPRLIST	goto 34
 
-	.	error
+	.	reduce by rule 1
 
 
 state 15:
 
-	EXPR : EXPR NOTEQUAL . EXPR 
+	EXPR : EXPR DIV . EXPR 
 
-	INT	shift 5
-	REAL	shift 4
-	BOOL	shift 3
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
 
-	EXPR	goto 26
+	EXPR	goto 35
 
 	.	error
 
 
 state 16:
 
-	EXPR : EXPR EQUAL . EXPR 
+	EXPR : EXPR MUL . EXPR 
 
-	INT	shift 5
-	REAL	shift 4
-	BOOL	shift 3
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
 
-	EXPR	goto 27
+	EXPR	goto 36
 
 	.	error
 
-error:  state 17: shift/reduce conflict (shift OR, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift AND, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift DIV, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift MUL, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift SUB, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift PLUS, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift GREATERTHAN, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift LESSERTHAN, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift NOTEQUAL, reduce by rule 11)
-error:  state 17: shift/reduce conflict (shift EQUAL, reduce by rule 11)
 
 state 17:
 
-	EXPR : EXPR . PLUS EXPR 
-	EXPR : EXPR . MUL EXPR 
-	EXPR : EXPR . DIV EXPR 
-	EXPR : EXPR . SUB EXPR 
-	EXPR : EXPR . AND EXPR 
-	EXPR : EXPR . OR EXPR 
-	EXPR : EXPR OR EXPR .  (reduce by rule 11)
-	EXPR : EXPR . EQUAL EXPR 
-	EXPR : EXPR . NOTEQUAL EXPR 
-	EXPR : EXPR . GREATERTHAN EXPR 
-	EXPR : EXPR . LESSERTHAN EXPR 
+	EXPR : EXPR SUB . EXPR 
 
-	EQUAL	shift 16
-	NOTEQUAL	shift 15
-	LESSERTHAN	shift 14
-	GREATERTHAN	shift 13
-	PLUS	shift 12
-	SUB	shift 11
-	MUL	shift 10
-	DIV	shift 9
-	AND	shift 7
-	OR	shift 6
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
 
+	EXPR	goto 37
 
-	.	reduce by rule 11
+	.	error
 
-error:  state 18: shift/reduce conflict (shift OR, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift AND, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift DIV, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift MUL, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift SUB, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift PLUS, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift GREATERTHAN, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift LESSERTHAN, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift NOTEQUAL, reduce by rule 10)
-error:  state 18: shift/reduce conflict (shift EQUAL, reduce by rule 10)
 
 state 18:
 
-	EXPR : EXPR . PLUS EXPR 
-	EXPR : EXPR . MUL EXPR 
-	EXPR : EXPR . DIV EXPR 
-	EXPR : EXPR . SUB EXPR 
-	EXPR : EXPR . AND EXPR 
-	EXPR : EXPR AND EXPR .  (reduce by rule 10)
-	EXPR : EXPR . OR EXPR 
-	EXPR : EXPR . EQUAL EXPR 
-	EXPR : EXPR . NOTEQUAL EXPR 
-	EXPR : EXPR . GREATERTHAN EXPR 
-	EXPR : EXPR . LESSERTHAN EXPR 
+	EXPR : EXPR PLUS . EXPR 
 
-	EQUAL	shift 16
-	NOTEQUAL	shift 15
-	LESSERTHAN	shift 14
-	GREATERTHAN	shift 13
-	PLUS	shift 12
-	SUB	shift 11
-	MUL	shift 10
-	DIV	shift 9
-	AND	shift 7
-	OR	shift 6
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
 
+	EXPR	goto 38
 
-	.	reduce by rule 10
+	.	error
 
 
 state 19:
 
-	EXPRLIST : EXPR DOT EXPRLIST .  (reduce by rule 2)
+	EXPR : EXPR GREATERTHAN . EXPR 
 
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
 
+	EXPR	goto 39
 
-	.	reduce by rule 2
+	.	error
 
-error:  state 20: shift/reduce conflict (shift OR, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift AND, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift DIV, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift MUL, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift SUB, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift PLUS, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift GREATERTHAN, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift LESSERTHAN, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift NOTEQUAL, reduce by rule 8)
-error:  state 20: shift/reduce conflict (shift EQUAL, reduce by rule 8)
 
 state 20:
 
-	EXPR : EXPR . PLUS EXPR 
-	EXPR : EXPR . MUL EXPR 
-	EXPR : EXPR . DIV EXPR 
-	EXPR : EXPR DIV EXPR .  (reduce by rule 8)
-	EXPR : EXPR . SUB EXPR 
-	EXPR : EXPR . AND EXPR 
-	EXPR : EXPR . OR EXPR 
-	EXPR : EXPR . EQUAL EXPR 
-	EXPR : EXPR . NOTEQUAL EXPR 
-	EXPR : EXPR . GREATERTHAN EXPR 
-	EXPR : EXPR . LESSERTHAN EXPR 
+	EXPR : EXPR LESSERTHAN . EXPR 
 
-	EQUAL	shift 16
-	NOTEQUAL	shift 15
-	LESSERTHAN	shift 14
-	GREATERTHAN	shift 13
-	PLUS	shift 12
-	SUB	shift 11
-	MUL	shift 10
-	DIV	shift 9
-	AND	shift 7
-	OR	shift 6
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
 
+	EXPR	goto 40
 
-	.	reduce by rule 8
+	.	error
 
-error:  state 21: shift/reduce conflict (shift OR, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift AND, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift DIV, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift MUL, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift SUB, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift PLUS, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift GREATERTHAN, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift LESSERTHAN, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift NOTEQUAL, reduce by rule 7)
-error:  state 21: shift/reduce conflict (shift EQUAL, reduce by rule 7)
 
 state 21:
 
-	EXPR : EXPR . PLUS EXPR 
-	EXPR : EXPR . MUL EXPR 
-	EXPR : EXPR MUL EXPR .  (reduce by rule 7)
-	EXPR : EXPR . DIV EXPR 
-	EXPR : EXPR . SUB EXPR 
-	EXPR : EXPR . AND EXPR 
-	EXPR : EXPR . OR EXPR 
-	EXPR : EXPR . EQUAL EXPR 
-	EXPR : EXPR . NOTEQUAL EXPR 
-	EXPR : EXPR . GREATERTHAN EXPR 
-	EXPR : EXPR . LESSERTHAN EXPR 
+	EXPR : EXPR NOTEQUAL . EXPR 
 
-	EQUAL	shift 16
-	NOTEQUAL	shift 15
-	LESSERTHAN	shift 14
-	GREATERTHAN	shift 13
-	PLUS	shift 12
-	SUB	shift 11
-	MUL	shift 10
-	DIV	shift 9
-	AND	shift 7
-	OR	shift 6
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
 
+	EXPR	goto 41
 
-	.	reduce by rule 7
+	.	error
 
-error:  state 22: shift/reduce conflict (shift OR, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift AND, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift DIV, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift MUL, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift SUB, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift PLUS, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift GREATERTHAN, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift LESSERTHAN, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift NOTEQUAL, reduce by rule 9)
-error:  state 22: shift/reduce conflict (shift EQUAL, reduce by rule 9)
 
 state 22:
 
-	EXPR : EXPR . PLUS EXPR 
-	EXPR : EXPR . MUL EXPR 
-	EXPR : EXPR . DIV EXPR 
-	EXPR : EXPR . SUB EXPR 
-	EXPR : EXPR SUB EXPR .  (reduce by rule 9)
-	EXPR : EXPR . AND EXPR 
-	EXPR : EXPR . OR EXPR 
-	EXPR : EXPR . EQUAL EXPR 
-	EXPR : EXPR . NOTEQUAL EXPR 
-	EXPR : EXPR . GREATERTHAN EXPR 
-	EXPR : EXPR . LESSERTHAN EXPR 
+	EXPR : EXPR EQUAL . EXPR 
 
-	EQUAL	shift 16
-	NOTEQUAL	shift 15
-	LESSERTHAN	shift 14
-	GREATERTHAN	shift 13
-	PLUS	shift 12
-	SUB	shift 11
-	MUL	shift 10
-	DIV	shift 9
-	AND	shift 7
-	OR	shift 6
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
 
+	EXPR	goto 42
 
-	.	reduce by rule 9
+	.	error
 
-error:  state 23: shift/reduce conflict (shift OR, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift AND, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift DIV, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift MUL, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift SUB, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift PLUS, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift GREATERTHAN, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift LESSERTHAN, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift NOTEQUAL, reduce by rule 6)
-error:  state 23: shift/reduce conflict (shift EQUAL, reduce by rule 6)
 
 state 23:
 
-	EXPR : EXPR . PLUS EXPR 
-	EXPR : EXPR PLUS EXPR .  (reduce by rule 6)
-	EXPR : EXPR . MUL EXPR 
-	EXPR : EXPR . DIV EXPR 
-	EXPR : EXPR . SUB EXPR 
-	EXPR : EXPR . AND EXPR 
-	EXPR : EXPR . OR EXPR 
-	EXPR : EXPR . EQUAL EXPR 
-	EXPR : EXPR . NOTEQUAL EXPR 
-	EXPR : EXPR . GREATERTHAN EXPR 
-	EXPR : EXPR . LESSERTHAN EXPR 
+	EXPR : LPAREN EXPRLISTC . RPAREN 
 
-	EQUAL	shift 16
-	NOTEQUAL	shift 15
-	LESSERTHAN	shift 14
-	GREATERTHAN	shift 13
-	PLUS	shift 12
-	SUB	shift 11
-	MUL	shift 10
-	DIV	shift 9
-	AND	shift 7
-	OR	shift 6
+	RPAREN	shift 43
 
 
-	.	reduce by rule 6
+	.	error
 
-error:  state 24: shift/reduce conflict (shift OR, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift AND, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift DIV, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift MUL, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift SUB, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift PLUS, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift GREATERTHAN, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift LESSERTHAN, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift NOTEQUAL, reduce by rule 14)
-error:  state 24: shift/reduce conflict (shift EQUAL, reduce by rule 14)
 
 state 24:
 
@@ -592,114 +518,62 @@ state 24:
 	EXPR : EXPR . EQUAL EXPR 
 	EXPR : EXPR . NOTEQUAL EXPR 
 	EXPR : EXPR . GREATERTHAN EXPR 
-	EXPR : EXPR GREATERTHAN EXPR .  (reduce by rule 14)
 	EXPR : EXPR . LESSERTHAN EXPR 
+	EXPRLISTC : EXPR .  (reduce by rule 25)
+	EXPRLISTC : EXPR . COMMA EXPRLISTC 
 
-	EQUAL	shift 16
-	NOTEQUAL	shift 15
-	LESSERTHAN	shift 14
-	GREATERTHAN	shift 13
-	PLUS	shift 12
-	SUB	shift 11
-	MUL	shift 10
-	DIV	shift 9
-	AND	shift 7
-	OR	shift 6
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	COMMA	shift 44
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
 
 
-	.	reduce by rule 14
+	.	reduce by rule 25
 
-error:  state 25: shift/reduce conflict (shift OR, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift AND, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift DIV, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift MUL, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift SUB, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift PLUS, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift GREATERTHAN, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift LESSERTHAN, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift NOTEQUAL, reduce by rule 15)
-error:  state 25: shift/reduce conflict (shift EQUAL, reduce by rule 15)
 
 state 25:
 
-	EXPR : EXPR . PLUS EXPR 
-	EXPR : EXPR . MUL EXPR 
-	EXPR : EXPR . DIV EXPR 
-	EXPR : EXPR . SUB EXPR 
-	EXPR : EXPR . AND EXPR 
-	EXPR : EXPR . OR EXPR 
-	EXPR : EXPR . EQUAL EXPR 
-	EXPR : EXPR . NOTEQUAL EXPR 
-	EXPR : EXPR . GREATERTHAN EXPR 
-	EXPR : EXPR . LESSERTHAN EXPR 
-	EXPR : EXPR LESSERTHAN EXPR .  (reduce by rule 15)
+	EXPR : LOCAL DEFN . IN DEFN END 
 
-	EQUAL	shift 16
-	NOTEQUAL	shift 15
-	LESSERTHAN	shift 14
-	GREATERTHAN	shift 13
-	PLUS	shift 12
-	SUB	shift 11
-	MUL	shift 10
-	DIV	shift 9
-	AND	shift 7
-	OR	shift 6
+	IN	shift 45
 
 
-	.	reduce by rule 15
+	.	error
 
-error:  state 26: shift/reduce conflict (shift OR, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift AND, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift DIV, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift MUL, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift SUB, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift PLUS, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift GREATERTHAN, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift LESSERTHAN, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift NOTEQUAL, reduce by rule 13)
-error:  state 26: shift/reduce conflict (shift EQUAL, reduce by rule 13)
 
 state 26:
 
-	EXPR : EXPR . PLUS EXPR 
-	EXPR : EXPR . MUL EXPR 
-	EXPR : EXPR . DIV EXPR 
-	EXPR : EXPR . SUB EXPR 
-	EXPR : EXPR . AND EXPR 
-	EXPR : EXPR . OR EXPR 
-	EXPR : EXPR . EQUAL EXPR 
-	EXPR : EXPR . NOTEQUAL EXPR 
-	EXPR : EXPR NOTEQUAL EXPR .  (reduce by rule 13)
-	EXPR : EXPR . GREATERTHAN EXPR 
-	EXPR : EXPR . LESSERTHAN EXPR 
+	DEFN : LCURL . DEFNLIST RCURL 
+	DEFN : LCURL . DEFN COMMA DEFN RCURL 
 
-	EQUAL	shift 16
-	NOTEQUAL	shift 15
-	LESSERTHAN	shift 14
-	GREATERTHAN	shift 13
-	PLUS	shift 12
-	SUB	shift 11
-	MUL	shift 10
-	DIV	shift 9
-	AND	shift 7
-	OR	shift 6
+	IDEN	shift 27
+	LCURL	shift 26
 
+	DEFN	goto 47
+	DEFNLIST	goto 46
 
-	.	reduce by rule 13
+	.	error
 
-error:  state 27: shift/reduce conflict (shift OR, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift AND, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift DIV, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift MUL, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift SUB, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift PLUS, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift GREATERTHAN, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift LESSERTHAN, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift NOTEQUAL, reduce by rule 12)
-error:  state 27: shift/reduce conflict (shift EQUAL, reduce by rule 12)
 
 state 27:
 
+	DEFN : IDEN . ASSIGN EXPR 
+
+	ASSIGN	shift 48
+
+
+	.	error
+
+
+state 28:
+
 	EXPR : EXPR . PLUS EXPR 
 	EXPR : EXPR . MUL EXPR 
 	EXPR : EXPR . DIV EXPR 
@@ -707,27 +581,984 @@ state 27:
 	EXPR : EXPR . AND EXPR 
 	EXPR : EXPR . OR EXPR 
 	EXPR : EXPR . EQUAL EXPR 
-	EXPR : EXPR EQUAL EXPR .  (reduce by rule 12)
+	EXPR : EXPR . NOTEQUAL EXPR 
+	EXPR : EXPR . GREATERTHAN EXPR 
+	EXPR : EXPR . LESSERTHAN EXPR 
+	EXPR : IF EXPR . THEN EXPR ELSE EXPR FI 
+
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	THEN	shift 49
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
+
+
+	.	error
+
+
+state 29:
+
+	EXPR : LET DEFN . IN EXPR END 
+
+	IN	shift 50
+
+
+	.	error
+
+
+state 30:
+
+	EXPR : FN LPAREN . STRINGLIST COMMA EXPR RPAREN 
+
+	IDEN	shift 52
+
+	STRINGLIST	goto 51
+
+	.	error
+
+
+state 31:
+
+	EXPR : IDEN ASSIGN . EXPR 
+
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
+
+	EXPR	goto 53
+
+	.	error
+
+error:  state 32: shift/reduce conflict (shift OR, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift AND, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift DIV, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift MUL, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift SUB, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift PLUS, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift GREATERTHAN, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift LESSERTHAN, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift NOTEQUAL, reduce by rule 12)
+error:  state 32: shift/reduce conflict (shift EQUAL, reduce by rule 12)
+
+state 32:
+
+	EXPR : EXPR . PLUS EXPR 
+	EXPR : EXPR . MUL EXPR 
+	EXPR : EXPR . DIV EXPR 
+	EXPR : EXPR . SUB EXPR 
+	EXPR : EXPR . AND EXPR 
+	EXPR : EXPR . OR EXPR 
+	EXPR : EXPR OR EXPR .  (reduce by rule 12)
+	EXPR : EXPR . EQUAL EXPR 
 	EXPR : EXPR . NOTEQUAL EXPR 
 	EXPR : EXPR . GREATERTHAN EXPR 
 	EXPR : EXPR . LESSERTHAN EXPR 
 
-	EQUAL	shift 16
-	NOTEQUAL	shift 15
-	LESSERTHAN	shift 14
-	GREATERTHAN	shift 13
-	PLUS	shift 12
-	SUB	shift 11
-	MUL	shift 10
-	DIV	shift 9
-	AND	shift 7
-	OR	shift 6
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
 
 
 	.	reduce by rule 12
 
+error:  state 33: shift/reduce conflict (shift OR, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift AND, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift DIV, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift MUL, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift SUB, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift PLUS, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift GREATERTHAN, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift LESSERTHAN, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift NOTEQUAL, reduce by rule 11)
+error:  state 33: shift/reduce conflict (shift EQUAL, reduce by rule 11)
 
-state 28:
+state 33:
+
+	EXPR : EXPR . PLUS EXPR 
+	EXPR : EXPR . MUL EXPR 
+	EXPR : EXPR . DIV EXPR 
+	EXPR : EXPR . SUB EXPR 
+	EXPR : EXPR . AND EXPR 
+	EXPR : EXPR AND EXPR .  (reduce by rule 11)
+	EXPR : EXPR . OR EXPR 
+	EXPR : EXPR . EQUAL EXPR 
+	EXPR : EXPR . NOTEQUAL EXPR 
+	EXPR : EXPR . GREATERTHAN EXPR 
+	EXPR : EXPR . LESSERTHAN EXPR 
+
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
+
+
+	.	reduce by rule 11
+
+
+state 34:
+
+	EXPRLIST : EXPR DOT EXPRLIST .  (reduce by rule 2)
+
+
+
+	.	reduce by rule 2
+
+error:  state 35: shift/reduce conflict (shift OR, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift AND, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift DIV, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift MUL, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift SUB, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift PLUS, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift GREATERTHAN, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift LESSERTHAN, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift NOTEQUAL, reduce by rule 9)
+error:  state 35: shift/reduce conflict (shift EQUAL, reduce by rule 9)
+
+state 35:
+
+	EXPR : EXPR . PLUS EXPR 
+	EXPR : EXPR . MUL EXPR 
+	EXPR : EXPR . DIV EXPR 
+	EXPR : EXPR DIV EXPR .  (reduce by rule 9)
+	EXPR : EXPR . SUB EXPR 
+	EXPR : EXPR . AND EXPR 
+	EXPR : EXPR . OR EXPR 
+	EXPR : EXPR . EQUAL EXPR 
+	EXPR : EXPR . NOTEQUAL EXPR 
+	EXPR : EXPR . GREATERTHAN EXPR 
+	EXPR : EXPR . LESSERTHAN EXPR 
+
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
+
+
+	.	reduce by rule 9
+
+error:  state 36: shift/reduce conflict (shift OR, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift AND, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift DIV, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift MUL, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift SUB, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift PLUS, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift GREATERTHAN, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift LESSERTHAN, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift NOTEQUAL, reduce by rule 8)
+error:  state 36: shift/reduce conflict (shift EQUAL, reduce by rule 8)
+
+state 36:
+
+	EXPR : EXPR . PLUS EXPR 
+	EXPR : EXPR . MUL EXPR 
+	EXPR : EXPR MUL EXPR .  (reduce by rule 8)
+	EXPR : EXPR . DIV EXPR 
+	EXPR : EXPR . SUB EXPR 
+	EXPR : EXPR . AND EXPR 
+	EXPR : EXPR . OR EXPR 
+	EXPR : EXPR . EQUAL EXPR 
+	EXPR : EXPR . NOTEQUAL EXPR 
+	EXPR : EXPR . GREATERTHAN EXPR 
+	EXPR : EXPR . LESSERTHAN EXPR 
+
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
+
+
+	.	reduce by rule 8
+
+error:  state 37: shift/reduce conflict (shift OR, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift AND, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift DIV, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift MUL, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift SUB, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift PLUS, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift GREATERTHAN, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift LESSERTHAN, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift NOTEQUAL, reduce by rule 10)
+error:  state 37: shift/reduce conflict (shift EQUAL, reduce by rule 10)
+
+state 37:
+
+	EXPR : EXPR . PLUS EXPR 
+	EXPR : EXPR . MUL EXPR 
+	EXPR : EXPR . DIV EXPR 
+	EXPR : EXPR . SUB EXPR 
+	EXPR : EXPR SUB EXPR .  (reduce by rule 10)
+	EXPR : EXPR . AND EXPR 
+	EXPR : EXPR . OR EXPR 
+	EXPR : EXPR . EQUAL EXPR 
+	EXPR : EXPR . NOTEQUAL EXPR 
+	EXPR : EXPR . GREATERTHAN EXPR 
+	EXPR : EXPR . LESSERTHAN EXPR 
+
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
+
+
+	.	reduce by rule 10
+
+error:  state 38: shift/reduce conflict (shift OR, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift AND, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift DIV, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift MUL, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift SUB, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift PLUS, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift GREATERTHAN, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift LESSERTHAN, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift NOTEQUAL, reduce by rule 7)
+error:  state 38: shift/reduce conflict (shift EQUAL, reduce by rule 7)
+
+state 38:
+
+	EXPR : EXPR . PLUS EXPR 
+	EXPR : EXPR PLUS EXPR .  (reduce by rule 7)
+	EXPR : EXPR . MUL EXPR 
+	EXPR : EXPR . DIV EXPR 
+	EXPR : EXPR . SUB EXPR 
+	EXPR : EXPR . AND EXPR 
+	EXPR : EXPR . OR EXPR 
+	EXPR : EXPR . EQUAL EXPR 
+	EXPR : EXPR . NOTEQUAL EXPR 
+	EXPR : EXPR . GREATERTHAN EXPR 
+	EXPR : EXPR . LESSERTHAN EXPR 
+
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
+
+
+	.	reduce by rule 7
+
+error:  state 39: shift/reduce conflict (shift OR, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift AND, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift DIV, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift MUL, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift SUB, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift PLUS, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift GREATERTHAN, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift LESSERTHAN, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift NOTEQUAL, reduce by rule 15)
+error:  state 39: shift/reduce conflict (shift EQUAL, reduce by rule 15)
+
+state 39:
+
+	EXPR : EXPR . PLUS EXPR 
+	EXPR : EXPR . MUL EXPR 
+	EXPR : EXPR . DIV EXPR 
+	EXPR : EXPR . SUB EXPR 
+	EXPR : EXPR . AND EXPR 
+	EXPR : EXPR . OR EXPR 
+	EXPR : EXPR . EQUAL EXPR 
+	EXPR : EXPR . NOTEQUAL EXPR 
+	EXPR : EXPR . GREATERTHAN EXPR 
+	EXPR : EXPR GREATERTHAN EXPR .  (reduce by rule 15)
+	EXPR : EXPR . LESSERTHAN EXPR 
+
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
+
+
+	.	reduce by rule 15
+
+error:  state 40: shift/reduce conflict (shift OR, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift AND, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift DIV, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift MUL, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift SUB, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift PLUS, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift GREATERTHAN, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift LESSERTHAN, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift NOTEQUAL, reduce by rule 16)
+error:  state 40: shift/reduce conflict (shift EQUAL, reduce by rule 16)
+
+state 40:
+
+	EXPR : EXPR . PLUS EXPR 
+	EXPR : EXPR . MUL EXPR 
+	EXPR : EXPR . DIV EXPR 
+	EXPR : EXPR . SUB EXPR 
+	EXPR : EXPR . AND EXPR 
+	EXPR : EXPR . OR EXPR 
+	EXPR : EXPR . EQUAL EXPR 
+	EXPR : EXPR . NOTEQUAL EXPR 
+	EXPR : EXPR . GREATERTHAN EXPR 
+	EXPR : EXPR . LESSERTHAN EXPR 
+	EXPR : EXPR LESSERTHAN EXPR .  (reduce by rule 16)
+
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
+
+
+	.	reduce by rule 16
+
+error:  state 41: shift/reduce conflict (shift OR, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift AND, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift DIV, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift MUL, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift SUB, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift PLUS, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift GREATERTHAN, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift LESSERTHAN, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift NOTEQUAL, reduce by rule 14)
+error:  state 41: shift/reduce conflict (shift EQUAL, reduce by rule 14)
+
+state 41:
+
+	EXPR : EXPR . PLUS EXPR 
+	EXPR : EXPR . MUL EXPR 
+	EXPR : EXPR . DIV EXPR 
+	EXPR : EXPR . SUB EXPR 
+	EXPR : EXPR . AND EXPR 
+	EXPR : EXPR . OR EXPR 
+	EXPR : EXPR . EQUAL EXPR 
+	EXPR : EXPR . NOTEQUAL EXPR 
+	EXPR : EXPR NOTEQUAL EXPR .  (reduce by rule 14)
+	EXPR : EXPR . GREATERTHAN EXPR 
+	EXPR : EXPR . LESSERTHAN EXPR 
+
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
+
+
+	.	reduce by rule 14
+
+error:  state 42: shift/reduce conflict (shift OR, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift AND, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift DIV, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift MUL, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift SUB, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift PLUS, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift GREATERTHAN, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift LESSERTHAN, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift NOTEQUAL, reduce by rule 13)
+error:  state 42: shift/reduce conflict (shift EQUAL, reduce by rule 13)
+
+state 42:
+
+	EXPR : EXPR . PLUS EXPR 
+	EXPR : EXPR . MUL EXPR 
+	EXPR : EXPR . DIV EXPR 
+	EXPR : EXPR . SUB EXPR 
+	EXPR : EXPR . AND EXPR 
+	EXPR : EXPR . OR EXPR 
+	EXPR : EXPR . EQUAL EXPR 
+	EXPR : EXPR EQUAL EXPR .  (reduce by rule 13)
+	EXPR : EXPR . NOTEQUAL EXPR 
+	EXPR : EXPR . GREATERTHAN EXPR 
+	EXPR : EXPR . LESSERTHAN EXPR 
+
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
+
+
+	.	reduce by rule 13
+
+
+state 43:
+
+	EXPR : LPAREN EXPRLISTC RPAREN .  (reduce by rule 20)
+
+
+
+	.	reduce by rule 20
+
+
+state 44:
+
+	EXPRLISTC : EXPR COMMA . EXPRLISTC 
+
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
+
+	EXPR	goto 24
+	EXPRLISTC	goto 54
+
+	.	error
+
+
+state 45:
+
+	EXPR : LOCAL DEFN IN . DEFN END 
+
+	IDEN	shift 27
+	LCURL	shift 26
+
+	DEFN	goto 55
+
+	.	error
+
+
+state 46:
+
+	DEFN : LCURL DEFNLIST . RCURL 
+
+	RCURL	shift 56
+
+
+	.	error
+
+
+state 47:
+
+	DEFN : LCURL DEFN . COMMA DEFN RCURL 
+	DEFNLIST : DEFN .  (reduce by rule 30)
+	DEFNLIST : DEFN . COLON DEFNLIST 
+
+	COMMA	shift 58
+	COLON	shift 57
+
+
+	.	reduce by rule 30
+
+
+state 48:
+
+	DEFN : IDEN ASSIGN . EXPR 
+
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
+
+	EXPR	goto 59
+
+	.	error
+
+
+state 49:
+
+	EXPR : IF EXPR THEN . EXPR ELSE EXPR FI 
+
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
+
+	EXPR	goto 60
+
+	.	error
+
+
+state 50:
+
+	EXPR : LET DEFN IN . EXPR END 
+
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
+
+	EXPR	goto 61
+
+	.	error
+
+
+state 51:
+
+	EXPR : FN LPAREN STRINGLIST . COMMA EXPR RPAREN 
+
+	COMMA	shift 62
+
+
+	.	error
+
+error:  state 52: shift/reduce conflict (shift COMMA, reduce by rule 23)
+
+state 52:
+
+	STRINGLIST : IDEN .  (reduce by rule 23)
+	STRINGLIST : IDEN . COMMA STRINGLIST 
+
+	COMMA	shift 63
+
+
+	.	error
+
+error:  state 53: shift/reduce conflict (shift OR, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift AND, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift DIV, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift MUL, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift SUB, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift PLUS, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift GREATERTHAN, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift LESSERTHAN, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift NOTEQUAL, reduce by rule 18)
+error:  state 53: shift/reduce conflict (shift EQUAL, reduce by rule 18)
+
+state 53:
+
+	EXPR : EXPR . PLUS EXPR 
+	EXPR : EXPR . MUL EXPR 
+	EXPR : EXPR . DIV EXPR 
+	EXPR : EXPR . SUB EXPR 
+	EXPR : EXPR . AND EXPR 
+	EXPR : EXPR . OR EXPR 
+	EXPR : EXPR . EQUAL EXPR 
+	EXPR : EXPR . NOTEQUAL EXPR 
+	EXPR : EXPR . GREATERTHAN EXPR 
+	EXPR : EXPR . LESSERTHAN EXPR 
+	EXPR : IDEN ASSIGN EXPR .  (reduce by rule 18)
+
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
+
+
+	.	reduce by rule 18
+
+
+state 54:
+
+	EXPRLISTC : EXPR COMMA EXPRLISTC .  (reduce by rule 26)
+
+
+
+	.	reduce by rule 26
+
+
+state 55:
+
+	EXPR : LOCAL DEFN IN DEFN . END 
+
+	END	shift 64
+
+
+	.	error
+
+
+state 56:
+
+	DEFN : LCURL DEFNLIST RCURL .  (reduce by rule 28)
+
+
+
+	.	reduce by rule 28
+
+
+state 57:
+
+	DEFNLIST : DEFN COLON . DEFNLIST 
+
+	IDEN	shift 27
+	LCURL	shift 26
+
+	DEFN	goto 66
+	DEFNLIST	goto 65
+
+	.	error
+
+
+state 58:
+
+	DEFN : LCURL DEFN COMMA . DEFN RCURL 
+
+	IDEN	shift 27
+	LCURL	shift 26
+
+	DEFN	goto 67
+
+	.	error
+
+
+state 59:
+
+	EXPR : EXPR . PLUS EXPR 
+	EXPR : EXPR . MUL EXPR 
+	EXPR : EXPR . DIV EXPR 
+	EXPR : EXPR . SUB EXPR 
+	EXPR : EXPR . AND EXPR 
+	EXPR : EXPR . OR EXPR 
+	EXPR : EXPR . EQUAL EXPR 
+	EXPR : EXPR . NOTEQUAL EXPR 
+	EXPR : EXPR . GREATERTHAN EXPR 
+	EXPR : EXPR . LESSERTHAN EXPR 
+	DEFN : IDEN ASSIGN EXPR .  (reduce by rule 27)
+
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
+
+
+	.	reduce by rule 27
+
+
+state 60:
+
+	EXPR : EXPR . PLUS EXPR 
+	EXPR : EXPR . MUL EXPR 
+	EXPR : EXPR . DIV EXPR 
+	EXPR : EXPR . SUB EXPR 
+	EXPR : EXPR . AND EXPR 
+	EXPR : EXPR . OR EXPR 
+	EXPR : EXPR . EQUAL EXPR 
+	EXPR : EXPR . NOTEQUAL EXPR 
+	EXPR : EXPR . GREATERTHAN EXPR 
+	EXPR : EXPR . LESSERTHAN EXPR 
+	EXPR : IF EXPR THEN EXPR . ELSE EXPR FI 
+
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	ELSE	shift 68
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
+
+
+	.	error
+
+
+state 61:
+
+	EXPR : EXPR . PLUS EXPR 
+	EXPR : EXPR . MUL EXPR 
+	EXPR : EXPR . DIV EXPR 
+	EXPR : EXPR . SUB EXPR 
+	EXPR : EXPR . AND EXPR 
+	EXPR : EXPR . OR EXPR 
+	EXPR : EXPR . EQUAL EXPR 
+	EXPR : EXPR . NOTEQUAL EXPR 
+	EXPR : EXPR . GREATERTHAN EXPR 
+	EXPR : EXPR . LESSERTHAN EXPR 
+	EXPR : LET DEFN IN EXPR . END 
+
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	END	shift 69
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
+
+
+	.	error
+
+
+state 62:
+
+	EXPR : FN LPAREN STRINGLIST COMMA . EXPR RPAREN 
+
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
+
+	EXPR	goto 70
+
+	.	error
+
+
+state 63:
+
+	STRINGLIST : IDEN COMMA . STRINGLIST 
+
+	IDEN	shift 52
+
+	STRINGLIST	goto 71
+
+	.	error
+
+
+state 64:
+
+	EXPR : LOCAL DEFN IN DEFN END .  (reduce by rule 21)
+
+
+
+	.	reduce by rule 21
+
+
+state 65:
+
+	DEFNLIST : DEFN COLON DEFNLIST .  (reduce by rule 31)
+
+
+
+	.	reduce by rule 31
+
+
+state 66:
+
+	DEFNLIST : DEFN .  (reduce by rule 30)
+	DEFNLIST : DEFN . COLON DEFNLIST 
+
+	COLON	shift 57
+
+
+	.	reduce by rule 30
+
+
+state 67:
+
+	DEFN : LCURL DEFN COMMA DEFN . RCURL 
+
+	RCURL	shift 72
+
+
+	.	error
+
+
+state 68:
+
+	EXPR : IF EXPR THEN EXPR ELSE . EXPR FI 
+
+	INT	shift 11
+	REAL	shift 10
+	BOOL	shift 9
+	IDEN	shift 8
+	FN	shift 7
+	LET	shift 6
+	IF	shift 5
+	LOCAL	shift 4
+	LPAREN	shift 3
+
+	EXPR	goto 73
+
+	.	error
+
+
+state 69:
+
+	EXPR : LET DEFN IN EXPR END .  (reduce by rule 22)
+
+
+
+	.	reduce by rule 22
+
+
+state 70:
+
+	EXPR : EXPR . PLUS EXPR 
+	EXPR : EXPR . MUL EXPR 
+	EXPR : EXPR . DIV EXPR 
+	EXPR : EXPR . SUB EXPR 
+	EXPR : EXPR . AND EXPR 
+	EXPR : EXPR . OR EXPR 
+	EXPR : EXPR . EQUAL EXPR 
+	EXPR : EXPR . NOTEQUAL EXPR 
+	EXPR : EXPR . GREATERTHAN EXPR 
+	EXPR : EXPR . LESSERTHAN EXPR 
+	EXPR : FN LPAREN STRINGLIST COMMA EXPR . RPAREN 
+
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	PLUS	shift 18
+	RPAREN	shift 74
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
+
+
+	.	error
+
+
+state 71:
+
+	STRINGLIST : IDEN COMMA STRINGLIST .  (reduce by rule 24)
+
+
+
+	.	reduce by rule 24
+
+
+state 72:
+
+	DEFN : LCURL DEFN COMMA DEFN RCURL .  (reduce by rule 29)
+
+
+
+	.	reduce by rule 29
+
+
+state 73:
+
+	EXPR : EXPR . PLUS EXPR 
+	EXPR : EXPR . MUL EXPR 
+	EXPR : EXPR . DIV EXPR 
+	EXPR : EXPR . SUB EXPR 
+	EXPR : EXPR . AND EXPR 
+	EXPR : EXPR . OR EXPR 
+	EXPR : EXPR . EQUAL EXPR 
+	EXPR : EXPR . NOTEQUAL EXPR 
+	EXPR : EXPR . GREATERTHAN EXPR 
+	EXPR : EXPR . LESSERTHAN EXPR 
+	EXPR : IF EXPR THEN EXPR ELSE EXPR . FI 
+
+	EQUAL	shift 22
+	NOTEQUAL	shift 21
+	LESSERTHAN	shift 20
+	GREATERTHAN	shift 19
+	FI	shift 75
+	PLUS	shift 18
+	SUB	shift 17
+	MUL	shift 16
+	DIV	shift 15
+	AND	shift 13
+	OR	shift 12
+
+
+	.	error
+
+
+state 74:
+
+	EXPR : FN LPAREN STRINGLIST COMMA EXPR RPAREN .  (reduce by rule 19)
+
+
+
+	.	reduce by rule 19
+
+
+state 75:
+
+	EXPR : IF EXPR THEN EXPR ELSE EXPR FI .  (reduce by rule 17)
+
+
+
+	.	reduce by rule 17
+
+
+state 76:
 
 
 	EOF	accept
@@ -736,5 +1567,5 @@ state 28:
 
 	.	error
 
-119 of 178 action table entries left after compaction
-15 goto table entries
+234 of 493 action table entries left after compaction
+36 goto table entries

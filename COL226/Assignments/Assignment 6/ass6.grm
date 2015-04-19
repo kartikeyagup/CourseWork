@@ -34,14 +34,21 @@
 	| DIV
 	| DOT 
 	| AND 
+	| LCURL
+	| RCURL
 	| OR 
 	| EOF 
+	| COLON
 	| SEMI
 
 
 %nonterm PROG of Absyn.program
 	| EXPR of Absyn.expr
 	| EXPRLIST of Absyn.expr list
+	| EXPRLISTC of Absyn.expr list
+	| STRINGLIST of string list
+	| DEFN of Absyn.expr
+	| DEFNLIST of Absyn.expr list
 
 %name Calc
 
@@ -61,6 +68,7 @@ EXPRLIST: EXPR DOT						([EXPR])
 
 
 EXPR : INT           			(Absyn.Expr_int INT)
+	| IDEN 						(Absyn.Expr_string IDEN)
 	| REAL						(Absyn.Expr_real REAL)
 	| BOOL 	 	  				(Absyn.Expr_bool (BOOL))
 	| EXPR PLUS EXPR   			(Absyn.Expr_bin (Absyn.ADD, EXPR1, EXPR2))
@@ -73,3 +81,25 @@ EXPR : INT           			(Absyn.Expr_int INT)
 	| EXPR NOTEQUAL EXPR		(Absyn.Expr_bin (Absyn.NOTEQUAL,EXPR1,EXPR2))				
 	| EXPR GREATERTHAN EXPR		(Absyn.Expr_bin (Absyn.GREATER,EXPR1,EXPR2))				
 	| EXPR LESSERTHAN EXPR		(Absyn.Expr_bin (Absyn.LESSER,EXPR1,EXPR2))
+	| IF EXPR THEN EXPR ELSE EXPR FI 
+								(Absyn.Expr_if(EXPR1,EXPR2,EXPR3))
+	| IDEN ASSIGN EXPR 			(Absyn.Expr_assign (IDEN,EXPR))
+	| FN LPAREN STRINGLIST COMMA EXPR RPAREN
+								(Absyn.Expr_function (STRINGLIST, EXPR))
+	| LPAREN EXPRLISTC RPAREN 	(Absyn.Expr_list EXPRLISTC)
+	| LOCAL DEFN IN DEFN END 	(Absyn.Expr_LocalInEnd(DEFN1,DEFN2))
+	| LET DEFN IN EXPR END 		(Absyn.Expr_LetInEnd(DEFN,EXPR))
+
+STRINGLIST: IDEN				([IDEN])
+	| IDEN COMMA STRINGLIST		(IDEN::STRINGLIST)
+
+EXPRLISTC: EXPR 				([EXPR])
+	| EXPR COMMA EXPRLISTC 		(EXPR::EXPRLISTC)
+
+DEFN: IDEN ASSIGN EXPR 			(Absyn.Expr_assign (IDEN,EXPR))
+	| LCURL DEFNLIST RCURL 		(Absyn.Expr_assignpar (DEFNLIST))
+	| LCURL DEFN COMMA DEFN RCURL
+						 		(Absyn.Expr_assignseq (DEFN1,DEFN2))
+
+DEFNLIST: DEFN 					([DEFN])
+	| DEFN COLON DEFNLIST		(DEFN::DEFNLIST)
