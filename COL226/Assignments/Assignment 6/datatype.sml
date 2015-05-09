@@ -27,6 +27,7 @@ signature ABSYN =
                 | Expr_assignseq of expr*expr
                 | Expr_LetInEnd of expr*expr
                 | Expr_LocalInEnd of expr*expr
+                | Expr_App of expr*expr
   end
 
 structure Absyn :> ABSYN =
@@ -58,4 +59,5 @@ datatype program = Program of expr list
                 | Expr_assignseq of expr*expr
                 | Expr_LetInEnd of expr*expr
                 | Expr_LocalInEnd of expr*expr
+                | Expr_App of expr*expr
     end

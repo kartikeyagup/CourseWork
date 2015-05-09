@@ -15,10 +15,12 @@ datatype OpCode = Add
 		|RetFromLoc
 		|Ret
 		|DumpVal
+		|CompList of OpCode list
 		|PopDump
 		|Greater
 		|Lesser
-		|IfThenElse
+		|App of int
+		|IfThenElse of (OpCode list)*(OpCode list)
 		|Bind of string
 		|Load of answer
 		|Clos of (string list)*(OpCode list)
@@ -27,8 +29,10 @@ datatype OpCode = Add
 		|ans_real of real
 		|ans_bool of bool
 		|ans_str of string
-		|ans_cls of (string list)*()
+		|ans_clos of ((string list)*(OpCode list))*((string*answer) list)
 ;
+
+exception CompileError;
 
 fun Compile(Absyn.Expr_int p) = [Load(ans_int p)]
 	|Compile(Absyn.Expr_string p) = [Load(ans_str p)]
@@ -46,15 +50,24 @@ fun Compile(Absyn.Expr_int p) = [Load(ans_int p)]
 	|Compile(Absyn.Expr_bin (Absyn.LESSER, e1,e2)) = Compile(e1) @ Compile( e2) @ [Lesser]
 	|Compile(Absyn.Expr_un (Absyn.NOT, e1)) = Compile(e1)@[Not]	
 	|Compile(Absyn.Expr_un (Absyn.ABS, e1)) = Compile(e1)@[Abs]
-	|Compile(Absyn.Expr_if(e1,e2,e3)) = Compile(e1)@Compile(e2)@Compile(e3)@[IfThenElse]
+	|Compile(Absyn.Expr_if(e1,e2,e3)) = Compile(e1)@[IfThenElse(Compile(e2),Compile(e3))]
 	|Compile(Absyn.Expr_assign(s,e)) = Compile(e)@[Bind(s)]
 	|Compile(Absyn.Expr_list ([])) = []
 	|Compile(Absyn.Expr_list (x::xs)) = Compile(x)@Compile(Absyn.Expr_list xs)
-	|Compile(Absyn.Expr_function(l,m)) = [Clos(l,Compile(m))]
-	|Compile(Absyn.Expr_assignpar(p)) = Compile(Absyn.Expr_list(p))
+	|Compile(Absyn.Expr_function(l,m)) = [Clos(l,Compile(m)@[RetFromLet])]
+	|Compile(Absyn.Expr_assignpar(p)) = 
+		let
+			fun helper([])=[]
+				|helper(x::xs)=Compile(x)@helper(xs)
+		in
+			(*[CompList(helper(p))]*)
+			Compile(Absyn.Expr_list(p))
+		end
 	|Compile(Absyn.Expr_assignseq(e1,e2)) = Compile(e1)@Compile(e2)
 	|Compile(Absyn.Expr_LetInEnd(e1,e2)) = [DumpVal]@Compile(e1)@Compile(e2)@[RetFromLet]
 	|Compile(Absyn.Expr_LocalInEnd(e1,e2)) = [DumpVal]@Compile(e1)@[DumpVal]@Compile(e2)@[RetFromLoc]
+	|Compile(Absyn.Expr_App(e1,Absyn.Expr_list(e2))) = [DumpVal]@Compile(e1)@Compile(Absyn.Expr_list(e2))@[App(List.length(e2))]
+	|Compile(_) = raise CompileError
 ;
 
 fun CompileAll([])=[]
@@ -83,13 +96,16 @@ and
 	exception IfThenTypeMismatch;
 	exception LookupFail;
 	exception UnknownOpcode;
+	exception BindError;
 
 	val NewMachine : OpCode list -> SECDMachine
 	val PushCompileList : SECDMachine*OpCode list -> SECDMachine
 	val Lookup : string*Env -> answer
 	val RunSingleInstruction : SECDMachine -> SECDMachine
 	val RunAllInstructions : SECDMachine -> answer list
+	val RunAllMachine : SECDMachine -> SECDMachine
 	val DoEveryThing: string -> answer list
+	val DoEveryThingMachine : string-> SECDMachine
 end
 
 structure Secd :> SECD= 
@@ -111,6 +127,7 @@ and
 	exception IfThenTypeMismatch;
 	exception LookupFail;
 	exception UnknownOpcode;
+	exception BindError;
 
 	fun NewMachine(l)=Machine(Stack([]),Environment([]),Control(l),Dump([]));
 
@@ -131,6 +148,12 @@ and
 			Slice(l1,length1-length2,[])
 		end
 	;
+	fun BindVars([],ans_clos(([],_),_),q)=q
+		|BindVars(x::xs,ans_clos((p::ps,B),C),q)=BindVars(xs,ans_clos((ps,B),C),(p,x)::q)
+		|BindVars(_,_,_)= raise BindError
+	;
+
+	fun GetTillP(l,p,k)=if List.length(k)=p then (k,hd(l)) else GetTillP(tl(l),p,hd(l)::k)
 
 	fun RunSingleInstruction(Machine(A,B,Control([]),D)) = Machine(A,B,Control([]),D)
 		(*Variable lookup*)
@@ -202,14 +225,12 @@ and
 		 	Machine(Stack(ans_bool(Real.==(x,xs))::l),B,Control(C),D)
 		|RunSingleInstruction(Machine(Stack(_),B,Control(Equal::C),D)) = raise ComparasionTypeMisMatch
 		(*If then else*)
-		|RunSingleInstruction(Machine(Stack([]),B,Control(IfThenElse::C),D))=raise InsufficientElements		
-		|RunSingleInstruction(Machine(Stack([x]),B,Control(IfThenElse::C),D))=raise InsufficientElements		
-		|RunSingleInstruction(Machine(Stack([x,y]),B,Control(IfThenElse::C),D))=raise InsufficientElements		
-		|RunSingleInstruction(Machine(Stack(x::y::ans_bool(true)::ys),B,Control(IfThenElse::C),D))=
-			Machine(Stack(y::ys),B,Control(C),D)		
-		|RunSingleInstruction(Machine(Stack(x::y::ans_bool(false)::ys),B,Control(IfThenElse::C),D))=	
-			Machine(Stack(x::ys),B,Control(C),D)		
-		|RunSingleInstruction(Machine(_,P,Control(IfThenElse::C),D))= raise IfThenTypeMismatch
+		|RunSingleInstruction(Machine(Stack([]),B,Control(IfThenElse(_,_)::C),D))=raise InsufficientElements		
+		|RunSingleInstruction(Machine(Stack(ans_bool(true)::ys),B,Control(IfThenElse(ax,bx)::C),D))=
+			Machine(Stack(ys),B,Control(ax@C),D)		
+		|RunSingleInstruction(Machine(Stack(ans_bool(false)::ys),B,Control(IfThenElse(ax,bx)::C),D))=
+			Machine(Stack(ys),B,Control(bx@C),D)		
+		|RunSingleInstruction(Machine(_,P,Control(IfThenElse(_,_)::C),D))= raise IfThenTypeMismatch
 		(*Bind*)
 		|RunSingleInstruction(Machine(Stack([]),P,Control(Bind(p)::C),D)) = raise InsufficientElements
 		|RunSingleInstruction(Machine(Stack(x::xs),Environment(K),Control(Bind(p)::C),D)) = 
@@ -228,6 +249,28 @@ and
 		|RunSingleInstruction(Machine(Stack(x),B,Control(RetFromLoc::C),Dump([p]))) = raise InsufficientElements
 		|RunSingleInstruction(Machine(Stack(x),Environment(B),Control(RetFromLoc::C),Dump((p1,Environment(p2),p3)::(q1,Environment(q2),q3)::L))) =
 			Machine(Stack(x),Environment(Slash(B,p2)@q2),Control(C),Dump(L))
+		(*Closure*)
+		|RunSingleInstruction(Machine(Stack(x),Environment(B),Control(Clos(p)::C),D))=
+			Machine(Stack(ans_clos(p,B)::x),Environment(B),Control(C),D)
+		(*Applying*)
+		|RunSingleInstruction(Machine(Stack(x),Environment(B),Control(App(p)::C),D))=
+			(*set values of variables to be the first p elements*)
+			(*Push these*)
+			let
+				val (getrelevant,bindingpart)=GetTillP(x,p,[]);
+				val getbinding=BindVars(getrelevant,bindingpart,[]);
+				val ans_clos((l1,l2),l3)=bindingpart;
+			in
+				Machine(Stack([]),Environment(getbinding@l3),Control(l2@C),D)
+			end
+		(*Comp list*)(*
+		|RunSingleInstruction(Machine(Stack(x),Environment(B),Control(CompList(p)::C),D))=
+			let
+				fun helper2(Machine(Stack(x),Environment(B),))=
+			in
+				body
+			end*)
+		(*Unknown opcode*)
 		|RunSingleInstruction(Machine(_,_,_,_))= raise UnknownOpcode;
 	;
 
@@ -235,18 +278,35 @@ and
 		|RunAllInstructions(M)=RunAllInstructions(RunSingleInstruction(M))
 	;
 
+	fun RunAllMachine(Machine(A,B,Control([]),D))=Machine(A,B,Control([]),D)
+		|RunAllMachine(M)=RunAllMachine(RunSingleInstruction(M))
+	;
+
 	fun DoEveryThing(s) = RunAllInstructions(NewMachine(CompileAll(GetExpressionList(Calc.parse_string(s)))));
+
+	fun DoEveryThingMachine(s) = RunAllMachine(NewMachine(CompileAll(GetExpressionList(Calc.parse_string(s)))));
+
 end
 ;
+
+
+open Secd;
 
 Control.Print.printDepth  := 1000;
 Control.Print.stringDepth := 1000;
 Control.Print.printLength := 1000;
 
-(*val e1= GetExpressionList( Calc.parse_string "3+4 .;");*)
-(*CompileAll(e1);*)
+val e1= GetExpressionList( Calc.parse_string "let x=50 in if true then x+7 else x-7 fi end . ;");
+CompileAll(e1);
 
 (*GetExpressionList( Calc.parse_string " x=5 . x+7 . 3+4 . 5*7 . 8-4 . 5/4 . if true then 4*9 else 3+6 fi . ;");*)
 Secd.DoEveryThing(" x=5 . y=7 . z=10 .  x*y*z  . let x=50 in x+7 end . x*10 . 5*7 . 8-4 . 5/4 . if true then 4*9 else 3+6 fi . ;");
 Secd.DoEveryThing( "let x=50 in x+7 end . ;");
-Secd.DoEveryThing( "local x=50 in y=x+7 end . 3*y . ;");
+Secd.DoEveryThing( " x= fn ( ( p, q ) , (p-q)*5 ) . x(3,4) . 3+4 . ; ");
+(*Calc.parse_string("x= fn ( (p) , p+3) . y=fn ((q,r), q(r) ) . y(x,7) . ; ");*)
+Secd.DoEveryThing( " fact=fn((x), if (x==0) then 1 else fact(x-1) fi ). fact(0) . ;");
+Secd.DoEveryThing( " x= fn ( (p) , p+3) . y=fn ((q,r), q(r) ) . y(x,10)  . ;");
+Secd.NewMachine(CompileAll(GetExpressionList(Calc.parse_string (" x= fn ( (p) , p+3) . y=fn ((q,r), q(r) ) . y(x,10)  . ;"))));
+Secd.NewMachine(CompileAll(GetExpressionList(Calc.parse_string ("  if (true) then let local a=3 in x=a end in x+7 end else (4.5+3.4) fi . ; "))));
+Secd.DoEveryThing("let x=50 in if true then x+7 else x-7 fi end . ;");
+Secd.DoEveryThing( "local [ x=50 : z= 65] in y=x+z end . 3*y . ;");

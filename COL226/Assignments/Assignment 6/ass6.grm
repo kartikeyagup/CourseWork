@@ -31,6 +31,8 @@
 	| RPAREN 
 	| SUB 
 	| MUL 
+	| BOXLPAREN 
+	| BOXRPAREN
 	| DIV
 	| DOT 
 	| AND 
@@ -56,7 +58,7 @@
 
 %start PROG
 
-%noshift EOF
+%noshift EOF SEMI
 %verbose
 %%
 
@@ -71,6 +73,7 @@ EXPR : INT           			(Absyn.Expr_int INT)
 	| IDEN 						(Absyn.Expr_string IDEN)
 	| REAL						(Absyn.Expr_real REAL)
 	| BOOL 	 	  				(Absyn.Expr_bool (BOOL))
+	| LPAREN EXPR RPAREN 		(EXPR)
 	| EXPR PLUS EXPR   			(Absyn.Expr_bin (Absyn.ADD, EXPR1, EXPR2))
 	| EXPR MUL EXPR   			(Absyn.Expr_bin (Absyn.MUL, EXPR1, EXPR2))
 	| EXPR DIV EXPR    			(Absyn.Expr_bin (Absyn.DIV, EXPR1, EXPR2))
@@ -84,11 +87,16 @@ EXPR : INT           			(Absyn.Expr_int INT)
 	| IF EXPR THEN EXPR ELSE EXPR FI 
 								(Absyn.Expr_if(EXPR1,EXPR2,EXPR3))
 	| IDEN ASSIGN EXPR 			(Absyn.Expr_assign (IDEN,EXPR))
-	| FN LPAREN STRINGLIST COMMA EXPR RPAREN
+	| FN LPAREN LPAREN STRINGLIST RPAREN COMMA EXPR RPAREN
 								(Absyn.Expr_function (STRINGLIST, EXPR))
-	| LPAREN EXPRLISTC RPAREN 	(Absyn.Expr_list EXPRLISTC)
+	| BOXLPAREN EXPRLISTC BOXRPAREN 	
+								(Absyn.Expr_list EXPRLISTC)
 	| LOCAL DEFN IN DEFN END 	(Absyn.Expr_LocalInEnd(DEFN1,DEFN2))
 	| LET DEFN IN EXPR END 		(Absyn.Expr_LetInEnd(DEFN,EXPR))
+	| IDEN LPAREN EXPRLISTC RPAREN
+								(Absyn.Expr_App(Absyn.Expr_string IDEN,Absyn.Expr_list(EXPRLISTC)))
+	| LET EXPR IN EXPR END 		(Absyn.Expr_LetInEnd(EXPR1,EXPR2))
+
 
 STRINGLIST: IDEN				([IDEN])
 	| IDEN COMMA STRINGLIST		(IDEN::STRINGLIST)
@@ -97,9 +105,9 @@ EXPRLISTC: EXPR 				([EXPR])
 	| EXPR COMMA EXPRLISTC 		(EXPR::EXPRLISTC)
 
 DEFN: IDEN ASSIGN EXPR 			(Absyn.Expr_assign (IDEN,EXPR))
-	| LCURL DEFNLIST RCURL 		(Absyn.Expr_assignpar (DEFNLIST))
-	| LCURL DEFN COMMA DEFN RCURL
-						 		(Absyn.Expr_assignseq (DEFN1,DEFN2))
+	| BOXLPAREN DEFNLIST BOXRPAREN 		(Absyn.Expr_assignpar (DEFNLIST))
+	| BOXLPAREN DEFN COMMA DEFN BOXRPAREN
+								(Absyn.Expr_assignseq (DEFN1,DEFN2))
 
 DEFNLIST: DEFN 					([DEFN])
 	| DEFN COLON DEFNLIST		(DEFN::DEFNLIST)
